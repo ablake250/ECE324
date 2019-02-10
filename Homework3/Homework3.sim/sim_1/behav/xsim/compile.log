@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/brokenALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module brokenALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simpleALUTB

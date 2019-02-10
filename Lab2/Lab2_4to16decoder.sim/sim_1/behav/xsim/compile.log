@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab1/TwoToFourDecoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwoToFourDecoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab2/fpga_top_Lab2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fpga_top_Lab2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab2/Lab2_4to16decoder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

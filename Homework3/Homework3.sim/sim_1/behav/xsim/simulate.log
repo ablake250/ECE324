@@ -1,0 +1,2050 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Info: Pass! a= 0, b= 0, s=0
+Time: 100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 0, s=1
+Time: 300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b= 0, s=2
+Time: 500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 0, s=3
+Time: 700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b= 1, s=0
+Time: 900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 1, s=1
+Time: 1100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b= 1, s=2
+Time: 1300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 1, s=3
+Time: 1500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b= 2, s=0
+Time: 1700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 2, s=1
+Time: 1900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b= 2, s=2
+Time: 2100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 2, s=3
+Time: 2300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b= 3, s=0
+Time: 2500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 3, s=1
+Time: 2700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b= 3, s=2
+Time: 2900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 3, s=3
+Time: 3100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b= 4, s=0
+Time: 3300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 4, s=1
+Time: 3500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b= 4, s=2
+Time: 3700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 4, s=3
+Time: 3900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b= 5, s=0
+Time: 4100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 5, s=1
+Time: 4300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b= 5, s=2
+Time: 4500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 5, s=3
+Time: 4700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b= 6, s=0
+Time: 4900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 6, s=1
+Time: 5100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b= 6, s=2
+Time: 5300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 6, s=3
+Time: 5500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b= 7, s=0
+Time: 5700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 7, s=1
+Time: 5900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b= 7, s=2
+Time: 6100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 7, s=3
+Time: 6300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b= 8, s=0
+Time: 6500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 8, s=1
+Time: 6700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b= 8, s=2
+Time: 6900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 8, s=3
+Time: 7100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b= 9, s=0
+Time: 7300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 9, s=1
+Time: 7500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b= 9, s=2
+Time: 7700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b= 9, s=3
+Time: 7900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b=10, s=0
+Time: 8100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=10, s=1
+Time: 8300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b=10, s=2
+Time: 8500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=10, s=3
+Time: 8700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b=11, s=0
+Time: 8900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=11, s=1
+Time: 9100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b=11, s=2
+Time: 9300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=11, s=3
+Time: 9500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b=12, s=0
+Time: 9700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=12, s=1
+Time: 9900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b=12, s=2
+Time: 10100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=12, s=3
+Time: 10300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b=13, s=0
+Time: 10500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=13, s=1
+Time: 10700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b=13, s=2
+Time: 10900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=13, s=3
+Time: 11100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b=14, s=0
+Time: 11300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=14, s=1
+Time: 11500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b=14, s=2
+Time: 11700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=14, s=3
+Time: 11900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 0, b=15, s=0
+Time: 12100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=15, s=1
+Time: 12300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 0, b=15, s=2
+Time: 12500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 0, b=15, s=3
+Time: 12700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 0, s=0
+Time: 12900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 0, s=1
+Time: 13100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 0, s=2
+Time: 13300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 0, s=3
+Time: 13500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b= 1, s=0
+Time: 13700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 1, s=1
+Time: 13900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 1, s=2
+Time: 14100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 1, s=3
+Time: 14300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b= 2, s=0
+Time: 14500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 2, s=1
+Time: 14700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 2, s=2
+Time: 14900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 2, s=3
+Time: 15100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b= 3, s=0
+Time: 15300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 3, s=1
+Time: 15500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 3, s=2
+Time: 15700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 3, s=3
+Time: 15900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b= 4, s=0
+Time: 16100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 4, s=1
+Time: 16300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 4, s=2
+Time: 16500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 4, s=3
+Time: 16700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b= 5, s=0
+Time: 16900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 5, s=1
+Time: 17100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 5, s=2
+Time: 17300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 5, s=3
+Time: 17500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b= 6, s=0
+Time: 17700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 6, s=1
+Time: 17900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 6, s=2
+Time: 18100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 6, s=3
+Time: 18300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b= 7, s=0
+Time: 18500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 7, s=1
+Time: 18700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 7, s=2
+Time: 18900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 7, s=3
+Time: 19100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 8, s=0
+Time: 19300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 8, s=1
+Time: 19500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 8, s=2
+Time: 19700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 8, s=3
+Time: 19900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b= 9, s=0
+Time: 20100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 9, s=1
+Time: 20300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b= 9, s=2
+Time: 20500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b= 9, s=3
+Time: 20700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b=10, s=0
+Time: 20900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=10, s=1
+Time: 21100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b=10, s=2
+Time: 21300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=10, s=3
+Time: 21500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b=11, s=0
+Time: 21700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=11, s=1
+Time: 21900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b=11, s=2
+Time: 22100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=11, s=3
+Time: 22300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b=12, s=0
+Time: 22500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=12, s=1
+Time: 22700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b=12, s=2
+Time: 22900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=12, s=3
+Time: 23100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b=13, s=0
+Time: 23300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=13, s=1
+Time: 23500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b=13, s=2
+Time: 23700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=13, s=3
+Time: 23900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b=14, s=0
+Time: 24100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=14, s=1
+Time: 24300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b=14, s=2
+Time: 24500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=14, s=3
+Time: 24700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 1, b=15, s=0
+Time: 24900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=15, s=1
+Time: 25100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 1, b=15, s=2
+Time: 25300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 1, b=15, s=3
+Time: 25500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 0, s=0
+Time: 25700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 0, s=1
+Time: 25900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 0, s=2
+Time: 26100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 0, s=3
+Time: 26300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b= 1, s=0
+Time: 26500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 1, s=1
+Time: 26700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 1, s=2
+Time: 26900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 1, s=3
+Time: 27100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b= 2, s=0
+Time: 27300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 2, s=1
+Time: 27500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 2, s=2
+Time: 27700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 2, s=3
+Time: 27900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b= 3, s=0
+Time: 28100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 3, s=1
+Time: 28300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 3, s=2
+Time: 28500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 3, s=3
+Time: 28700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b= 4, s=0
+Time: 28900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 4, s=1
+Time: 29100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 4, s=2
+Time: 29300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 4, s=3
+Time: 29500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b= 5, s=0
+Time: 29700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 5, s=1
+Time: 29900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 5, s=2
+Time: 30100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 5, s=3
+Time: 30300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b= 6, s=0
+Time: 30500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 6, s=1
+Time: 30700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 6, s=2
+Time: 30900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 6, s=3
+Time: 31100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b= 7, s=0
+Time: 31300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 7, s=1
+Time: 31500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 7, s=2
+Time: 31700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 7, s=3
+Time: 31900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 8, s=0
+Time: 32100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 8, s=1
+Time: 32300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 8, s=2
+Time: 32500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 8, s=3
+Time: 32700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b= 9, s=0
+Time: 32900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 9, s=1
+Time: 33100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b= 9, s=2
+Time: 33300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b= 9, s=3
+Time: 33500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b=10, s=0
+Time: 33700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=10, s=1
+Time: 33900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b=10, s=2
+Time: 34100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=10, s=3
+Time: 34300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b=11, s=0
+Time: 34500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=11, s=1
+Time: 34700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b=11, s=2
+Time: 34900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=11, s=3
+Time: 35100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b=12, s=0
+Time: 35300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=12, s=1
+Time: 35500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b=12, s=2
+Time: 35700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=12, s=3
+Time: 35900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b=13, s=0
+Time: 36100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=13, s=1
+Time: 36300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b=13, s=2
+Time: 36500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=13, s=3
+Time: 36700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b=14, s=0
+Time: 36900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=14, s=1
+Time: 37100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b=14, s=2
+Time: 37300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=14, s=3
+Time: 37500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 2, b=15, s=0
+Time: 37700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=15, s=1
+Time: 37900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 2, b=15, s=2
+Time: 38100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 2, b=15, s=3
+Time: 38300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 0, s=0
+Time: 38500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 0, s=1
+Time: 38700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 0, s=2
+Time: 38900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 0, s=3
+Time: 39100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b= 1, s=0
+Time: 39300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 1, s=1
+Time: 39500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 1, s=2
+Time: 39700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 1, s=3
+Time: 39900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b= 2, s=0
+Time: 40100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 2, s=1
+Time: 40300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 2, s=2
+Time: 40500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 2, s=3
+Time: 40700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b= 3, s=0
+Time: 40900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 3, s=1
+Time: 41100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 3, s=2
+Time: 41300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 3, s=3
+Time: 41500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b= 4, s=0
+Time: 41700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 4, s=1
+Time: 41900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 4, s=2
+Time: 42100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 4, s=3
+Time: 42300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b= 5, s=0
+Time: 42500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 5, s=1
+Time: 42700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 5, s=2
+Time: 42900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 5, s=3
+Time: 43100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b= 6, s=0
+Time: 43300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 6, s=1
+Time: 43500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 6, s=2
+Time: 43700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 6, s=3
+Time: 43900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b= 7, s=0
+Time: 44100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 7, s=1
+Time: 44300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 7, s=2
+Time: 44500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 7, s=3
+Time: 44700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 8, s=0
+Time: 44900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 8, s=1
+Time: 45100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 8, s=2
+Time: 45300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 8, s=3
+Time: 45500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b= 9, s=0
+Time: 45700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 9, s=1
+Time: 45900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b= 9, s=2
+Time: 46100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b= 9, s=3
+Time: 46300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b=10, s=0
+Time: 46500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=10, s=1
+Time: 46700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b=10, s=2
+Time: 46900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=10, s=3
+Time: 47100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b=11, s=0
+Time: 47300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=11, s=1
+Time: 47500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b=11, s=2
+Time: 47700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=11, s=3
+Time: 47900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b=12, s=0
+Time: 48100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=12, s=1
+Time: 48300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b=12, s=2
+Time: 48500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=12, s=3
+Time: 48700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b=13, s=0
+Time: 48900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=13, s=1
+Time: 49100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b=13, s=2
+Time: 49300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=13, s=3
+Time: 49500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b=14, s=0
+Time: 49700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=14, s=1
+Time: 49900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b=14, s=2
+Time: 50100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=14, s=3
+Time: 50300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 3, b=15, s=0
+Time: 50500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=15, s=1
+Time: 50700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 3, b=15, s=2
+Time: 50900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 3, b=15, s=3
+Time: 51100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 0, s=0
+Time: 51300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 0, s=1
+Time: 51500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 0, s=2
+Time: 51700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 0, s=3
+Time: 51900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b= 1, s=0
+Time: 52100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 1, s=1
+Time: 52300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 1, s=2
+Time: 52500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 1, s=3
+Time: 52700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b= 2, s=0
+Time: 52900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 2, s=1
+Time: 53100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 2, s=2
+Time: 53300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 2, s=3
+Time: 53500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b= 3, s=0
+Time: 53700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 3, s=1
+Time: 53900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 3, s=2
+Time: 54100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 3, s=3
+Time: 54300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b= 4, s=0
+Time: 54500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 4, s=1
+Time: 54700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 4, s=2
+Time: 54900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 4, s=3
+Time: 55100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b= 5, s=0
+Time: 55300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 5, s=1
+Time: 55500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 5, s=2
+Time: 55700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 5, s=3
+Time: 55900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b= 6, s=0
+Time: 56100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 6, s=1
+Time: 56300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 6, s=2
+Time: 56500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 6, s=3
+Time: 56700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b= 7, s=0
+Time: 56900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 7, s=1
+Time: 57100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 7, s=2
+Time: 57300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 7, s=3
+Time: 57500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 8, s=0
+Time: 57700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 8, s=1
+Time: 57900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 8, s=2
+Time: 58100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 8, s=3
+Time: 58300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b= 9, s=0
+Time: 58500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 9, s=1
+Time: 58700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b= 9, s=2
+Time: 58900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b= 9, s=3
+Time: 59100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b=10, s=0
+Time: 59300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=10, s=1
+Time: 59500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b=10, s=2
+Time: 59700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=10, s=3
+Time: 59900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b=11, s=0
+Time: 60100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=11, s=1
+Time: 60300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b=11, s=2
+Time: 60500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=11, s=3
+Time: 60700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b=12, s=0
+Time: 60900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=12, s=1
+Time: 61100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b=12, s=2
+Time: 61300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=12, s=3
+Time: 61500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b=13, s=0
+Time: 61700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=13, s=1
+Time: 61900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b=13, s=2
+Time: 62100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=13, s=3
+Time: 62300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b=14, s=0
+Time: 62500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=14, s=1
+Time: 62700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b=14, s=2
+Time: 62900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=14, s=3
+Time: 63100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 4, b=15, s=0
+Time: 63300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=15, s=1
+Time: 63500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 4, b=15, s=2
+Time: 63700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 4, b=15, s=3
+Time: 63900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 0, s=0
+Time: 64100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 0, s=1
+Time: 64300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 0, s=2
+Time: 64500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 0, s=3
+Time: 64700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b= 1, s=0
+Time: 64900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 1, s=1
+Time: 65100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 1, s=2
+Time: 65300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 1, s=3
+Time: 65500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b= 2, s=0
+Time: 65700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 2, s=1
+Time: 65900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 2, s=2
+Time: 66100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 2, s=3
+Time: 66300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b= 3, s=0
+Time: 66500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 3, s=1
+Time: 66700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 3, s=2
+Time: 66900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 3, s=3
+Time: 67100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b= 4, s=0
+Time: 67300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 4, s=1
+Time: 67500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 4, s=2
+Time: 67700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 4, s=3
+Time: 67900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b= 5, s=0
+Time: 68100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 5, s=1
+Time: 68300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 5, s=2
+Time: 68500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 5, s=3
+Time: 68700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b= 6, s=0
+Time: 68900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 6, s=1
+Time: 69100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 6, s=2
+Time: 69300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 6, s=3
+Time: 69500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b= 7, s=0
+Time: 69700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 7, s=1
+Time: 69900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 7, s=2
+Time: 70100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 7, s=3
+Time: 70300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 8, s=0
+Time: 70500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 8, s=1
+Time: 70700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 8, s=2
+Time: 70900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 8, s=3
+Time: 71100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b= 9, s=0
+Time: 71300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 9, s=1
+Time: 71500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b= 9, s=2
+Time: 71700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b= 9, s=3
+Time: 71900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b=10, s=0
+Time: 72100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=10, s=1
+Time: 72300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b=10, s=2
+Time: 72500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=10, s=3
+Time: 72700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b=11, s=0
+Time: 72900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=11, s=1
+Time: 73100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b=11, s=2
+Time: 73300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=11, s=3
+Time: 73500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b=12, s=0
+Time: 73700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=12, s=1
+Time: 73900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b=12, s=2
+Time: 74100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=12, s=3
+Time: 74300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b=13, s=0
+Time: 74500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=13, s=1
+Time: 74700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b=13, s=2
+Time: 74900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=13, s=3
+Time: 75100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b=14, s=0
+Time: 75300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=14, s=1
+Time: 75500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b=14, s=2
+Time: 75700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=14, s=3
+Time: 75900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 5, b=15, s=0
+Time: 76100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=15, s=1
+Time: 76300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 5, b=15, s=2
+Time: 76500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 5, b=15, s=3
+Time: 76700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 0, s=0
+Time: 76900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 0, s=1
+Time: 77100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 0, s=2
+Time: 77300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 0, s=3
+Time: 77500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b= 1, s=0
+Time: 77700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 1, s=1
+Time: 77900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 1, s=2
+Time: 78100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 1, s=3
+Time: 78300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b= 2, s=0
+Time: 78500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 2, s=1
+Time: 78700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 2, s=2
+Time: 78900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 2, s=3
+Time: 79100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b= 3, s=0
+Time: 79300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 3, s=1
+Time: 79500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 3, s=2
+Time: 79700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 3, s=3
+Time: 79900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b= 4, s=0
+Time: 80100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 4, s=1
+Time: 80300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 4, s=2
+Time: 80500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 4, s=3
+Time: 80700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b= 5, s=0
+Time: 80900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 5, s=1
+Time: 81100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 5, s=2
+Time: 81300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 5, s=3
+Time: 81500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b= 6, s=0
+Time: 81700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 6, s=1
+Time: 81900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 6, s=2
+Time: 82100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 6, s=3
+Time: 82300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b= 7, s=0
+Time: 82500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 7, s=1
+Time: 82700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 7, s=2
+Time: 82900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 7, s=3
+Time: 83100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 8, s=0
+Time: 83300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 8, s=1
+Time: 83500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 8, s=2
+Time: 83700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 8, s=3
+Time: 83900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b= 9, s=0
+Time: 84100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 9, s=1
+Time: 84300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b= 9, s=2
+Time: 84500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b= 9, s=3
+Time: 84700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b=10, s=0
+Time: 84900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=10, s=1
+Time: 85100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b=10, s=2
+Time: 85300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=10, s=3
+Time: 85500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b=11, s=0
+Time: 85700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=11, s=1
+Time: 85900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b=11, s=2
+Time: 86100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=11, s=3
+Time: 86300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b=12, s=0
+Time: 86500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=12, s=1
+Time: 86700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b=12, s=2
+Time: 86900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=12, s=3
+Time: 87100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b=13, s=0
+Time: 87300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=13, s=1
+Time: 87500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b=13, s=2
+Time: 87700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=13, s=3
+Time: 87900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b=14, s=0
+Time: 88100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=14, s=1
+Time: 88300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b=14, s=2
+Time: 88500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=14, s=3
+Time: 88700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 6, b=15, s=0
+Time: 88900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=15, s=1
+Time: 89100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 6, b=15, s=2
+Time: 89300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 6, b=15, s=3
+Time: 89500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 0, s=0
+Time: 89700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 0, s=1
+Time: 89900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 0, s=2
+Time: 90100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 0, s=3
+Time: 90300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b= 1, s=0
+Time: 90500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 1, s=1
+Time: 90700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 1, s=2
+Time: 90900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 1, s=3
+Time: 91100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b= 2, s=0
+Time: 91300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 2, s=1
+Time: 91500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 2, s=2
+Time: 91700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 2, s=3
+Time: 91900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b= 3, s=0
+Time: 92100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 3, s=1
+Time: 92300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 3, s=2
+Time: 92500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 3, s=3
+Time: 92700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b= 4, s=0
+Time: 92900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 4, s=1
+Time: 93100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 4, s=2
+Time: 93300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 4, s=3
+Time: 93500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b= 5, s=0
+Time: 93700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 5, s=1
+Time: 93900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 5, s=2
+Time: 94100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 5, s=3
+Time: 94300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b= 6, s=0
+Time: 94500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 6, s=1
+Time: 94700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 6, s=2
+Time: 94900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 6, s=3
+Time: 95100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b= 7, s=0
+Time: 95300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 7, s=1
+Time: 95500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 7, s=2
+Time: 95700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 7, s=3
+Time: 95900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 8, s=0
+Time: 96100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 8, s=1
+Time: 96300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 8, s=2
+Time: 96500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 8, s=3
+Time: 96700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b= 9, s=0
+Time: 96900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 9, s=1
+Time: 97100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b= 9, s=2
+Time: 97300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b= 9, s=3
+Time: 97500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b=10, s=0
+Time: 97700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=10, s=1
+Time: 97900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b=10, s=2
+Time: 98100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=10, s=3
+Time: 98300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b=11, s=0
+Time: 98500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=11, s=1
+Time: 98700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b=11, s=2
+Time: 98900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=11, s=3
+Time: 99100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b=12, s=0
+Time: 99300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=12, s=1
+Time: 99500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b=12, s=2
+Time: 99700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=12, s=3
+Time: 99900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b=13, s=0
+Time: 100100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=13, s=1
+Time: 100300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b=13, s=2
+Time: 100500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=13, s=3
+Time: 100700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b=14, s=0
+Time: 100900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=14, s=1
+Time: 101100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b=14, s=2
+Time: 101300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=14, s=3
+Time: 101500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 7, b=15, s=0
+Time: 101700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=15, s=1
+Time: 101900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 7, b=15, s=2
+Time: 102100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 7, b=15, s=3
+Time: 102300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 0, s=0
+Time: 102500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 0, s=1
+Time: 102700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 0, s=2
+Time: 102900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 0, s=3
+Time: 103100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b= 1, s=0
+Time: 103300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 1, s=1
+Time: 103500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 1, s=2
+Time: 103700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 1, s=3
+Time: 103900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b= 2, s=0
+Time: 104100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 2, s=1
+Time: 104300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 2, s=2
+Time: 104500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 2, s=3
+Time: 104700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b= 3, s=0
+Time: 104900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 3, s=1
+Time: 105100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 3, s=2
+Time: 105300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 3, s=3
+Time: 105500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b= 4, s=0
+Time: 105700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 4, s=1
+Time: 105900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 4, s=2
+Time: 106100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 4, s=3
+Time: 106300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b= 5, s=0
+Time: 106500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 5, s=1
+Time: 106700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 5, s=2
+Time: 106900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 5, s=3
+Time: 107100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b= 6, s=0
+Time: 107300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 6, s=1
+Time: 107500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 6, s=2
+Time: 107700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 6, s=3
+Time: 107900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b= 7, s=0
+Time: 108100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 7, s=1
+Time: 108300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 7, s=2
+Time: 108500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 7, s=3
+Time: 108700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 8, s=0
+Time: 108900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 8, s=1
+Time: 109100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 8, s=2
+Time: 109300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 8, s=3
+Time: 109500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b= 9, s=0
+Time: 109700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 9, s=1
+Time: 109900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b= 9, s=2
+Time: 110100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b= 9, s=3
+Time: 110300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b=10, s=0
+Time: 110500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=10, s=1
+Time: 110700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b=10, s=2
+Time: 110900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=10, s=3
+Time: 111100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b=11, s=0
+Time: 111300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=11, s=1
+Time: 111500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b=11, s=2
+Time: 111700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=11, s=3
+Time: 111900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b=12, s=0
+Time: 112100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=12, s=1
+Time: 112300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b=12, s=2
+Time: 112500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=12, s=3
+Time: 112700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b=13, s=0
+Time: 112900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=13, s=1
+Time: 113100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b=13, s=2
+Time: 113300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=13, s=3
+Time: 113500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b=14, s=0
+Time: 113700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=14, s=1
+Time: 113900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b=14, s=2
+Time: 114100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=14, s=3
+Time: 114300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 8, b=15, s=0
+Time: 114500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=15, s=1
+Time: 114700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 8, b=15, s=2
+Time: 114900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 8, b=15, s=3
+Time: 115100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 0, s=0
+Time: 115300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 0, s=1
+Time: 115500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 0, s=2
+Time: 115700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 0, s=3
+Time: 115900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b= 1, s=0
+Time: 116100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 1, s=1
+Time: 116300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 1, s=2
+Time: 116500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 1, s=3
+Time: 116700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b= 2, s=0
+Time: 116900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 2, s=1
+Time: 117100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 2, s=2
+Time: 117300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 2, s=3
+Time: 117500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b= 3, s=0
+Time: 117700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 3, s=1
+Time: 117900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 3, s=2
+Time: 118100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 3, s=3
+Time: 118300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b= 4, s=0
+Time: 118500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 4, s=1
+Time: 118700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 4, s=2
+Time: 118900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 4, s=3
+Time: 119100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b= 5, s=0
+Time: 119300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 5, s=1
+Time: 119500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 5, s=2
+Time: 119700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 5, s=3
+Time: 119900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b= 6, s=0
+Time: 120100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 6, s=1
+Time: 120300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 6, s=2
+Time: 120500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 6, s=3
+Time: 120700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b= 7, s=0
+Time: 120900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 7, s=1
+Time: 121100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 7, s=2
+Time: 121300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 7, s=3
+Time: 121500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 8, s=0
+Time: 121700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 8, s=1
+Time: 121900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 8, s=2
+Time: 122100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 8, s=3
+Time: 122300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b= 9, s=0
+Time: 122500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 9, s=1
+Time: 122700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b= 9, s=2
+Time: 122900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b= 9, s=3
+Time: 123100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b=10, s=0
+Time: 123300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=10, s=1
+Time: 123500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b=10, s=2
+Time: 123700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=10, s=3
+Time: 123900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b=11, s=0
+Time: 124100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=11, s=1
+Time: 124300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b=11, s=2
+Time: 124500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=11, s=3
+Time: 124700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b=12, s=0
+Time: 124900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=12, s=1
+Time: 125100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b=12, s=2
+Time: 125300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=12, s=3
+Time: 125500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b=13, s=0
+Time: 125700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=13, s=1
+Time: 125900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b=13, s=2
+Time: 126100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=13, s=3
+Time: 126300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b=14, s=0
+Time: 126500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=14, s=1
+Time: 126700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b=14, s=2
+Time: 126900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=14, s=3
+Time: 127100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a= 9, b=15, s=0
+Time: 127300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=15, s=1
+Time: 127500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a= 9, b=15, s=2
+Time: 127700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a= 9, b=15, s=3
+Time: 127900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 0, s=0
+Time: 128100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 0, s=1
+Time: 128300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 0, s=2
+Time: 128500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 0, s=3
+Time: 128700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b= 1, s=0
+Time: 128900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 1, s=1
+Time: 129100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 1, s=2
+Time: 129300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 1, s=3
+Time: 129500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b= 2, s=0
+Time: 129700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 2, s=1
+Time: 129900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 2, s=2
+Time: 130100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 2, s=3
+Time: 130300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b= 3, s=0
+Time: 130500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 3, s=1
+Time: 130700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 3, s=2
+Time: 130900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 3, s=3
+Time: 131100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b= 4, s=0
+Time: 131300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 4, s=1
+Time: 131500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 4, s=2
+Time: 131700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 4, s=3
+Time: 131900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b= 5, s=0
+Time: 132100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 5, s=1
+Time: 132300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 5, s=2
+Time: 132500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 5, s=3
+Time: 132700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b= 6, s=0
+Time: 132900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 6, s=1
+Time: 133100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 6, s=2
+Time: 133300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 6, s=3
+Time: 133500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b= 7, s=0
+Time: 133700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 7, s=1
+Time: 133900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 7, s=2
+Time: 134100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 7, s=3
+Time: 134300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 8, s=0
+Time: 134500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 8, s=1
+Time: 134700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 8, s=2
+Time: 134900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 8, s=3
+Time: 135100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b= 9, s=0
+Time: 135300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 9, s=1
+Time: 135500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b= 9, s=2
+Time: 135700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b= 9, s=3
+Time: 135900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b=10, s=0
+Time: 136100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=10, s=1
+Time: 136300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b=10, s=2
+Time: 136500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=10, s=3
+Time: 136700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b=11, s=0
+Time: 136900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=11, s=1
+Time: 137100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b=11, s=2
+Time: 137300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=11, s=3
+Time: 137500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b=12, s=0
+Time: 137700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=12, s=1
+Time: 137900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b=12, s=2
+Time: 138100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=12, s=3
+Time: 138300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b=13, s=0
+Time: 138500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=13, s=1
+Time: 138700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b=13, s=2
+Time: 138900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=13, s=3
+Time: 139100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b=14, s=0
+Time: 139300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=14, s=1
+Time: 139500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b=14, s=2
+Time: 139700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=14, s=3
+Time: 139900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=10, b=15, s=0
+Time: 140100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=15, s=1
+Time: 140300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=10, b=15, s=2
+Time: 140500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=10, b=15, s=3
+Time: 140700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 0, s=0
+Time: 140900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 0, s=1
+Time: 141100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 0, s=2
+Time: 141300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 0, s=3
+Time: 141500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b= 1, s=0
+Time: 141700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 1, s=1
+Time: 141900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 1, s=2
+Time: 142100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 1, s=3
+Time: 142300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b= 2, s=0
+Time: 142500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 2, s=1
+Time: 142700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 2, s=2
+Time: 142900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 2, s=3
+Time: 143100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b= 3, s=0
+Time: 143300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 3, s=1
+Time: 143500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 3, s=2
+Time: 143700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 3, s=3
+Time: 143900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b= 4, s=0
+Time: 144100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 4, s=1
+Time: 144300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 4, s=2
+Time: 144500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 4, s=3
+Time: 144700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b= 5, s=0
+Time: 144900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 5, s=1
+Time: 145100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 5, s=2
+Time: 145300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 5, s=3
+Time: 145500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b= 6, s=0
+Time: 145700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 6, s=1
+Time: 145900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 6, s=2
+Time: 146100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 6, s=3
+Time: 146300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b= 7, s=0
+Time: 146500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 7, s=1
+Time: 146700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 7, s=2
+Time: 146900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 7, s=3
+Time: 147100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 8, s=0
+Time: 147300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 8, s=1
+Time: 147500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 8, s=2
+Time: 147700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 8, s=3
+Time: 147900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b= 9, s=0
+Time: 148100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 9, s=1
+Time: 148300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b= 9, s=2
+Time: 148500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b= 9, s=3
+Time: 148700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b=10, s=0
+Time: 148900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=10, s=1
+Time: 149100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b=10, s=2
+Time: 149300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=10, s=3
+Time: 149500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b=11, s=0
+Time: 149700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=11, s=1
+Time: 149900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b=11, s=2
+Time: 150100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=11, s=3
+Time: 150300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b=12, s=0
+Time: 150500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=12, s=1
+Time: 150700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b=12, s=2
+Time: 150900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=12, s=3
+Time: 151100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b=13, s=0
+Time: 151300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=13, s=1
+Time: 151500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b=13, s=2
+Time: 151700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=13, s=3
+Time: 151900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b=14, s=0
+Time: 152100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=14, s=1
+Time: 152300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b=14, s=2
+Time: 152500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=14, s=3
+Time: 152700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=11, b=15, s=0
+Time: 152900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=15, s=1
+Time: 153100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=11, b=15, s=2
+Time: 153300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=11, b=15, s=3
+Time: 153500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 0, s=0
+Time: 153700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 0, s=1
+Time: 153900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 0, s=2
+Time: 154100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 0, s=3
+Time: 154300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b= 1, s=0
+Time: 154500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 1, s=1
+Time: 154700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 1, s=2
+Time: 154900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 1, s=3
+Time: 155100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b= 2, s=0
+Time: 155300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 2, s=1
+Time: 155500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 2, s=2
+Time: 155700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 2, s=3
+Time: 155900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b= 3, s=0
+Time: 156100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 3, s=1
+Time: 156300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 3, s=2
+Time: 156500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 3, s=3
+Time: 156700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b= 4, s=0
+Time: 156900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 4, s=1
+Time: 157100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 4, s=2
+Time: 157300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 4, s=3
+Time: 157500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b= 5, s=0
+Time: 157700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 5, s=1
+Time: 157900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 5, s=2
+Time: 158100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 5, s=3
+Time: 158300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b= 6, s=0
+Time: 158500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 6, s=1
+Time: 158700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 6, s=2
+Time: 158900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 6, s=3
+Time: 159100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b= 7, s=0
+Time: 159300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 7, s=1
+Time: 159500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 7, s=2
+Time: 159700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 7, s=3
+Time: 159900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 8, s=0
+Time: 160100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 8, s=1
+Time: 160300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 8, s=2
+Time: 160500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 8, s=3
+Time: 160700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b= 9, s=0
+Time: 160900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 9, s=1
+Time: 161100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b= 9, s=2
+Time: 161300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b= 9, s=3
+Time: 161500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b=10, s=0
+Time: 161700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=10, s=1
+Time: 161900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b=10, s=2
+Time: 162100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=10, s=3
+Time: 162300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b=11, s=0
+Time: 162500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=11, s=1
+Time: 162700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b=11, s=2
+Time: 162900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=11, s=3
+Time: 163100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b=12, s=0
+Time: 163300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=12, s=1
+Time: 163500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b=12, s=2
+Time: 163700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=12, s=3
+Time: 163900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b=13, s=0
+Time: 164100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=13, s=1
+Time: 164300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b=13, s=2
+Time: 164500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=13, s=3
+Time: 164700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b=14, s=0
+Time: 164900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=14, s=1
+Time: 165100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b=14, s=2
+Time: 165300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=14, s=3
+Time: 165500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=12, b=15, s=0
+Time: 165700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=15, s=1
+Time: 165900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=12, b=15, s=2
+Time: 166100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=12, b=15, s=3
+Time: 166300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 0, s=0
+Time: 166500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 0, s=1
+Time: 166700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 0, s=2
+Time: 166900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 0, s=3
+Time: 167100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b= 1, s=0
+Time: 167300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 1, s=1
+Time: 167500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 1, s=2
+Time: 167700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 1, s=3
+Time: 167900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b= 2, s=0
+Time: 168100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 2, s=1
+Time: 168300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 2, s=2
+Time: 168500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 2, s=3
+Time: 168700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b= 3, s=0
+Time: 168900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 3, s=1
+Time: 169100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 3, s=2
+Time: 169300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 3, s=3
+Time: 169500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b= 4, s=0
+Time: 169700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 4, s=1
+Time: 169900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 4, s=2
+Time: 170100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 4, s=3
+Time: 170300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b= 5, s=0
+Time: 170500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 5, s=1
+Time: 170700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 5, s=2
+Time: 170900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 5, s=3
+Time: 171100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b= 6, s=0
+Time: 171300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 6, s=1
+Time: 171500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 6, s=2
+Time: 171700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 6, s=3
+Time: 171900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b= 7, s=0
+Time: 172100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 7, s=1
+Time: 172300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 7, s=2
+Time: 172500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 7, s=3
+Time: 172700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 8, s=0
+Time: 172900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 8, s=1
+Time: 173100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 8, s=2
+Time: 173300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 8, s=3
+Time: 173500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b= 9, s=0
+Time: 173700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 9, s=1
+Time: 173900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b= 9, s=2
+Time: 174100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b= 9, s=3
+Time: 174300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b=10, s=0
+Time: 174500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=10, s=1
+Time: 174700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b=10, s=2
+Time: 174900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=10, s=3
+Time: 175100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b=11, s=0
+Time: 175300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=11, s=1
+Time: 175500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b=11, s=2
+Time: 175700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=11, s=3
+Time: 175900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b=12, s=0
+Time: 176100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=12, s=1
+Time: 176300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b=12, s=2
+Time: 176500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=12, s=3
+Time: 176700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b=13, s=0
+Time: 176900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=13, s=1
+Time: 177100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b=13, s=2
+Time: 177300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=13, s=3
+Time: 177500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b=14, s=0
+Time: 177700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=14, s=1
+Time: 177900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b=14, s=2
+Time: 178100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=14, s=3
+Time: 178300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=13, b=15, s=0
+Time: 178500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=15, s=1
+Time: 178700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=13, b=15, s=2
+Time: 178900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=13, b=15, s=3
+Time: 179100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 0, s=0
+Time: 179300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 0, s=1
+Time: 179500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 0, s=2
+Time: 179700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 0, s=3
+Time: 179900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b= 1, s=0
+Time: 180100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 1, s=1
+Time: 180300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 1, s=2
+Time: 180500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 1, s=3
+Time: 180700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b= 2, s=0
+Time: 180900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 2, s=1
+Time: 181100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 2, s=2
+Time: 181300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 2, s=3
+Time: 181500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b= 3, s=0
+Time: 181700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 3, s=1
+Time: 181900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 3, s=2
+Time: 182100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 3, s=3
+Time: 182300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b= 4, s=0
+Time: 182500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 4, s=1
+Time: 182700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 4, s=2
+Time: 182900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 4, s=3
+Time: 183100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b= 5, s=0
+Time: 183300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 5, s=1
+Time: 183500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 5, s=2
+Time: 183700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 5, s=3
+Time: 183900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b= 6, s=0
+Time: 184100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 6, s=1
+Time: 184300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 6, s=2
+Time: 184500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 6, s=3
+Time: 184700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b= 7, s=0
+Time: 184900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 7, s=1
+Time: 185100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 7, s=2
+Time: 185300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 7, s=3
+Time: 185500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 8, s=0
+Time: 185700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 8, s=1
+Time: 185900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 8, s=2
+Time: 186100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 8, s=3
+Time: 186300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b= 9, s=0
+Time: 186500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 9, s=1
+Time: 186700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b= 9, s=2
+Time: 186900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b= 9, s=3
+Time: 187100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b=10, s=0
+Time: 187300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=10, s=1
+Time: 187500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b=10, s=2
+Time: 187700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=10, s=3
+Time: 187900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b=11, s=0
+Time: 188100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=11, s=1
+Time: 188300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b=11, s=2
+Time: 188500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=11, s=3
+Time: 188700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b=12, s=0
+Time: 188900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=12, s=1
+Time: 189100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b=12, s=2
+Time: 189300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=12, s=3
+Time: 189500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b=13, s=0
+Time: 189700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=13, s=1
+Time: 189900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b=13, s=2
+Time: 190100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=13, s=3
+Time: 190300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b=14, s=0
+Time: 190500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=14, s=1
+Time: 190700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b=14, s=2
+Time: 190900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=14, s=3
+Time: 191100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=14, b=15, s=0
+Time: 191300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=15, s=1
+Time: 191500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=14, b=15, s=2
+Time: 191700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=14, b=15, s=3
+Time: 191900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 0, s=0
+Time: 192100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 0, s=1
+Time: 192300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 0, s=2
+Time: 192500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 0, s=3
+Time: 192700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b= 1, s=0
+Time: 192900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 1, s=1
+Time: 193100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 1, s=2
+Time: 193300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 1, s=3
+Time: 193500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b= 2, s=0
+Time: 193700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 2, s=1
+Time: 193900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 2, s=2
+Time: 194100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 2, s=3
+Time: 194300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b= 3, s=0
+Time: 194500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 3, s=1
+Time: 194700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 3, s=2
+Time: 194900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 3, s=3
+Time: 195100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b= 4, s=0
+Time: 195300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 4, s=1
+Time: 195500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 4, s=2
+Time: 195700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 4, s=3
+Time: 195900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b= 5, s=0
+Time: 196100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 5, s=1
+Time: 196300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 5, s=2
+Time: 196500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 5, s=3
+Time: 196700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b= 6, s=0
+Time: 196900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 6, s=1
+Time: 197100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 6, s=2
+Time: 197300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 6, s=3
+Time: 197500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b= 7, s=0
+Time: 197700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 7, s=1
+Time: 197900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 7, s=2
+Time: 198100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 7, s=3
+Time: 198300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 8, s=0
+Time: 198500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 8, s=1
+Time: 198700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 8, s=2
+Time: 198900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 8, s=3
+Time: 199100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b= 9, s=0
+Time: 199300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 9, s=1
+Time: 199500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b= 9, s=2
+Time: 199700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b= 9, s=3
+Time: 199900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b=10, s=0
+Time: 200100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=10, s=1
+Time: 200300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b=10, s=2
+Time: 200500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=10, s=3
+Time: 200700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b=11, s=0
+Time: 200900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=11, s=1
+Time: 201100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b=11, s=2
+Time: 201300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=11, s=3
+Time: 201500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b=12, s=0
+Time: 201700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=12, s=1
+Time: 201900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b=12, s=2
+Time: 202100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=12, s=3
+Time: 202300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b=13, s=0
+Time: 202500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=13, s=1
+Time: 202700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b=13, s=2
+Time: 202900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=13, s=3
+Time: 203100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b=14, s=0
+Time: 203300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=14, s=1
+Time: 203500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b=14, s=2
+Time: 203700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=14, s=3
+Time: 203900 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Error: FAILED: a=15, b=15, s=0
+Time: 204100 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=15, s=1
+Time: 204300 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass! a=15, b=15, s=2
+Time: 204500 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
+Info: Pass!  a=15, b=15, s=3
+Time: 204700 ps  Iteration: 0  Process: /simpleALUTB/Initial16_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework3/simpleALUTB.sv
