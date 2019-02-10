@@ -39,22 +39,18 @@ integer i; // loop counter
 //New Calculations:
 //4=1/(16*t^2), t=0.125sec, 0.125sec/(2^17)=954nsec, timeBaseTick = 95.4 => 6.5bits
 
-
 mod_m_counter #(.N(MOD_M)) mmc0(
 	.clk(CLK100MHZ),
 	.max_tick(timeBaseTick),
-	.
+	.q()
 );
 
-
 /*
-
 free_run_bin_counter #(.N(BITS_IN_TIME_BASE_CNTR)) frbc0(
 	.clk(CLK100MHZ), 
 	.max_tick(timeBaseTick), // on for one clock cycle every 1/(2**17) of the fall time
 	.q() // count value not used
 );
-
 */
 
 // Generate the time it would take to fall from the zenith to the current location,
