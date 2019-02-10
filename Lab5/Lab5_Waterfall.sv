@@ -13,7 +13,7 @@ Revisions:
 22 Feb 2017 Tom Pritchard: improved some comments.
 14 Jun 2018 Tom Pritchard: converted to SystemVerilog.
 */
-  
+
 module Lab5_Waterfall(
 	input logic CLK100MHZ,  // 100 MHz clock from crystal oscillator
 	output logic [15:0] LED // 16 red LEDs above switches on Nexys4DDR
@@ -23,18 +23,16 @@ localparam  BITS_IN_TIME_BASE_CNTR = 11;
 localparam  MOD_M = 381;
 localparam	t_bits=17
 
-
 // Declarations
-logic timeBaseTick; // on for one clock cycle every 1/(2**17) of the fall time
-logic [-1:-17] t = 0; // time required to fall from zenith to the current location, 
-                      // normalized to the total falling time (so 0<=t<1)
-logic [-1:-34] tSquared; // the square of the 17 bit value of t
-logic [3:-30] d; // distance down from zenith, normalized so 0<=d<16
-integer i; // loop counter
+logic timeBaseTick; 		// on for one clock cycle every 1/(2**17) of the fall time
+logic [-1:-17] t = 0; 		// time required to fall from zenith to the current location, 
+                     		// normalized to the total falling time (so 0<=t<1)
+logic [-1:-34] tSquared; 	// the square of the 17 bit value of t
+logic [3:-30] d; 			// distance down from zenith, normalized so 0<=d<16
+integer i; 					// loop counter
 logic up;
 logic min_tick = 0;
 logic [16:0]max_tick = 0; 
-
 
 // Starting with a 100 MHz clock, this counter generates a tick every 
 //    1/(2**17) of the travel time from the zenith to the bottom.
@@ -69,6 +67,7 @@ end
 */
 
 univ_bin_counter #(N.(t_bits)) ubc0(
+	
 	//inputs below
 	.clk(CLK100MHZ),
 	.syn_clr(0),
@@ -76,6 +75,7 @@ univ_bin_counter #(N.(t_bits)) ubc0(
 	.d(0),
 	.en(1),
 	.up(up),
+
 	//outputs below
 	.q(t),
 	.max_tick(max_tick),
@@ -85,7 +85,6 @@ univ_bin_counter #(N.(t_bits)) ubc0(
 always_ff @(posedge(CLK100MHZ)) begin
 	if (t==max_tick | t==min_tick) up <= ~up;
 end
-
 
 // Generate the distance down from the zenith, using d = 0.5 * g * (t**2).
 // Assume g = 32 ft/sec**2, which is close to the acceleration due to gravity near the surface of the earth;
