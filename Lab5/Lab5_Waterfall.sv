@@ -21,7 +21,7 @@ module Lab5_Waterfall(
 
 localparam  BITS_IN_TIME_BASE_CNTR = 11;
 localparam  MOD_M = 381;
-localparam	t_bits=17
+localparam	t_bits=17;
 
 // Declarations
 logic timeBaseTick; 		// on for one clock cycle every 1/(2**17) of the fall time
@@ -66,7 +66,7 @@ always_ff @(posedge CLK100MHZ) begin
 end
 */
 
-univ_bin_counter #(N.(t_bits)) ubc0(
+univ_bin_counter #(.N(t_bits)) ubc0(
 	
 	//inputs below
 	.clk(CLK100MHZ),
@@ -80,7 +80,7 @@ univ_bin_counter #(N.(t_bits)) ubc0(
 	.q(t),
 	.max_tick(max_tick),
 	.min_tick(max_tick)
-)
+);
 
 always_ff @(posedge(CLK100MHZ)) begin
 	if (t==max_tick | t==min_tick) up <= ~up;
