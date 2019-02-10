@@ -20,7 +20,7 @@ module Lab5_Waterfall(
 );
 
 localparam  BITS_IN_TIME_BASE_CNTR = 11;
-localparam  MOD_M = 6;
+localparam  MOD_M = 381;
 
 // Declarations
 logic timeBaseTick; // on for one clock cycle every 1/(2**17) of the fall time
@@ -33,17 +33,18 @@ integer i; // loop counter
 // Starting with a 100 MHz clock, this counter generates a tick every 
 //    1/(2**17) of the travel time from the zenith to the bottom.
 // With 11 bits, this counter generates a timeBaseTick every 2048/100,000,000 = 20.48us,
-//    which will result in a fall time of 20.48us * (2**17) ~= 2.68 seconds,
+//    which will result in a fall time of 20.45us * (2**17) ~= 2.68 seconds,
 //    which will result in a fall distance of 0.5 * 32 * (2.68**2) ~= 115 feet.
 
 //New Calculations:
-//4=1/(16*t^2), t=0.125sec, 0.125sec/(2^17)=954nsec, timeBaseTick = 95.4 => 6.5bits
+//4=1/(16*t^2), t=0.5sec, 0.5sec/(2^17)=3.81us, timeBaseTick = 381
 
-mod_m_counter #(.N(MOD_M)) mmc0(
+mod_m_counter #(.M(MOD_M)) mmc0(
 	.clk(CLK100MHZ),
 	.max_tick(timeBaseTick),
 	.q()
 );
+
 
 /*
 free_run_bin_counter #(.N(BITS_IN_TIME_BASE_CNTR)) frbc0(
