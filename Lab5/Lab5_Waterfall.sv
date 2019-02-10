@@ -20,7 +20,7 @@ module Lab5_Waterfall(
 );
 
 localparam  BITS_IN_TIME_BASE_CNTR = 11;
-localparam  MOD_M = 6;
+
 
 // Declarations
 logic timeBaseTick; // on for one clock cycle every 1/(2**17) of the fall time
@@ -40,14 +40,6 @@ integer i; // loop counter
 //4=1/(16*t^2), t=0.125sec, 0.125sec/(2^17)=954nsec, timeBaseTick = 95.4 => 6.5bits
 
 
-mod_m_counter #(.N(MOD_M)) mmc0(
-	.clk(CLK100MHZ),
-	.max_tick(timeBaseTick),
-	.
-);
-
-
-/*
 
 free_run_bin_counter #(.N(BITS_IN_TIME_BASE_CNTR)) frbc0(
 	.clk(CLK100MHZ), 
@@ -55,7 +47,6 @@ free_run_bin_counter #(.N(BITS_IN_TIME_BASE_CNTR)) frbc0(
 	.q() // count value not used
 );
 
-*/
 
 // Generate the time it would take to fall from the zenith to the current location,
 //    normalized to the total falling time (so 0<=t<1, which is why the range values are negative).
