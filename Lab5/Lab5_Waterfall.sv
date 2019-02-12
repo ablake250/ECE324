@@ -30,7 +30,7 @@ logic [-1:-17] t = 0; 		// time required to fall from zenith to the current loca
 logic [-1:-34] tSquared; 	// the square of the 17 bit value of t
 logic [3:-30] d; 			// distance down from zenith, normalized so 0<=d<16
 integer i; 					// loop counter
-logic up;
+logic up =0;
 logic min_tick = 0;
 logic [16:0]max_tick = 0; 
 
