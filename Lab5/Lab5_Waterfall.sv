@@ -32,7 +32,7 @@ logic [3:-30] d; 			// distance down from zenith, normalized so 0<=d<16
 integer i; 					// loop counter
 logic up = 1;
 logic min_tick;
-logic [16:0]max_tick; 
+logic max_tick; 
 logic zero = 0;
 
 // Starting with a 100 MHz clock, this counter generates a tick every 
@@ -83,8 +83,9 @@ univ_bin_counter #(.N(T_BITS)) ubc0(
 	.min_tick(min_tick)
 );
 
-always_ff @(posedge(timeBaseTick)) begin
-	if (t==max_tick | t==min_tick) up <= ~up;
+always_ff @(posedge(CLK100MHZ)) begin
+	if (max_tick) up <= 1'b0;
+	if (min_tick) up <= 1'b1;
 end
 
 // Generate the distance down from the zenith, using d = 0.5 * g * (t**2).
