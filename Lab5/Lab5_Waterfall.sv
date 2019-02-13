@@ -21,18 +21,19 @@ module Lab5_Waterfall(
 
 localparam  BITS_IN_TIME_BASE_CNTR = 11;
 localparam  MOD_M = 381;
-localparam	t_bits=17;
+localparam	T_BITS=17;
 
 // Declarations
 logic timeBaseTick; 		// on for one clock cycle every 1/(2**17) of the fall time
-logic [-1:-17] t = 0; 		// time required to fall from zenith to the current location, 
+logic [-1:-17] t; 		// time required to fall from zenith to the current location, 
                      		// normalized to the total falling time (so 0<=t<1)
 logic [-1:-34] tSquared; 	// the square of the 17 bit value of t
 logic [3:-30] d; 			// distance down from zenith, normalized so 0<=d<16
 integer i; 					// loop counter
-logic up =0;
-logic min_tick = 0;
-logic [16:0]max_tick = 0; 
+logic up = 1;
+logic min_tick;
+logic [16:0]max_tick; 
+logic zero = 0;
 
 // Starting with a 100 MHz clock, this counter generates a tick every 
 //    1/(2**17) of the travel time from the zenith to the bottom.
@@ -66,23 +67,23 @@ always_ff @(posedge CLK100MHZ) begin
 end
 */
 
-univ_bin_counter #(.N(t_bits)) ubc0(
+univ_bin_counter #(.N(T_BITS)) ubc0(
 	
 	//inputs below
 	.clk(CLK100MHZ),
-	.syn_clr(0),
-	.load(0),
-	.d(0),
-	.en(1),
+	.syn_clr(zero),
+	.load(zero),
+	.d(zero),
+	.en(timeBaseTick),
 	.up(up),
 
 	//outputs below
 	.q(t),
 	.max_tick(max_tick),
-	.min_tick(max_tick)
+	.min_tick(min_tick)
 );
 
-always_ff @(posedge(CLK100MHZ)) begin
+always_ff @(posedge(timeBaseTick)) begin
 	if (t==max_tick | t==min_tick) up <= ~up;
 end
 

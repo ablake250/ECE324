@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1550013049">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1550018110">
   <File Type="BITSTR-BMM" Name="Lab5_Waterfall_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Lab5_Waterfall_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Lab5_Waterfall_timing_summary_init.rpt"/>

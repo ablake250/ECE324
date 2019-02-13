@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab5/Lab 5.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab5/Lab 5.srcs/sim_1/new/testBench.sv,1550016062,systemVerilog,,,,testBench,,,,,,,,
+C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab5/Lab5_Waterfall.sv,1550015226,systemVerilog,,,,Lab5_Waterfall,,,,,,,,
+C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab5/mod_m_counter.sv,1549654940,systemVerilog,,C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab5/univ_bin_counter.sv,,mod_m_counter,,,,,,,,
+C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab5/univ_bin_counter.sv,1550012605,systemVerilog,,C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab5/Lab 5.srcs/sim_1/new/testBench.sv,,univ_bin_counter,,,,,,,,
