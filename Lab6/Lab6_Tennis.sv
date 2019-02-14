@@ -118,7 +118,7 @@ risingEdgeDetector nHit_instance(
 
 
 // Generate the s1 and s0 flip-flops
-
+/*
 always_ff @(posedge nSwing, negedge nSet_s1) begin
 	if (!nSet_s1) s1 <= 1;
 	else          s1 <= nL[7];
@@ -127,20 +127,27 @@ always_ff @(posedge nSwing, negedge nSet_s0) begin
 	if (!nSet_s0) s0 <= 1;
 	else          s0 <= nL[0];
 end
+*/
 // ***** 4. CONVERT THE ABOVE 2 FLIP-FLOPS TO BE FULLY SYNCHRONOUS (INCLUDING SETS)
-/*
+
 always_ff @(posedge CLK100MHZ) begin
 	if      (!nSet_s1)      s1 <= 1;
 	else if (rising_nSwing) s1 <= nL[7];
 	else                    s1 <= s1;
 end
-*/
+always_ff @(posedge CLK100MHZ) begin
+	if      (!nSet_s0)      s0 <= 1;
+	else if (rising_nSwing) s0 <= nL[0];
+	else                    s0 <= s0;
+end
+
 	
 // Generate the function of the two 74LS194 shift registers
 // The 74LS194's asynchronous reset isn't needed for this design.
 // Because this design never has s1=s0=0, that case isn't included here.
 // The shift register's bit 0 is on the right.
 
+/*
 always_ff @(posedge clkCounter[BITS_IN_CLK_COUNTER-1]) begin // the clock rises every 1/3 second
 	case({s1,s0})
 		2'b01  : nL <= {1'b1,nL[7:1]};       // shift right
@@ -148,13 +155,19 @@ always_ff @(posedge clkCounter[BITS_IN_CLK_COUNTER-1]) begin // the clock rises 
 		default: nL <= {7'b1111_111,nServe}; // parallel load
 	endcase
 end
+*/
 // ***** 5. MAKE THE ABOVE COUNTER SYNCHRONOUS TO CLK100MHZ
-/*
+
 always_ff @(posedge CLK100MHZ) begin
 	if (!moveBall) nL <= nL;
-	else ...
+	else begin
+		case({s1,s0})
+			2'b01:		nL <= {1'b1,nL[7:1]};
+			2'b10:		nL <= {nL[6:0],1'b1};
+			default:	nL <= {7'b1111_111,nServe};
+	end
 end
-*/
+
 
 
 // ***************************************************
