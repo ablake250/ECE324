@@ -57,17 +57,31 @@ free_run_bin_counter #(.N(BITS_IN_CLK_COUNTER)) clkCounter_instance(
 // ***************************************************
 // Inputs to the TTL design from the buttons
 // ***************************************************
+/*
 assign swingLeft =  BTNL;
 assign swingRight = BTNR;
 assign toss = BTNC;
+*/
 // ***** 1. REPLACE EACH OF THE ABOVE THREE ASSIGN STATEMENTS WITH SOMETHING LIKE THE FOLLOWING:
-/*
+
 free_run_shift_reg #(.N(4)) swingLeft_instance(
 	.clk(CLK100MHZ),
 	.s_in(BTNL),
 	.s_out(swingLeft)
 );
-*/
+free_run_shift_reg #(.N(4)) swingRight_instance(
+	.clk(CLK100MHZ),
+	.s_in(BTNR),
+	.s_out(swingRight)
+);
+free_run_shift_reg #(.N(4)) toss_instance(
+	.clk(CLK100MHZ),
+	.s_in(BTNC),
+	.s_out(toss)
+);
+
+
+
 
 // buttons pushed on the Nexys4DDR produce "1", but on the TTL design they produce "0"
 assign nSwing = !(swingLeft | swingRight);
@@ -78,15 +92,15 @@ assign nToss = !toss;
 // Emulation of logic on TTL design
 // ***************************************************
 // Generate when serving the ball
-assign nServe = !(nL[1] &  serve);
-assign  serve = !(nToss & nServe);
+
+//assign nServe = !(nL[1] &  serve);
+//assign  serve = !(nToss & nServe);
+
 // ***** 2. REPLACE THE ABOVE TWO ASSIGN STATEMENTS WITH THE FOLLOWING THAT YOU NEED TO COMPLETE:
-/*
 always_ff @(posedge CLK100MHZ) begin
-	if      (nL[1] == 0) nServe <= ...
-    else if (nToss == 0) ...
+	if      (nL[1] == 0) nServe <= 1;
+    else if (nToss == 0) nServe <= 0;
 end
-*/
 
 // Generate the two "and" gates making the asynchronous negative-true sets of s1 and s0
 assign nSet_s1 = nL[0] & nToss;
@@ -94,13 +108,13 @@ assign nSet_s0 = nL[7] & nToss;
 
 
 // ***** 3. INSERT A RISING EDGE DETECTOR HERE
-/*
+
 risingEdgeDetector nHit_instance(
 	.clk(CLK100MHZ),
-	.signal(      ),
+	.signal(nSwing),
 	.risingEdge(rising_nSwing)
 );
-*/
+
 
 
 // Generate the s1 and s0 flip-flops
