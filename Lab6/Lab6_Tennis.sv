@@ -184,6 +184,7 @@ always_ff @(posedge CLK100MHZ) begin
 			2'b01:		nL <= {1'b1,nL[7:1]};
 			2'b10:		nL <= {nL[6:0],1'b1};
 			default:	nL <= {7'b1111_111,nServe};
+		endcase
 	end
 end
 
