@@ -42,8 +42,7 @@ logic [2:0] digit;
 	// "block" forces BRAM to be used, instead of allowing the synthesizer to choose
 initial $readmemh ("TennisDisplayMem.txt", displayMem, 0, 255); // initialize displayMem
 logic [7:0] displayMemOut;
-logic [7:0]d;
-logic [7:0]dprevmax=255
+logic [24:0]d = 33554431;
 
 
 // ***************************************************
@@ -68,8 +67,8 @@ univ_bin_counter ubc0(
 );
 
 always_ff @(posedge CLK100MHZ) begin
-	if (!nSwing) d <= d-10;
-	else if (toss) d <= 255;
+	if (!nSwing) d <= d-500000;
+	else if (toss) d <= 33554431;
 	else d <= d;
 end
 
