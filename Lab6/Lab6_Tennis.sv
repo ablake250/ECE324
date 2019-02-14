@@ -42,7 +42,7 @@ logic [2:0] digit;
 	// "block" forces BRAM to be used, instead of allowing the synthesizer to choose
 initial $readmemh ("TennisDisplayMem.txt", displayMem, 0, 255); // initialize displayMem
 logic [7:0] displayMemOut;
-logic [24:0]d = 33554431;
+logic [24:0]d = 25'h1FF_FFFF;
 
 
 // ***************************************************
@@ -56,7 +56,7 @@ free_run_bin_counter #(.N(BITS_IN_CLK_COUNTER)) clkCounter_instance(
 );
 */
 
-univ_bin_counter ubc0(
+univ_bin_counter#(.N(BITS_IN_CLK_COUNTER)) ubc0(
 	.clk(CLK100MHZ),
 	.syn_clr(0),
 	.en(1),
@@ -67,8 +67,8 @@ univ_bin_counter ubc0(
 );
 
 always_ff @(posedge CLK100MHZ) begin
-	if (!nSwing) d <= d-500000;
-	else if (toss) d <= 33554431;
+	if (!nSwing) d <= d-50000;
+	else if (toss) d <= 25'h1FF_FFFF;
 	else d <= d;
 end
 

@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Feb 14 13:11:47 2019
-# Process ID: 15488
+# Start of session at: Thu Feb 14 13:50:02 2019
+# Process ID: 2524
 # Current directory: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab6/Lab6.runs/synth_1
 # Command line: vivado.exe -log Lab6_Tennis.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab6_Tennis.tcl
 # Log file: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab6/Lab6.runs/synth_1/Lab6_Tennis.vds

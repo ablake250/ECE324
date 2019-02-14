@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu Feb 14 13:13:39 2019
+| Date             : Thu Feb 14 13:51:52 2019
 | Host             : Alex-XPS running 64-bit major release  (build 9200)
 | Command          : report_power -file Lab6_Tennis_power_routed.rpt -pb Lab6_Tennis_power_summary_routed.pb -rpx Lab6_Tennis_power_routed.rpx
 | Design           : Lab6_Tennis
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.110        |
+| Total On-Chip Power (W)  | 0.111        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.013        |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |    <0.001 |        3 |       --- |             --- |
-| Slice Logic             |    <0.001 |      138 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |       45 |     63400 |            0.07 |
-|   CARRY4                |    <0.001 |        8 |     15850 |            0.05 |
-|   Register              |    <0.001 |       56 |    126800 |            0.04 |
+| Clocks                  |     0.001 |        3 |       --- |             --- |
+| Slice Logic             |    <0.001 |      234 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |       76 |     63400 |            0.12 |
+|   CARRY4                |    <0.001 |       18 |     15850 |            0.11 |
+|   Register              |    <0.001 |       91 |    126800 |            0.07 |
 |   LUT as Shift Register |    <0.001 |        3 |     19000 |            0.02 |
 |   Others                |     0.000 |       14 |       --- |             --- |
-| Signals                 |    <0.001 |       98 |       --- |             --- |
+| Signals                 |    <0.001 |      141 |       --- |             --- |
 | Block RAM               |    <0.001 |      0.5 |       135 |            0.37 |
 | I/O                     |     0.011 |       20 |       210 |            9.52 |
 | Static Power            |     0.097 |          |           |                 |
-| Total                   |     0.110 |          |           |                 |
+| Total                   |     0.111 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
+| Vccint    |       1.000 |     0.018 |       0.003 |      0.015 |
 | Vccaux    |       1.800 |     0.019 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
