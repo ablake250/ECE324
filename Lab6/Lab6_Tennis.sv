@@ -42,16 +42,36 @@ logic [2:0] digit;
 	// "block" forces BRAM to be used, instead of allowing the synthesizer to choose
 initial $readmemh ("TennisDisplayMem.txt", displayMem, 0, 255); // initialize displayMem
 logic [7:0] displayMemOut;
+logic [7:0]d;
+logic [7:0]dprevmax=255
 
 
 // ***************************************************
 // Emulate a 3 Hz clock signal from a signal generator
 // ***************************************************
+/*
 free_run_bin_counter #(.N(BITS_IN_CLK_COUNTER)) clkCounter_instance(
 	.clk(CLK100MHZ), 
 	.max_tick(moveBall), // high for one clock cycle approximately every 1/3 seconds
 	.q(clkCounter)		 // the most significant bit is a 3 Hz 50% duty cycle square wave
 );
+*/
+
+univ_bin_counter ubc0(
+	.clk(CLK100MHZ),
+	.syn_clr(0),
+	.en(1),
+	.load(moveBall),
+	.up(0),
+	.d(d),
+	.min_tick(moveBall)
+);
+
+always_ff @(posedge CLK100MHZ) begin
+	if (!nSwing) d <= d-10;
+	else if (toss) d <= 255;
+	else d <= d;
+end
 
 
 // ***************************************************
