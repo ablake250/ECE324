@@ -2,7 +2,7 @@
 
 module usrTB;
     parameter  N_BITS = 4;
-    logic   clk, reset;
+    logic   clk = 0, reset;
     logic [1:0] opcode;
     logic [N_BITS-1:0] d, q;
 
