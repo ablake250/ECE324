@@ -3,14 +3,12 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 650b7c63025840b69a01232929c5bb66 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot usrTB_behav xil_defaultlib.usrTB xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'd' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework4/usrTB.sv:13]
-WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'q' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework4/usrTB.sv:14]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework4/univ_shift_reg.sv" Line 2. Module univ_shift_reg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework4/univ_shift_reg.sv" Line 2. Module univ_shift_reg(N=4) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.univ_shift_reg
+Compiling module xil_defaultlib.univ_shift_reg(N=4)
 Compiling module xil_defaultlib.usrTB
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot usrTB_behav
