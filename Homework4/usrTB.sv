@@ -2,7 +2,7 @@
 
 module usrTB();
     parameter  N_BITS = 4;      //bits to instantiate the width of the register, specified at 4 bits
-    logic   clk = 0, reset;
+    logic   clk = 1'b1, reset;
     logic [1:0] opcode;
     logic [N_BITS-1:0] d, q;
 
@@ -19,11 +19,11 @@ module usrTB();
     end
 
     initial begin
-        #10     d=4'b1010; opcode = 2'b11;       //load value of D into shifter reg
+                d=4'b1010; opcode = 2'b11;       //load value of D into shifter reg
         #10     opcode = 2'b00;                 //no Operations should happen for this cycle
         #40     opcode = 2'b01;                 //shift left 4 times
         #40     opcode = 2'b10;                 //shift right 4 times
         #42     reset = 1;
-        #10 $stop;
+        #8      $stop;
     end
 endmodule
