@@ -23,7 +23,7 @@ module usrTB();
         #10     opcode = 2'b00;                 //no Operations should happen for this cycle
         #40     opcode = 2'b01;                 //shift left 4 times
         #40     opcode = 2'b10;                 //shift right 4 times
-        #42     reset = 1;
-        #8      $stop;
+        #47     reset = 1;
+        #3      $stop;
     end
 endmodule
