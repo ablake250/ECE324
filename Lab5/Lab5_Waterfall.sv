@@ -20,20 +20,24 @@ module Lab5_Waterfall(
 );
 
 localparam  BITS_IN_TIME_BASE_CNTR = 11;
-localparam  MOD_M = 381;
-localparam	T_BITS=17;
+
+// -- added localparameters for new functions --
+localparam  MOD_M = 381;	//number which modulo gives the correct timeBaseTick frequency
+localparam	T_BITS=17;		//number of bits for ubc0 to function correctly
 
 // Declarations
 logic timeBaseTick; 		// on for one clock cycle every 1/(2**17) of the fall time
-logic [-1:-17] t; 		// time required to fall from zenith to the current location, 
+logic [-1:-17] t; 			// time required to fall from zenith to the current location, 
                      		// normalized to the total falling time (so 0<=t<1)
 logic [-1:-34] tSquared; 	// the square of the 17 bit value of t
 logic [3:-30] d; 			// distance down from zenith, normalized so 0<=d<16
 integer i; 					// loop counter
-logic up = 1;
-logic min_tick;
-logic max_tick; 
-logic zero = 0;
+
+// -- added logic --
+logic up = 1;				//counting direction of ubc0
+logic min_tick;				//output bit if counter=0
+logic max_tick; 			//output bit if counter=max
+logic zero = 0;				//zero input to tie some ubc0 to 0
 
 // Starting with a 100 MHz clock, this counter generates a tick every 
 //    1/(2**17) of the travel time from the zenith to the bottom.
@@ -44,6 +48,7 @@ logic zero = 0;
 //New Calculations:
 //4=1/(16*t^2), t=0.5sec, 0.5sec/(2^17)=3.81us, timeBaseTick = 381
 
+// -- new modulo counter initialized below to replace frbc0--
 mod_m_counter #(.M(MOD_M)) mmc0(
 	.clk(CLK100MHZ),
 	.max_tick(timeBaseTick),
@@ -67,25 +72,29 @@ always_ff @(posedge CLK100MHZ) begin
 end
 */
 
+
+// -- added ubc0 to replace above statement to control t (time) --
 univ_bin_counter #(.N(T_BITS)) ubc0(
 	
 	//inputs below
-	.clk(CLK100MHZ),
-	.syn_clr(zero),
-	.load(zero),
-	.d(zero),
-	.en(timeBaseTick),
-	.up(up),
+	.clk(CLK100MHZ),		//clock signal
+	.syn_clr(zero),			//synchronous clear (set to 0)
+	.load(zero),			//load (set to 0)
+	.d(zero),				//d input set to 0
+	.en(timeBaseTick),		//enabled every time timeBaseTick is high
+	.up(up),				//direction of counter, determined by always_ff block below
 
 	//outputs below
-	.q(t),
-	.max_tick(max_tick),
-	.min_tick(min_tick)
+	.q(t),					//q output to t (time)
+	.max_tick(max_tick),	//output when counter maxes out
+	.min_tick(min_tick)		//output when counter hits 0
 );
 
+
+// -- ff to change direction of ball by changing count direction of ubc0 --
 always_ff @(posedge(CLK100MHZ)) begin
-	if (max_tick) up <= 1'b0;
-	if (min_tick) up <= 1'b1;
+	if (max_tick) up <= 1'b0;		//changes ball direction if ball hit max_tick
+	if (min_tick) up <= 1'b1;		//changes ball direction if ball hit min_tick
 end
 
 // Generate the distance down from the zenith, using d = 0.5 * g * (t**2).
