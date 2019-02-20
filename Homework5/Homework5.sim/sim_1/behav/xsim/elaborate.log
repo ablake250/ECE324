@@ -1,0 +1,18 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 19406983508c4966a6dfb42277e6e789 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot fifoTB_behav xil_defaultlib.fifoTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifo.sv" Line 2. Module fifo(DATA_WIDTH=16,ADDR_WIDTH=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifo_ctrl.sv" Line 5. Module fifo_ctrl(ADDR_WIDTH=3) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/reg_file.sv" Line 2. Module reg_file(DATA_WIDTH=16,ADDR_WIDTH=3) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fifo_ctrl(ADDR_WIDTH=3)
+Compiling module xil_defaultlib.reg_file(DATA_WIDTH=16,ADDR_WIDT...
+Compiling module xil_defaultlib.fifo(DATA_WIDTH=16,ADDR_WIDTH=3)
+Compiling module xil_defaultlib.fifoTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifoTB_behav
