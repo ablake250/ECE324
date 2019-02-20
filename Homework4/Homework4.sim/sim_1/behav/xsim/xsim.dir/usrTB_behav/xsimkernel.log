@@ -2,3 +2,6 @@ Running: xsim.dir/usrTB_behav/xsimk.exe -simmode gui -wdb usrTB_behav.wdb -simru
 Design successfully loaded
 Design Loading Memory Usage: 5020 KB (Peak: 5020 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 5640 KB (Peak: 5640 KB)
+Simulation CPU Usage: 15 ms
