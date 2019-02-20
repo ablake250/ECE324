@@ -30,9 +30,9 @@ always_ff @(posedge clk, posedge reset) begin
 	// assertions which the testbench may do, but shouldn't happen in the target application.
 	assert (!(empty & rd)) else $warning("read attempted when FIFO is empty.");
 
-	//Added assertions that shouldn't happen
+	// -- Added assertions that shouldn't happen --
 	assert (!(empty & full)) else $error("both 'empty' and 'full' are 1");	//This shouldn't happen
-	assert (!(wr & full)) else $error("Trying to write while full, OVERFLOW!"); //Overflow error
+	assert (!(wr & full)) else $warning("Trying to write while full, OVERFLOW!"); //Overflow error
 
 end
 endmodule

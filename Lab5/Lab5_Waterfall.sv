@@ -46,7 +46,7 @@ logic zero = 0;				//zero input to tie some ubc0 to 0
 //    which will result in a fall distance of 0.5 * 32 * (2.68**2) ~= 115 feet.
 
 //New Calculations:
-//4=1/(16*t^2), t=0.5sec, 0.5sec/(2^17)=3.81us, timeBaseTick = 381
+//4=(16*t^2), t=0.5sec, 0.5sec/(2^17)=3.81us, timeBaseTick = 381
 
 // -- new modulo counter initialized below to replace frbc0--
 mod_m_counter #(.M(MOD_M)) mmc0(
@@ -93,8 +93,8 @@ univ_bin_counter #(.N(T_BITS)) ubc0(
 
 // -- ff to change direction of ball by changing count direction of ubc0 --
 always_ff @(posedge(CLK100MHZ)) begin
-	if (max_tick) up <= 1'b0;		//changes ball direction if ball hit max_tick
-	if (min_tick) up <= 1'b1;		//changes ball direction if ball hit min_tick
+	if (max_tick) up <= 1'b0;		//changes ball direction if ball hit max_tick (hits ground)
+	if (min_tick) up <= 1'b1;		//changes ball direction if ball hit min_tick (catches/throws ball again)
 end
 
 // Generate the distance down from the zenith, using d = 0.5 * g * (t**2).

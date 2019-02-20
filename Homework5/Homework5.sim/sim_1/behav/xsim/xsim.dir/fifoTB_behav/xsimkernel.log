@@ -1,7 +1,4 @@
-Running: xsim.dir/fifoTB_behav/xsimk.exe -simmode gui -wdb fifoTB_behav.wdb -simrunnum 0 -socket 52689
+Running: xsim.dir/fifoTB_behav/xsimk.exe -simmode gui -wdb fifoTB_behav.wdb -simrunnum 0 -socket 56561
 Design successfully loaded
-Design Loading Memory Usage: 5048 KB (Peak: 5048 KB)
+Design Loading Memory Usage: 5036 KB (Peak: 5036 KB)
 Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 5740 KB (Peak: 5740 KB)
-Simulation CPU Usage: 31 ms
