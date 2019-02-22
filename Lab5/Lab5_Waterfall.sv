@@ -1,3 +1,8 @@
+/*********************************************************
+* ECE 324 Lab 5: Waterfall to Bouncing Ball
+* Alex Blake & Jameson Shaw 21 Feb 2019
+*********************************************************/
+
 /* file name: Lab5_Waterfall.sv
 Module name:  Lab5_Waterfall
 Function:   
