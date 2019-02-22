@@ -19,6 +19,7 @@ Revisions:
 module Lab7_TrafficLight(
 	input logic CLK100MHZ,               // Nexys4DDR's 100 MHz clock
 	input logic SW15,SW14,SW13,SW12,SW11,SW10,SW9,SW8,SW7,SW6,SW5,SW4,SW3,SW2,SW1,SW0, // 16 switches to control LED brightness
+	input logic BTNL, BTNR, BTNC, BTNU, BTND;
 	output logic LED16_G, LED16_R,       // green and red color signals on Nexys4DDR's right RGB LED
 	output logic LED17_G, LED17_R,       // green and red color signals on Nexys4DDR's left  RGB LED
 	output logic [7:0] AN,               // negative true anodes   for Nexys4DDR's 7-segment displays
@@ -28,7 +29,8 @@ module Lab7_TrafficLight(
 //////////////////////////////////////////////////////////////////////////////////////////////
 // Parameters and Declarations
 parameter OFF = 0, ON = 1;
-				
+parameter N_BITS=4;		//added for shift registers for buttons
+
 logic  [26:0] trafficLightPrescaler; // 27 bits needed for a 100 MHz clock	
 logic oneSecondTick;
 logic [3:0] trafficLightTimer; 
@@ -39,6 +41,28 @@ logic roadA_GreenLight, roadA_YellowLight, roadA_RedLight;
 logic roadB_GreenLight, roadB_YellowLight, roadB_RedLight;
 logic LED_On;
 logic [7:0] sseg2, sseg1, sseg0;
+
+// -- added logic --
+logic sensorA, sensorB, sensorC;
+
+
+// -- button buffers -- 
+
+free_run_shift_reg srl (
+	.clk(CLK100MHZ),
+	.s_in(BTNL | BTNR),
+	.s_out(sensorA)
+);
+free_run_shift_reg srl (
+	.clk(CLK100MHZ),
+	.s_in(BTNU | BTND),
+	.s_out(sensorB)
+);
+free_run_shift_reg srl (
+	.clk(CLK100MHZ),
+	.s_in(BTNC),
+	.s_out(sensorC)
+);
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
