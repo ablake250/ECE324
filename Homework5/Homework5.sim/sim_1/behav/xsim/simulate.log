@@ -1,0 +1,10 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Error: both 'empty' and 'full' are 1
+Time: 0 ps  Iteration: 0  Process: /fifoTB/f0/c_unit/Always14_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifo_ctrl.sv
+Warning: Trying to write while full, OVERFLOW!
+Time: 90 ns  Iteration: 0  Process: /fifoTB/f0/c_unit/Always14_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifo_ctrl.sv
+Warning: read attempted when FIFO is empty.
+Time: 180 ns  Iteration: 0  Process: /fifoTB/f0/c_unit/Always14_1  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifo_ctrl.sv
+Info: FIFO is empty as expected
+Time: 241 ns  Iteration: 0  Process: /fifoTB/Initial31_3  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifoTB.sv

@@ -4,6 +4,6 @@ Dec  7 2018
 00:33:28
 C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/Homework5.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
 C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifo.sv,1550617913,systemVerilog,,C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifo_ctrl.sv,,fifo,,,,,,,,
-C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifoTB.sv,1550623923,systemVerilog,,,,fifoTB,,,,,,,,
+C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifoTB.sv,1550685252,systemVerilog,,,,fifoTB,,,,,,,,
 C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifo_ctrl.sv,1550699996,systemVerilog,,C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/reg_file.sv,,fifo_ctrl,,,,,,,,
 C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/reg_file.sv,1550617913,systemVerilog,,C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/fifoTB.sv,,reg_file,,,,,,,,

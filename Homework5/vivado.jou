@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb 22 14:47:38 2019
+# Process ID: 10308
+# Current directory: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5
+# Command line: vivado.exe -mode tcl Homework5
+# Log file: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/vivado.log
+# Journal file: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5\vivado.jou
+#-----------------------------------------------------------
+open_project Homework5
+simulation
+run
+simulation
+help
+Simulation
+help -category Simulation
+xsim
+xsim -help
+launch_simulation
+source fifoTB.tcl
+synthesis
+help -synthesis
+help
+help -help synthesis
+help -category synthesis
+synthesis -help
+Synthesis
+help -category Synthesis
+help -synthesis
+help synthesis
+synthesis
+tcl package
+tcl_package
+help -tclpackage
+help -help
+project
+Project

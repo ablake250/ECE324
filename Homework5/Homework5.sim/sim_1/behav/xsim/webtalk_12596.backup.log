@@ -2,8 +2,8 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Feb 22 15:05:24 2019
-# Process ID: 10328
+# Start of session at: Tue Feb 19 16:25:14 2019
+# Process ID: 12596
 # Current directory: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/Homework5.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/Homework5.sim/sim_1/behav/xsim/xsim.dir/fifoTB_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework5/Homework5.sim/sim_1/behav/xsim/webtalk.log
@@ -14,4 +14,4 @@ invalid command name "%"
     while executing
 "% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
     (file "C:/Users/Axelb/Documents/School/WSU" line 1)
-INFO: [Common 17-206] Exiting Webtalk at Fri Feb 22 15:05:24 2019...
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb 19 16:25:14 2019...
