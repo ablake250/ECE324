@@ -1,3 +1,9 @@
+/*********************************************************
+* ECE 324 Homework 5: FIFO Control (Modified)
+* Alex Blake 22 Feb 2019
+*********************************************************/
+
+
 // Leveraged from Chu Listing 7.7
 // Revisions:
 // 24 Dec 2018 Pritchard: Simplified, and added some assertions
@@ -30,9 +36,15 @@ always_ff @(posedge clk, posedge reset) begin
 	// assertions which the testbench may do, but shouldn't happen in the target application.
 	assert (!(empty & rd)) else $warning("read attempted when FIFO is empty.");
 
+
+	//
+	//	Below edited by Alex Blake
+	//
+
 	// -- Added assertions that shouldn't happen --
-	assert (!(empty & full)) else $error("both 'empty' and 'full' are 1");	//This shouldn't happen
-	assert (!(wr & full)) else $warning("Trying to write while full, OVERFLOW!"); //Overflow error
+	assert (!(empty & full)) else $error("both 'empty' and 'full' are 1");	//This shouldn't happen in hardware
+	assert (!(wr & full)) else $warning("Trying to write while full, OVERFLOW!"); 	//Overflow error, tried to 
+																					//write while full
 
 end
 endmodule
