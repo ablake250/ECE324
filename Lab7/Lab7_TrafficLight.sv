@@ -34,8 +34,10 @@ parameter N_BITS=4;		//added for shift registers for buttons
 logic  [26:0] trafficLightPrescaler; // 27 bits needed for a 100 MHz clock	
 logic oneSecondTick;
 logic [3:0] trafficLightTimer; 
-typedef enum {greenA, yellowA, redA, greenB, yellowB, redB} state_type;	// 6 state names, numbered 0 to 5
-state_type state_TrafficLight = yellowB, nextState_TrafficLight;
+typedef enum {greenA, yellowA, redA, greenB, yellowB, redB, flashRedOn, flashRedOff} state_type;	
+		// 6 state names, numbered 0 to 5
+																					// 7th state added (flashRed)
+state_type state_TrafficLight = flashRedOn, nextState_TrafficLight;		//Changed default state to flashRedOn
 logic initializeTrafficLightTimer;
 logic roadA_GreenLight, roadA_YellowLight, roadA_RedLight;
 logic roadB_GreenLight, roadB_YellowLight, roadB_RedLight;
@@ -43,27 +45,45 @@ logic LED_On;
 logic [7:0] sseg2, sseg1, sseg0;
 
 // -- added logic --
-logic sensorA, sensorB, sensorC;
+logic sensorA, sensorB, sensorCBounce, sensorCDeBounce, sensorC;
+
+// -- sensors ---
+// sensorA - Raod A east/west
+// sensorB - Road B north/south
+// sensorC - road reset/flashing red
 
 
 // -- button buffers -- 
 
-free_run_shift_reg srl (
+free_run_shift_reg srlr (
 	.clk(CLK100MHZ),
 	.s_in(BTNL | BTNR),
 	.s_out(sensorA)
 );
-free_run_shift_reg srl (
+free_run_shift_reg srud (
 	.clk(CLK100MHZ),
 	.s_in(BTNU | BTND),
 	.s_out(sensorB)
 );
-free_run_shift_reg srl (
+free_run_shift_reg srlc (
 	.clk(CLK100MHZ),
 	.s_in(BTNC),
-	.s_out(sensorC)
+	.s_out(sensorCBounce)
 );
 
+// --- Debounce the Center Button with db_fsm ---
+db_fsm dbBTNC(
+	.clk(CLK100MHZ),
+	.sw(sensorCBounce),
+	.db(sensorCDeBounce)
+);
+
+// --- Rising edge detector to output sensorC to be used in state machine ---
+risingEdgeDetector redBTNC(
+	.clk(CLK100MHZ),
+	.signal(sensorCDeBounce),
+	.risingEdge(sensorC)
+);
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 // Timers
@@ -97,7 +117,15 @@ always_comb begin
 	case (state_TrafficLight)
 		greenA: begin
 			roadA_GreenLight = ON; roadB_RedLight = ON;
-			if (oneSecondTick & trafficLightTimer >= 8) begin // 8 seconds
+			if (sensorC) begin
+				nextState_TrafficLight = flashRedOn;
+				initializeTrafficLightTimer = 1;
+			end
+			else if (oneSecondTick & trafficLightTimer >= 6 & !sensorA & sensorB) begin
+				nextState_TrafficLight = yellowA;
+				initializeTrafficLightTimer = 1;
+			end
+			else if (oneSecondTick & trafficLightTimer >= 9) begin // 8 seconds --> changed to 9
 				nextState_TrafficLight = yellowA;
 				initializeTrafficLightTimer = 1;
 			end
@@ -105,7 +133,11 @@ always_comb begin
 		
 		yellowA: begin
 			roadA_YellowLight = ON; roadB_RedLight = ON;
-			if (oneSecondTick & trafficLightTimer >= 2) begin // 2 seconds
+			if (sensorC) begin
+				nextState_TrafficLight = flashRedOn;
+				initializeTrafficLightTimer = 1;
+			end
+			else if (oneSecondTick & trafficLightTimer >= 2) begin // 2 seconds
 				nextState_TrafficLight = redA;
 				initializeTrafficLightTimer = 1;
 			end
@@ -113,7 +145,11 @@ always_comb begin
 		
 		redA: begin
 			roadA_RedLight = ON; roadB_RedLight = ON;
-			if (oneSecondTick & trafficLightTimer >= 2) begin // 2 seconds
+			if (sensorC) begin
+				nextState_TrafficLight = flashRedOn;
+				initializeTrafficLightTimer = 1;
+			end
+			else if (oneSecondTick & trafficLightTimer >= 2) begin // 2 seconds
 				nextState_TrafficLight = greenB;
 				initializeTrafficLightTimer = 1;
 			end
@@ -121,7 +157,15 @@ always_comb begin
 
 		greenB: begin
 		roadB_GreenLight = ON; roadA_RedLight = ON;
-			if (oneSecondTick & trafficLightTimer >= 6) begin // 6 seconds
+			if (sensorC) begin
+				nextState_TrafficLight = flashRedOn;
+				initializeTrafficLightTimer = 1;
+			end
+			else if (oneSecondTick & trafficLightTimer >= 6 & sensorA & !sensorB) begin
+				nextState_TrafficLight = yellowB;
+				initializeTrafficLightTimer = 1;
+			end
+			else if (oneSecondTick & trafficLightTimer >= 6) begin // 6 seconds
 				nextState_TrafficLight = yellowB;
 				initializeTrafficLightTimer = 1;
 			end
@@ -129,7 +173,11 @@ always_comb begin
 		
 		yellowB: begin
 			roadB_YellowLight = ON; roadA_RedLight = ON;
-			if (oneSecondTick & trafficLightTimer >= 2) begin // 2 seconds
+			if (sensorC) begin
+				nextState_TrafficLight = flashRedOn;
+				initializeTrafficLightTimer = 1;
+			end
+			else if (oneSecondTick & trafficLightTimer >= 2) begin // 2 seconds
 				nextState_TrafficLight = redB;
 				initializeTrafficLightTimer = 1;
 			end
@@ -137,8 +185,36 @@ always_comb begin
 		
 		redB: begin
 			roadB_RedLight = ON; roadA_RedLight = ON;
-			if (oneSecondTick & trafficLightTimer >= 2) begin // 2 seconds
+			if (sensorC) begin
+				nextState_TrafficLight = flashRedOn;
+				initializeTrafficLightTimer = 1;
+			end
+			else if (oneSecondTick & trafficLightTimer >= 2) begin // 2 seconds
 				nextState_TrafficLight = greenA;
+				initializeTrafficLightTimer = 1;
+			end
+		end
+
+		// -- Added states to incorperate fhashing red lights --
+		flashRedOn:		begin
+			roadB_RedLight=ON; roadA_RedLight=ON;
+			if(sensorC) begin
+				nextState_TrafficLight = yellowB;
+				initializeTrafficLightTimer = 1;
+			end
+			else if(oneSecondTick & trafficLightTimer >= 1) begin
+				nextState_TrafficLight = flashRedOff;
+				initializeTrafficLightTimer = 1;
+			end
+		end
+
+		flashRedOff:	begin
+			if(sensorC) begin
+				nextState_TrafficLight = yellowB;
+				initializeTrafficLightTimer = 1;
+			end
+			else if(oneSecondTick & trafficLightTimer >= 1) begin
+				nextState_TrafficLight = flashRedOn;
 				initializeTrafficLightTimer = 1;
 			end
 		end
