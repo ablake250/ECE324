@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Feb 26 15:42:11 2019
+# Process ID: 12056
+# Current directory: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10428 C:\Users\Axelb\Documents\School\WSU Spring 2019\ECE 324\Lab6\Lab6.xpr
+# Log file: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab6/vivado.log
+# Journal file: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab6/Lab6.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 752.477 ; gain = 141.906
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 4
+[Tue Feb 26 15:45:39 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab6/Lab6.runs/impl_1/runme.log
+reset_run impl_1
