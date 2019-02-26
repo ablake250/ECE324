@@ -19,7 +19,7 @@ Revisions:
 module Lab7_TrafficLight(
 	input logic CLK100MHZ,               // Nexys4DDR's 100 MHz clock
 	input logic SW15,SW14,SW13,SW12,SW11,SW10,SW9,SW8,SW7,SW6,SW5,SW4,SW3,SW2,SW1,SW0, // 16 switches to control LED brightness
-	input logic BTNL, BTNR, BTNC, BTNU, BTND;
+	input logic BTNL, BTNR, BTNC, BTNU, BTND,
 	output logic LED16_G, LED16_R,       // green and red color signals on Nexys4DDR's right RGB LED
 	output logic LED17_G, LED17_R,       // green and red color signals on Nexys4DDR's left  RGB LED
 	output logic [7:0] AN,               // negative true anodes   for Nexys4DDR's 7-segment displays
@@ -161,11 +161,11 @@ always_comb begin
 				nextState_TrafficLight = flashRedOn;
 				initializeTrafficLightTimer = 1;
 			end
-			else if (oneSecondTick & trafficLightTimer >= 6 & sensorA & !sensorB) begin
+			else if (oneSecondTick & trafficLightTimer >= 6 & sensorA) begin
 				nextState_TrafficLight = yellowB;
 				initializeTrafficLightTimer = 1;
 			end
-			else if (oneSecondTick & trafficLightTimer >= 6) begin // 6 seconds
+			else if (oneSecondTick & trafficLightTimer >= 9) begin // 6 seconds
 				nextState_TrafficLight = yellowB;
 				initializeTrafficLightTimer = 1;
 			end
