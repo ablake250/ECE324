@@ -1,3 +1,8 @@
+/*********************************************************
+* ECE 324 Lab 6: Tennis
+* Alex Blake & Jameson Shaw 26 Feb 2019
+*********************************************************/
+
 /* ECE 324 Lab 6
 File Name:   Lab6_Tennis.sv
 Module Name: Lab6_Tennis
@@ -97,9 +102,11 @@ assign nToss = !toss;
 //assign  serve = !(nToss & nServe);
 
 // ***** 2. REPLACE THE ABOVE TWO ASSIGN STATEMENTS WITH THE FOLLOWING THAT YOU NEED TO COMPLETE:
+// -- nServe flip-flop --
 always_ff @(posedge CLK100MHZ) begin
-	if      (nL[1] == 0) nServe <= 1;
-    else if (nToss == 0) nServe <= 0;
+	if      (nL[1] == 0) nServe <= 1;		//condition to change nServe to 1
+    else if (nToss == 0) nServe <= 0;		//condition to change nServe to 0
+	//if both 'if' statements aren't true, flip-flop is unchanged
 end
 
 // Generate the two "and" gates making the asynchronous negative-true sets of s1 and s0
@@ -109,10 +116,11 @@ assign nSet_s0 = nL[7] & nToss;
 
 // ***** 3. INSERT A RISING EDGE DETECTOR HERE
 
+// -- rising edge detector to output rising_nSwing --
 risingEdgeDetector nHit_instance(
-	.clk(CLK100MHZ),
-	.signal(nSwing),
-	.risingEdge(rising_nSwing)
+	.clk(CLK100MHZ),					//clock signal
+	.signal(nSwing),					//input nSwing
+	.risingEdge(rising_nSwing)			//output rising_nSwing
 );
 
 
@@ -130,15 +138,18 @@ end
 */
 // ***** 4. CONVERT THE ABOVE 2 FLIP-FLOPS TO BE FULLY SYNCHRONOUS (INCLUDING SETS)
 
+// -- flip flops for s1 --
 always_ff @(posedge CLK100MHZ) begin
-	if      (!nSet_s1)      s1 <= 1;
-	else if (rising_nSwing) s1 <= nL[7];
-	else                    s1 <= s1;
+	if      (!nSet_s1)      s1 <= 1;		//if Set_s1, s1=1
+	else if (rising_nSwing) s1 <= nL[7];	//if rising nSwing s1= 7 bit of nL
+	else                    s1 <= s1;		//s1 unchanged
 end
+
+// -- flip flops for s1 --
 always_ff @(posedge CLK100MHZ) begin
-	if      (!nSet_s0)      s0 <= 1;
-	else if (rising_nSwing) s0 <= nL[0];
-	else                    s0 <= s0;
+	if      (!nSet_s0)      s0 <= 1;		//if Set_s0, s0=1 
+	else if (rising_nSwing) s0 <= nL[0];	//if rising_nSwing, s0= 0 bit of nL
+	else                    s0 <= s0;		// s0 unchanged
 end
 
 	
@@ -158,13 +169,14 @@ end
 */
 // ***** 5. MAKE THE ABOVE COUNTER SYNCHRONOUS TO CLK100MHZ
 
+// -- synchronous flip-flop for nL --
 always_ff @(posedge CLK100MHZ) begin
-	if (!moveBall) nL <= nL;
-	else begin
-		case({s1,s0})
-			2'b01:		nL <= {1'b1,nL[7:1]};
-			2'b10:		nL <= {nL[6:0],1'b1};
-			default:	nL <= {7'b1111_111,nServe};
+	if (!moveBall) nL <= nL;			// nL unchanged if moveBall is low
+	else begin							//moveBall is high
+		case({s1,s0})				
+			2'b01:		nL <= {1'b1,nL[7:1]};			//ball moves right
+			2'b10:		nL <= {nL[6:0],1'b1};			//ball moves left
+			default:	nL <= {7'b1111_111,nServe};		//ball reset
 	   endcase
 	end
 end
