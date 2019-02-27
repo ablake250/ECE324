@@ -1,0 +1,1 @@
+-wto "ee316fec8e9b415786f82a56c2164bf1" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "CoinDetectorTB_behav" "xil_defaultlib.CoinDetectorTB" "xil_defaultlib.glbl" -log "elaborate.log" 
