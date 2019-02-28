@@ -8,6 +8,8 @@ module CoinDetectorTB;
     logic clk = 1, reset = 0, coinSensor;
     logic [2:0] coinTest;
     logic dimeDetected, nickelDetected, quarterDetected;
+    
+    logic coinTestnext = 0;
 
     CoinDetector #(
                 .dimeMin(dimeMin),
@@ -26,7 +28,7 @@ module CoinDetectorTB;
     initial begin
         // -- reset module to make sure it is initialized --
         reset = 1;
-        repeat (1) @(negedge clk);
+        repeat (2) @(negedge clk);
         reset = 0; coinSensor = 0;
 
         // -- 3 clock cycles of idle, should stay on idle --
@@ -36,7 +38,7 @@ module CoinDetectorTB;
 
         // -- tests each state per itereation of loop --
 
-        for(int i = 1; i <= 8; i++) begin
+        for(int i = 1; i <= 1; i++) begin
             coinSensor = 1;
             repeat (1) @(negedge clk);
             coinSensor = 0;

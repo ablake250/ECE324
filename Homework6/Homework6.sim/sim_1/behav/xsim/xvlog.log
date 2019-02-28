@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetector.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CoinDetector
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module CoinDetectorTB

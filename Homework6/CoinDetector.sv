@@ -16,7 +16,8 @@ module CoinDetector
 	input logic reset,
 	input logic coinSensor,
 	output logic [2:0] coinTest,
-	output logic dimeDetected, nickelDetected, quarterDetected
+	output logic dimeDetected, nickelDetected, quarterDetected,
+	output logic coinTestnext
 ); 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -61,6 +62,10 @@ typedef enum {testDmin, testDmax, testNmin, testNmax, testQmin, testQmax, oversi
 state_type state, stateNext;
 
 assign coinTest = state; // the states were assigned to generate the coinTest output bits directly
+
+// ADDED
+assign coinTestnext = stateNext;
+
 
 always_ff @(posedge clk) begin
 	if (reset) state <= idle;
@@ -118,7 +123,7 @@ always_comb begin
 		end
 		idle:		begin
 			if(sensor) stateNext = testDmin;
-			else stateNext = state;
+
 		end
 		default:	stateNext = idle;
 	endcase	
