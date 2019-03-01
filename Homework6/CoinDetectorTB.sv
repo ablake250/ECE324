@@ -47,7 +47,7 @@ module CoinDetectorTB;
             assert(quarterDetected) $info("Quarter Output Works!"); 
                 else $error("NO Quarter DETECTED");
         end
-        else begin
+        else if begin
             assert(!(dimeDetected | nickelDetected | quarterDetected)) 
                 else $error("No output when there should be!");
         end
