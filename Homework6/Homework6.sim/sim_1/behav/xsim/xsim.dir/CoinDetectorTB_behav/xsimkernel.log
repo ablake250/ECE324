@@ -1,7 +1,7 @@
-Running: xsim.dir/CoinDetectorTB_behav/xsimk.exe -simmode gui -wdb CoinDetectorTB_behav.wdb -simrunnum 0 -socket 54764
+Running: xsim.dir/CoinDetectorTB_behav/xsimk.exe -simmode gui -wdb CoinDetectorTB_behav.wdb -simrunnum 0 -socket 56757
 Design successfully loaded
-Design Loading Memory Usage: 5012 KB (Peak: 5012 KB)
-Design Loading CPU Usage: 0 ms
+Design Loading Memory Usage: 5092 KB (Peak: 5092 KB)
+Design Loading CPU Usage: 61 ms
 Simulation completed
-Simulation Memory Usage: 5696 KB (Peak: 5696 KB)
-Simulation CPU Usage: 0 ms
+Simulation Memory Usage: 5792 KB (Peak: 5792 KB)
+Simulation CPU Usage: 77 ms

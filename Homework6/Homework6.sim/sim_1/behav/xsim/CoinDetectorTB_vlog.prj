@@ -1,5 +1,6 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  \
+"../../../../CoinDetector.sv" \
 "../../../../CoinDetectorTB.sv" \
 
 # compile glbl module

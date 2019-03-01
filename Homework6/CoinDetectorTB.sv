@@ -38,17 +38,31 @@ module CoinDetectorTB;
 
         // -- tests each state per itereation of loop --
 
-        for(int i = 1; i <= 1; i++) begin
+        for(int i = 1; i <= 8; i++) begin
             coinSensor = 1;
+            assert(coinTest == i) $info("correct state: coinTest==%d", coinTest);
+                else $error("FAILED: coinTest==%d", coinTest);
             repeat (1) @(negedge clk);
             coinSensor = 0;
+            if(coinTest==1) begin
+                assert(dimeDetected) $info("Dime was detected!");
+                    else $error("Expected Dime True");
+            end
+            else if(coinTest==3) begin
+                assert(nickelDetected) $info("Nickel was Detected!");
+                    else $error("Expected Nickel, none!");
+            end
+            else if(coinTest==5) begin
+                assert(quarterDetected) $info("Quarter was Detected!");
+                    else $error("Expected Quarter, none!");
+            end
             repeat(1) @(negedge clk);
-            assert(!coinTest==7) $error("FAILED");
+            assert(!(coinTest==7)) $error("FAILED");
                 else $info("Pass");
             coinSensor = 1;
             repeat(2*i) @(negedge clk);
         end
-        repeat(1) @(negedge clk); 
+        repeat(3) @(negedge clk); 
         $stop;
     end
 
