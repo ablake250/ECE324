@@ -1,20 +1,42 @@
 Vivado Simulator 2018.3
 Time resolution is 1 ps
 Info: Pass
-Time: 9 ns  Iteration: 0  Process: /CoinDetectorTB/Initial28_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Time: 9 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED: coinTest==7
+Time: 9 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
 Info: Pass
-Time: 13 ns  Iteration: 0  Process: /CoinDetectorTB/Initial28_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
-Info: Pass
-Time: 21 ns  Iteration: 0  Process: /CoinDetectorTB/Initial28_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
-Info: Pass
-Time: 33 ns  Iteration: 0  Process: /CoinDetectorTB/Initial28_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
-Info: Pass
-Time: 49 ns  Iteration: 0  Process: /CoinDetectorTB/Initial28_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
-Info: Pass
-Time: 69 ns  Iteration: 0  Process: /CoinDetectorTB/Initial28_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
-Info: Pass
-Time: 93 ns  Iteration: 0  Process: /CoinDetectorTB/Initial28_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
-Info: Pass
-Time: 121 ns  Iteration: 0  Process: /CoinDetectorTB/Initial28_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
-Info: Pass
-Time: 153 ns  Iteration: 0  Process: /CoinDetectorTB/Initial28_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Time: 13 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED: coinTest==7
+Time: 17 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED
+Time: 21 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED: coinTest==0
+Time: 29 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: Expected Dime True
+Time: 31 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED
+Time: 33 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED: coinTest==1
+Time: 45 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED
+Time: 49 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED: coinTest==2
+Time: 65 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: Expected Nickel, none!
+Time: 67 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED
+Time: 69 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED: coinTest==3
+Time: 89 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED
+Time: 93 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED: coinTest==4
+Time: 117 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: Expected Quarter, none!
+Time: 119 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED
+Time: 121 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED: coinTest==5
+Time: 149 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Error: FAILED
+Time: 153 ns  Iteration: 0  Process: /CoinDetectorTB/Initial25_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv

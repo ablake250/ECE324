@@ -1,16 +1,24 @@
+/*********************************************************
+* ECE 324 Homework 6: Coin Detector Testbench
+* Alex Blake 28 Feb 2019
+*********************************************************/
+
 `timescale 1ns/10ps
 
 module CoinDetectorTB;
+    //Parameters Defined:
     localparam  T = 2;
     localparam  dimeMin = 2, dimeMax = 4, nickelMin = 6, nickelMax = 8,
                quarterMin = 10, quarterMax = 12;
 
+    // -- logic inputs for CoinDetector module --
     logic clk = 1, reset = 0, coinSensor;
+
+    // -- logic outputs for CoinDetector module --
     logic [2:0] coinTest;
     logic dimeDetected, nickelDetected, quarterDetected;
-    
-    logic coinTestnext = 0;
 
+    // -- instantiate a CoinDetector module --
     CoinDetector #(
                 .dimeMin(dimeMin),
 	            .dimeMax(dimeMax), 
@@ -37,13 +45,20 @@ module CoinDetectorTB;
             else $info("Pass");
 
         // -- tests each state per itereation of loop --
+        for(int i = 1; i <= 7; i++) begin   
+            coinSensor = 1;                 //coin sensor detecting coin
 
-        for(int i = 1; i <= 8; i++) begin
-            coinSensor = 1;
+            //assert we are in the i'th state, or in other words, each iteration
+            //of this for loop will be in the next sequential state and test both
+            //the break back to idle or the continuation to the next state 
             assert(coinTest == i) $info("correct state: coinTest==%d", coinTest);
                 else $error("FAILED: coinTest==%d", coinTest);
             repeat (1) @(negedge clk);
+
+            //break back to idle
             coinSensor = 0;
+
+            //if in state 
             if(coinTest==1) begin
                 assert(dimeDetected) $info("Dime was detected!");
                     else $error("Expected Dime True");
@@ -62,7 +77,6 @@ module CoinDetectorTB;
             coinSensor = 1;
             repeat(2*i) @(negedge clk);
         end
-        repeat(3) @(negedge clk); 
         $stop;
     end
 
