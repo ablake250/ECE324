@@ -32,29 +32,6 @@ module CoinDetectorTB;
     always begin
         #(T/2)  clk=~clk;
     end
-     /*
-    always begin
-        repeat(1) @(posedge clk);
-        if (!coinSensor & (coinTest==1)) begin
-           assert(dimeDetected) $info("Dime Output Works!"); 
-                else $error("NO DIME DETECTED");
-        end
-        else if(!coinSensor & (coinTest==3) & clk) begin
-           assert(nickelDetected) $info("Nickel Output Works!"); 
-                else $error("NO Nickel DETECTED"); 
-        end
-        else if(!coinSensor & (coinTest==5) & clk) begin
-            assert(quarterDetected) $info("Quarter Output Works!"); 
-                else $error("NO Quarter DETECTED");
-        end
-
-       
-        else if(!coinSensor & clk) begin
-            assert(!(dimeDetected | nickelDetected | quarterDetected)) 
-                else $error("No output when there should be!");
-        end
-        */
-    end
 
     initial begin
         // -- reset module to make sure it is initialized --
@@ -75,7 +52,7 @@ module CoinDetectorTB;
 
             //break back to idle
             coinSensor = 0;
-            repeat(1) @(negedge clk);   //delay a cycle for delay of input flip-flop
+            repeat(2) @(negedge clk);   //delay a cycle for delay of input flip-flop
             if(coinTest==1) begin
                 assert(dimeDetected) $info("Dime Detected!");
                     else $error("Dime NOT Detected!");
