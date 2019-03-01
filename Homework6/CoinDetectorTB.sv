@@ -52,25 +52,27 @@ module CoinDetectorTB;
 
             //break back to idle
             coinSensor = 0;
-            repeat(2) @(negedge clk);   //delay a cycle for delay of input flip-flop
-            if(coinTest==1) begin
+
+            // -- test for correct outputs --
+            repeat(2) @(negedge clk);               //delay 2 cycles for delay of input flip-flop
+            if(coinTest==1) begin                   //test for Dime Output
                 assert(dimeDetected) $info("Dime Detected!");
                     else $error("Dime NOT Detected!");
             end
-            else if(coinTest==3) begin
+            else if(coinTest==3) begin              //test for Nickel Output
                 assert(nickelDetected) $info("Nickel Detected!");
                     else $error("Nickel NOT Detected!");
             end
-            else if(coinTest==5) begin
+            else if(coinTest==5) begin              //test for Quarter Output
                 assert(quarterDetected) $info("Quarter Detected!");
                     else $error("Quarter NOT Detected!");
             end
 
-            repeat(1) @(negedge clk);
+            // -- set state machine to next state by waiting 2*i clock cycles --
             coinSensor = 1;
             repeat(2*i) @(negedge clk);
         end
-        $stop;
+        $stop;      //stop simulation
     end
 
 endmodule
