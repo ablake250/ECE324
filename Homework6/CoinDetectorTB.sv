@@ -32,6 +32,26 @@ module CoinDetectorTB;
     always begin
         #(T/2)  clk=~clk;
     end
+    
+    always begin
+        repeat(1) @(negedge clk);
+        if (!coinSensor & (coinTest==1) & clk) begin
+           assert(dimeDetected) $info("Dime Output Works!"); 
+                else $error("NO DIME DETECTED");
+        end
+        else if(!coinSensor & (coinTest==3) & clk) begin
+           assert(nickelDetected) $info("Nickel Output Works!"); 
+                else $error("NO Nickel DETECTED"); 
+        end
+        else if(!coinSensor & (coinTest==5) & clk) begin
+            assert(quarterDetected) $info("Quarter Output Works!"); 
+                else $error("NO Quarter DETECTED");
+        end
+        else begin
+            assert(!(dimeDetected | nickelDetected | quarterDetected)) 
+                else $error("No output when there should be!");
+        end
+    end
 
     initial begin
         // -- reset module to make sure it is initialized --
@@ -41,8 +61,6 @@ module CoinDetectorTB;
 
         // -- 3 clock cycles of idle, should stay on idle --
         repeat (3) @(negedge clk);
-        assert(!coinTest==7) $error("FAILED");
-            else $info("Pass");
 
         // -- tests each state per itereation of loop --
         for(int i = 1; i <= 7; i++) begin   
@@ -50,30 +68,13 @@ module CoinDetectorTB;
 
             //assert we are in the i'th state, or in other words, each iteration
             //of this for loop will be in the next sequential state and test both
-            //the break back to idle or the continuation to the next state 
-            assert(coinTest == i) $info("correct state: coinTest==%d", coinTest);
-                else $error("FAILED: coinTest==%d", coinTest);
+            //the break back to idle or the continuation to the next state
             repeat (1) @(negedge clk);
 
             //break back to idle
             coinSensor = 0;
 
-            //if in state 
-            if(coinTest==1) begin
-                assert(dimeDetected) $info("Dime was detected!");
-                    else $error("Expected Dime True");
-            end
-            else if(coinTest==3) begin
-                assert(nickelDetected) $info("Nickel was Detected!");
-                    else $error("Expected Nickel, none!");
-            end
-            else if(coinTest==5) begin
-                assert(quarterDetected) $info("Quarter was Detected!");
-                    else $error("Expected Quarter, none!");
-            end
             repeat(1) @(negedge clk);
-            assert(!(coinTest==7)) $error("FAILED");
-                else $info("Pass");
             coinSensor = 1;
             repeat(2*i) @(negedge clk);
         end

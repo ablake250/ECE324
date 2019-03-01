@@ -5,7 +5,7 @@ Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetector.sv" Line 8. Module CoinDetector(dimeMin=2,dimeMax=4,nickelMin=6,nickelMax=8,quarterMin=10,quarterMax=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetector.sv" Line 12. Module CoinDetector(dimeMin=2,dimeMax=4,nickelMin=6,nickelMax=8,quarterMin=10,quarterMax=12) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.CoinDetector(dimeMin=2,dimeMax=4...
