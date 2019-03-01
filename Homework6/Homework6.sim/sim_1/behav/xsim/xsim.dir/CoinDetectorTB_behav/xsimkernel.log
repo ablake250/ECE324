@@ -2,3 +2,6 @@ Running: xsim.dir/CoinDetectorTB_behav/xsimk.exe -simmode gui -wdb CoinDetectorT
 Design successfully loaded
 Design Loading Memory Usage: 5000 KB (Peak: 5000 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 5716 KB (Peak: 5716 KB)
+Simulation CPU Usage: 31 ms
