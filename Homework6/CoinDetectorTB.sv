@@ -32,9 +32,9 @@ module CoinDetectorTB;
     always begin
         #(T/2)  clk=~clk;
     end
-    
+     /*
     always begin
-        repeat(1) @(negedge clk);
+        repeat(1) @(posedge clk);
         if (!coinSensor & (coinTest==1)) begin
            assert(dimeDetected) $info("Dime Output Works!"); 
                 else $error("NO DIME DETECTED");
@@ -47,10 +47,13 @@ module CoinDetectorTB;
             assert(quarterDetected) $info("Quarter Output Works!"); 
                 else $error("NO Quarter DETECTED");
         end
+
+       
         else if(!coinSensor & clk) begin
             assert(!(dimeDetected | nickelDetected | quarterDetected)) 
                 else $error("No output when there should be!");
         end
+        */
     end
 
     initial begin
@@ -64,8 +67,7 @@ module CoinDetectorTB;
 
         // -- tests each state per itereation of loop --
         for(int i = 1; i <= 7; i++) begin   
-            coinSensor = 1;                 //coin sensor detecting coin
-
+            coinSensor = 1;         //coin sensor detecting coin
             //assert we are in the i'th state, or in other words, each iteration
             //of this for loop will be in the next sequential state and test both
             //the break back to idle or the continuation to the next state
@@ -73,6 +75,19 @@ module CoinDetectorTB;
 
             //break back to idle
             coinSensor = 0;
+            repeat(1) @(negedge clk);   //delay a cycle for delay of input flip-flop
+            if(coinTest==1) begin
+                assert(dimeDetected) $info("Dime Detected!");
+                    else $error("Dime NOT Detected!");
+            end
+            else if(coinTest==3) begin
+                assert(nickelDetected) $info("Nickel Detected!");
+                    else $error("Nickel NOT Detected!");
+            end
+            else if(coinTest==5) begin
+                assert(quarterDetected) $info("Quarter Detected!");
+                    else $error("Quarter NOT Detected!");
+            end
 
             repeat(1) @(negedge clk);
             coinSensor = 1;
