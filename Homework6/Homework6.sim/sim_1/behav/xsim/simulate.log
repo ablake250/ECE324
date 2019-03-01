@@ -1,0 +1,8 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Info: Dime Detected!
+Time: 25 ns  Iteration: 0  Process: /CoinDetectorTB/Initial36_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Info: Nickel Detected!
+Time: 57 ns  Iteration: 0  Process: /CoinDetectorTB/Initial36_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
+Info: Quarter Detected!
+Time: 105 ns  Iteration: 0  Process: /CoinDetectorTB/Initial36_7  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework6/CoinDetectorTB.sv
