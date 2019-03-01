@@ -35,7 +35,7 @@ module CoinDetectorTB;
     
     always begin
         repeat(1) @(negedge clk);
-        if (!coinSensor & (coinTest==1) & clk) begin
+        if (!coinSensor & (coinTest==1)) begin
            assert(dimeDetected) $info("Dime Output Works!"); 
                 else $error("NO DIME DETECTED");
         end
@@ -47,7 +47,7 @@ module CoinDetectorTB;
             assert(quarterDetected) $info("Quarter Output Works!"); 
                 else $error("NO Quarter DETECTED");
         end
-        else if begin
+        else if(!coinSensor & clk) begin
             assert(!(dimeDetected | nickelDetected | quarterDetected)) 
                 else $error("No output when there should be!");
         end
