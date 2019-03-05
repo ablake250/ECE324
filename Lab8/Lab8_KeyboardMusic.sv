@@ -162,19 +162,21 @@ always_comb begin
 		BREAK_BYTE_AFTER_IDLE: begin
 		    if (rx_done_tick) nextState = IDLE; // this state completes the break code sequence, so the second byte isn't interpreted as a make code.
 		end
-/*		
+		
 		EXT_BYTE_AFTER_IDLE: begin
-			.
-			.
-			.
+			if(rx_done_tick) begin
+				increaseVolume = 1;
+				if(rxData == BREAK_BYTE) nextState = BREAK_BYTE_AFTER_EXT_BYTE;
+			end
+		end
+	
+		BREAK_BYTE_AFTER_EXT_BYTE: begin
+			if (rx_done_tick) begin
+				keyReleased = 1;
+				nextState = IDLE;
+			end
 		end
 		
-		BREAK_BYTE_AFTER_EXT_BYTE: begin
-			.
-			.
-			.
-		end
-*/
 	endcase
 end
 
@@ -257,7 +259,7 @@ always_ff @(posedge CLK100MHZ) begin
 		8'h55: fccw <= 7946; // = = F#5 = 739.989 Hz
 		8'h5B: fccw <= 8418; // ] = G5  = 783.991 Hz
 		8'h5A: fccw <= 8418; //Ent= G5  = 783.991 Hz
-		//8'h66: fccw <= 8919; //BkS= G#5 = 830.609 Hz
+		8'h66: fccw <= 8919; //BkS= G#5 = 830.609 Hz
 
 		// insert here your calculation of the carrier frequency control word (fccw) of the note A5
 		/*
@@ -265,7 +267,7 @@ always_ff @(posedge CLK100MHZ) begin
 			A5 frequency = (440Hz)*2=880Hz
 			fccw = 880Hz * (2^30) / 100MHz = 9449
 		*/
-		8'h66: fccw <= 9449; //BkS= A5 = 880Hz
+		8'h5D: fccw <= 9449; //BkS= A5 = 880Hz
 
 	  default: fccw <= 524288; // 48828 Hz (above human hearing range) if any other key pressed
 	endcase
