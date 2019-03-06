@@ -31,7 +31,7 @@ VendingMachine #(.dimeMin(2), .dimeMax(4), .nickelMin(6), .nickelMax(8), .quarte
 	.coinSensor,
 	.dispense
 );
-
+    	
 // generate clk
 always begin
 	clk = 1'b0;
@@ -81,6 +81,28 @@ begin
 	depositCoin(DIME, EXPECTED_DISPENSE_0); // 10 cents + 10 cents -  0 cents = 20 cents
 	depositCoin(DIME, EXPECTED_DISPENSE_1); // 20 cents + 10 cents - 25 cents =  5 cents
 	// FINISH THIS TASK AND TASK RQNQNQNQNQNDD HERE
+	depositCoin(DIME, EXPECTED_DISPENSE_0); //  5 cents + 10 cents -  0 cents = 15 cents
+	depositCoin(DIME, EXPECTED_DISPENSE_1); // 15 cents + 10 cents - 25 cents =  0 cents
+	depositCoin(DIME, EXPECTED_DISPENSE_0); //  0 cents + 10 cents -  0 cents = 10 cents
+	depositCoin(DIME, EXPECTED_DISPENSE_0); // 10 cents + 10 cents -  0 cents = 20 cents 
+end
+endtask
+
+task RQNQNQNQNQNDD();
+begin
+	rst();
+	depositCoin(QUARTER, EXPECTED_DISPENSE_1);		// 0+25-25=0
+	depositCoin(NICKEL, EXPECTED_DISPENSE_0);		// 0+5-0=5
+	depositCoin(QUARTER, EXPECTED_DISPENSE_1);		// 5+25-25=5
+	depositCoin(NICKEL, EXPECTED_DISPENSE_0);		// 5+5-0=10
+	depositCoin(QUARTER, EXPECTED_DISPENSE_1);		// 10+25-25=10
+	depositCoin(NICKEL, EXPECTED_DISPENSE_0);		// 10+5-0=15
+	depositCoin(QUARTER, EXPECTED_DISPENSE_1);		// 15+25-25=15
+	depositCoin(NICKEL, EXPECTED_DISPENSE_0);		// 15+5-0=20
+	depositCoin(QUARTER, EXPECTED_DISPENSE_1);		// 20+25-25=20
+	depositCoin(NICKEL, EXPECTED_DISPENSE_1);		// 20+5-25=0
+	depositCoin(DIME, EXPECTED_DISPENSE_0);			// 0+10-0=10
+	depositCoin(DIME, EXPECTED_DISPENSE_0);			// 10+10-0=20
 end
 endtask
 
