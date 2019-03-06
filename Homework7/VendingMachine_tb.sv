@@ -105,6 +105,5 @@ begin
 	depositCoin(DIME, EXPECTED_DISPENSE_0);			// 10+10-0=20
 end
 endtask
-
-task 
+ 
 endmodule
