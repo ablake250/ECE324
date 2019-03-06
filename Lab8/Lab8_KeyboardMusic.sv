@@ -165,8 +165,10 @@ always_comb begin
 		
 		EXT_BYTE_AFTER_IDLE: begin
 			if(rx_done_tick) begin
-				increaseVolume = 1;
-				if(rxData == BREAK_BYTE) nextState = BREAK_BYTE_AFTER_EXT_BYTE;
+				if(rxData == BREAK_BYTE) begin
+					increaseVolume = 1;
+					nextState = BREAK_BYTE_AFTER_EXT_BYTE;
+				end
 			end
 		end
 	
@@ -267,7 +269,7 @@ always_ff @(posedge CLK100MHZ) begin
 			A5 frequency = (440Hz)*2=880Hz
 			fccw = 880Hz * (2^30) / 100MHz = 9449
 		*/
-		8'h5D: fccw <= 9449; //BkS= A5 = 880Hz
+		8'h5D: fccw <= 9449; // \ = A5 = 880Hz
 
 	  default: fccw <= 524288; // 48828 Hz (above human hearing range) if any other key pressed
 	endcase
