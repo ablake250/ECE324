@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework7/CoinDetector.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CoinDetector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework7/VendingMachine.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VendingMachine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework7/VendingMachine_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VendingMachine_tb

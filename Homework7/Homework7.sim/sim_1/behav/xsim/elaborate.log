@@ -4,4 +4,13 @@ Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5646739f6b
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework7/VendingMachine.sv" Line 8. Module VendingMachine(dimeMin=2,dimeMax=4,nickelMin=6,nickelMax=8,quarterMin=10,quarterMax=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework7/CoinDetector.sv" Line 12. Module CoinDetector(dimeMin=2,dimeMax=4,nickelMin=6,nickelMax=8,quarterMin=10,quarterMax=12) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CoinDetector(dimeMin=2,dimeMax=4...
+Compiling module xil_defaultlib.VendingMachine(dimeMin=2,dimeMax...
+Compiling module xil_defaultlib.VendingMachine_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot VendingMachine_tb_behav

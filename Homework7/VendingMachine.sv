@@ -52,7 +52,7 @@ always_ff @(posedge clk) begin
 	      dispense <= 0;           
 		case(credit_state)
 	      credit0: if (nickelDetected) credit_state <= credit5; 
-	      	else if (dimeDetected) credit_state <= credit10;    
+	      	else if (dimeDetected) credit_state <= credit20;            //?
 	      	else if (quarterDetected) dispense <= 1;           
 			// FINISH STATE MACHINE HERE
 
@@ -66,7 +66,7 @@ always_ff @(posedge clk) begin
 			end
 
 			credit10: begin
-				if(nickelDetected) credit_state <= credit5;         //changed from credit15 to credit0
+				if(nickelDetected) credit_state <= credit15;
 	      		else if (dimeDetected) credit_state <= credit20;    
 				else if (quarterDetected) begin	
 					credit_state <= credit10;

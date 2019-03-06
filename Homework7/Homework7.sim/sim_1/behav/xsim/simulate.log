@@ -1,0 +1,12 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Error: dispense is 1, but expected 0
+Time: 130 ns  Iteration: 0  Process: /VendingMachine_tb/depositCoin  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework7/VendingMachine_tb.sv
+Error: dispense is 0, but expected 1
+Time: 190 ns  Iteration: 0  Process: /VendingMachine_tb/depositCoin  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework7/VendingMachine_tb.sv
+Error: dispense is 1, but expected 0
+Time: 250 ns  Iteration: 0  Process: /VendingMachine_tb/depositCoin  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework7/VendingMachine_tb.sv
+Error: dispense is 0, but expected 1
+Time: 310 ns  Iteration: 0  Process: /VendingMachine_tb/depositCoin  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework7/VendingMachine_tb.sv
+Error: dispense is 1, but expected 0
+Time: 370 ns  Iteration: 0  Process: /VendingMachine_tb/depositCoin  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework7/VendingMachine_tb.sv
