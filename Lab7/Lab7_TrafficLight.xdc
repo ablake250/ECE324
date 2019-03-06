@@ -1,3 +1,8 @@
+#Modified
+#ECE 324 - Lab 7: Traffic Light
+#Alex Blake & Jameson Shaw 5 Mar 2019
+
+
 ## This file is a general .xdc for the Nexys4 DDR Rev. C
 ## To use it in a project:
 ## - uncomment the lines corresponding to used pins
@@ -81,6 +86,7 @@ set_property -dict { PACKAGE_PIN U13   IOSTANDARD LVCMOS33 } [get_ports { AN[7] 
 
 #set_property -dict { PACKAGE_PIN C12   IOSTANDARD LVCMOS33 } [get_ports { CPU_RESETN }]; #IO_L3P_T0_DQS_AD1P_15 Sch=cpu_resetn
 
+#Buttons below added to constraint file (uncommented)
 set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } [get_ports { BTNC }]; #IO_L9P_T1_DQS_14 Sch=btnc
 set_property -dict { PACKAGE_PIN M18   IOSTANDARD LVCMOS33 } [get_ports { BTNU }]; #IO_L4N_T0_D05_14 Sch=btnu
 set_property -dict { PACKAGE_PIN P17   IOSTANDARD LVCMOS33 } [get_ports { BTNL }]; #IO_L12P_T1_MRCC_14 Sch=btnl

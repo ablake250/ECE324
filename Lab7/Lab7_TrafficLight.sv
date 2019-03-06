@@ -1,5 +1,7 @@
-/* ECE 324 Lab7: Traffic Light State Machine
-File:  Lab7_TrafficLight.sv
+/*********************************************************
+* ECE 324 Lab 7: Traffic Light
+* Alex Blake & Jameson Shaw 5 Mar 2019
+*********************************************************/
 
 This starter code emulates a USA 3-color dumb traffic light, using an Agilent Nexys4DDR board.
 7-segment displays illustrate the positions of the red (top), yellow (center), and green (bottom) traffic lights for road A (left) and road B (right).
@@ -56,33 +58,33 @@ logic sensorA, sensorB, sensorCBounce, sensorCDeBounce, sensorC;
 // -- button buffers -- 
 
 free_run_shift_reg srlr (
-	.clk(CLK100MHZ),
-	.s_in(BTNL | BTNR),
-	.s_out(sensorA)
+	.clk(CLK100MHZ),		//synchronous
+	.s_in(BTNL | BTNR),		// Left or Right Buttons OR'd together
+	.s_out(sensorA)			//sensorA is the Road A Sensor used later in module
 );
 free_run_shift_reg srud (
-	.clk(CLK100MHZ),
-	.s_in(BTNU | BTND),
-	.s_out(sensorB)
+	.clk(CLK100MHZ),		//synchronous
+	.s_in(BTNU | BTND),		//Top and Bottom Buttons OR'd  together
+	.s_out(sensorB)			//sensorB is the Road B Sensor used later in module
 );
 free_run_shift_reg srlc (
-	.clk(CLK100MHZ),
-	.s_in(BTNC),
-	.s_out(sensorCBounce)
+	.clk(CLK100MHZ),		//synchronous
+	.s_in(BTNC),			//center button
+	.s_out(sensorCBounce)	//SensorCBounce sent to debounce module to debounce
 );
 
 // --- Debounce the Center Button with db_fsm ---
 db_fsm dbBTNC(
-	.clk(CLK100MHZ),
-	.sw(sensorCBounce),
-	.db(sensorCDeBounce)
+	.clk(CLK100MHZ),		//synchronous
+	.sw(sensorCBounce),		//bounced button to be debounced
+	.db(sensorCDeBounce)	//debounced output sent to rising edge module
 );
 
 // --- Rising edge detector to output sensorC to be used in state machine ---
 risingEdgeDetector redBTNC(
-	.clk(CLK100MHZ),
-	.signal(sensorCDeBounce),
-	.risingEdge(sensorC)
+	.clk(CLK100MHZ),			//synchronous
+	.signal(sensorCDeBounce),	//debounced signal to find rising edge
+	.risingEdge(sensorC)		//rising edge output used in module later
 );
 
 //////////////////////////////////////////////////////////////////////////////////////////////
@@ -115,9 +117,12 @@ always_comb begin
 	roadB_GreenLight = OFF; roadB_YellowLight = OFF; roadB_RedLight = OFF; // default road B lights are off
 	
 	case (state_TrafficLight)
+
+		// -- add additional if statement to break from any state to flashing red (part b) below --
 		greenA: begin
 			roadA_GreenLight = ON; roadB_RedLight = ON;
-			if (sensorC) begin
+			//if statement below added to break to flashing red if center button pressed
+			if (sensorC) begin	
 				nextState_TrafficLight = flashRedOn;
 				initializeTrafficLightTimer = 1;
 			end
@@ -133,6 +138,7 @@ always_comb begin
 		
 		yellowA: begin
 			roadA_YellowLight = ON; roadB_RedLight = ON;
+			//if statement below added to break to flashing red if center button pressed
 			if (sensorC) begin
 				nextState_TrafficLight = flashRedOn;
 				initializeTrafficLightTimer = 1;
@@ -157,6 +163,7 @@ always_comb begin
 
 		greenB: begin
 		roadB_GreenLight = ON; roadA_RedLight = ON;
+			//if statement below added to break to flashing red if center button pressed
 			if (sensorC) begin
 				nextState_TrafficLight = flashRedOn;
 				initializeTrafficLightTimer = 1;
@@ -173,6 +180,7 @@ always_comb begin
 		
 		yellowB: begin
 			roadB_YellowLight = ON; roadA_RedLight = ON;
+			//if statement below added to break to flashing red if center button pressed
 			if (sensorC) begin
 				nextState_TrafficLight = flashRedOn;
 				initializeTrafficLightTimer = 1;
@@ -185,6 +193,7 @@ always_comb begin
 		
 		redB: begin
 			roadB_RedLight = ON; roadA_RedLight = ON;
+			//if statement below added to break to flashing red if center button pressed
 			if (sensorC) begin
 				nextState_TrafficLight = flashRedOn;
 				initializeTrafficLightTimer = 1;
@@ -195,13 +204,17 @@ always_comb begin
 			end
 		end
 
-		// -- Added states to incorperate fhashing red lights --
+		// -- Added states to incorperate fhashing red lights (Part C) --
 		flashRedOn:		begin
-			roadB_RedLight=ON; roadA_RedLight=ON;
+			roadB_RedLight=ON; roadA_RedLight=ON;		//turn all red lights on
+			
+			//if sensorC, break back to yellowB state and reset timer
 			if(sensorC) begin
 				nextState_TrafficLight = yellowB;
 				initializeTrafficLightTimer = 1;
 			end
+
+			//after 1 second, change state to flashRedOff and reset timer
 			else if(oneSecondTick & trafficLightTimer >= 1) begin
 				nextState_TrafficLight = flashRedOff;
 				initializeTrafficLightTimer = 1;
@@ -209,10 +222,14 @@ always_comb begin
 		end
 
 		flashRedOff:	begin
+			//if sensorC break back to yellowB state and reset timer
 			if(sensorC) begin
 				nextState_TrafficLight = yellowB;
 				initializeTrafficLightTimer = 1;
 			end
+
+			//after 1 second, change state to flashRedOn and reset timer
+			//this keeps flashing loop until center button pressed
 			else if(oneSecondTick & trafficLightTimer >= 1) begin
 				nextState_TrafficLight = flashRedOn;
 				initializeTrafficLightTimer = 1;
