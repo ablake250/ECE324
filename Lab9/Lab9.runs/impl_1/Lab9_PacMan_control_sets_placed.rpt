@@ -1,0 +1,81 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Mar 19 14:03:46 2019
+| Host         : Alex-XPS running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Lab9_PacMan_control_sets_placed.rpt
+| Design       : Lab9_PacMan
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    33 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            2 |
+|      6 |            1 |
+|      7 |            1 |
+|     11 |            1 |
+|     12 |            1 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             267 |           88 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              74 |           23 |
+| Yes          | No                    | No                     |              75 |           22 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              39 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+-------------------------------+------------------------------------------+------------------+----------------+
+|         Clock Signal        |         Enable Signal         |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++-----------------------------+-------------------------------+------------------------------------------+------------------+----------------+
+|  videoClk108MHz_0/clk108MHz |                               | videoPixelRGB_stg5                       |                1 |              4 |
+|  videoClk108MHz_0/clk108MHz | videoColumn_stg1[10]_i_1_n_0  |                                          |                1 |              4 |
+|  videoClk108MHz_0/clk108MHz |                               | spriteMotion0/pacmanColumnChange1        |                2 |              6 |
+|  videoClk108MHz_0/clk108MHz | videoColumn_stg1[10]_i_1_n_0  | videoRow_stg1                            |                2 |              7 |
+|  videoClk108MHz_0/clk108MHz |                               | videoColumn_stg1[10]_i_1_n_0             |                4 |             11 |
+|  videoClk108MHz_0/clk108MHz |                               | VGA_B0                                   |                5 |             12 |
+|  videoClk108MHz_0/clk108MHz | spriteMotion0/moveBlinky_stg2 | CPU_RESETN_instance/resetPressed         |                4 |             16 |
+|  videoClk108MHz_0/clk108MHz | spriteMotion0/movePacman_stg2 | CPU_RESETN_instance/resetPressed         |                4 |             16 |
+|  videoClk108MHz_0/clk108MHz |                               | spriteMotion0/pacmanCntr/q_reg[3]_0      |                5 |             20 |
+|  videoClk108MHz_0/clk108MHz |                               | spriteMotion0/blinkyCntr/max_tick_Blinky |                6 |             21 |
+|  videoClk108MHz_0/clk108MHz | VGA_VS_OBUF                   |                                          |               21 |             71 |
+|  videoClk108MHz_0/clk108MHz |                               |                                          |               88 |            278 |
++-----------------------------+-------------------------------+------------------------------------------+------------------+----------------+
+
+

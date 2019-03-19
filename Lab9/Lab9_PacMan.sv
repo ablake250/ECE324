@@ -382,7 +382,7 @@ end
 // Generate video signals to be sent to monitor
 always_ff @(posedge clk108MHz) begin
 	// Overlay black outside the tile locations	(including outside the display area)
-	if ((videoColumn_stg9 >= 1024) | (videoRow_stg9 >= VD)) {VGA_R, VGA_G, VGA_B} <= 12'h000; // Blanking
+	if ((videoColumn_stg9 >= 1024-64) | (videoRow_stg9 >= VD) | (videoColumn_stg9 <= 64)) {VGA_R, VGA_G, VGA_B} <= 12'h000; // Blanking
 	else {VGA_R, VGA_G, VGA_B} <= videoPixelRGB_stg9[11:0];
 	// generate video sync signals
 	VGA_HS <= (videoColumn_stg9 >= (HD+HF)) && (videoColumn_stg9 <= (HD+HF+HR));

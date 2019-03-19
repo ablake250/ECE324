@@ -129,7 +129,7 @@ always_ff @(posedge clk108MHz) begin
     moveBlinky <= max_tick_Blinky; // synchronize, since max_tick_Blinky is driven by a lot of combinational logic
 	if (resetPressed | pacmanColumn==blinkyColumn & pacmanRow==blinkyRow) begin blinkyColumnChange <= 2'b00; blinkyRowChange <= 2'b00; end
        // stop blinky if reset button is pushed, or if pacman and blinky are in the same location
-	else if ((blinkyColumnChange == 2'b00) & (blinkyRowChange == 2'b00) & (leftPressed | rightPressed)) blinkyColumnChange <= 2'b01; 
+	else if ((blinkyColumnChange == 2'b00) & (blinkyRowChange == 2'b00) & (leftPressed | rightPressed)) blinkyColumnChange <= 2'b11; 
        // start blinky moving when pacman starts
     else if(moveBlinky & blinkyCenterColumn & blinkyCenterRow) begin // tile center
         case({pacmanToBlinkyRowDistance[8], pacmanToBlinkyColumnDistance[8], pacmanToBlinkyRowMagnitudeGtColumnMagnitude})
