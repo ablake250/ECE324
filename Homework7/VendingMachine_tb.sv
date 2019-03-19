@@ -4,7 +4,7 @@
 * Testbench for vending machine state machine
 * 06 Jan 2019 Tom Pritchard: initially wrote
 ************************************************/
-`timescale 1 ns/10 ps
+`timescale 100 ps/1 ps
 module VendingMachine_tb;
 	
 localparam T = 10; // clock period
@@ -101,7 +101,7 @@ begin
 	depositCoin(NICKEL, EXPECTED_DISPENSE_0);		// 15+5-0=20
 	depositCoin(QUARTER, EXPECTED_DISPENSE_1);		// 20+25-25=20
 	depositCoin(NICKEL, EXPECTED_DISPENSE_1);		// 20+5-25=0
-	depositCoin(DIME, EXPECTED_DISPENSE_0);			// 0+10-0=10
+	depositCoin(DIME, EXPECTED_DISPENSE_0);			// 15+10-0=10
 	depositCoin(DIME, EXPECTED_DISPENSE_0);			// 10+10-0=20
 end
 endtask

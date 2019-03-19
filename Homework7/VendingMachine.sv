@@ -51,23 +51,23 @@ always_ff @(posedge clk) begin
 	else begin
 	      dispense <= 0;           
 		case(credit_state)
-	      credit0: if (nickelDetected) credit_state <= credit5; 
-	      	else if (dimeDetected) credit_state <= credit20;            //?
+	      credit0: if (nickelDetected) credit_state <= credit5;
+	      	else if (dimeDetected) credit_state <= credit10;            
 	      	else if (quarterDetected) dispense <= 1;           
 			// FINISH STATE MACHINE HERE
 
 			credit5: begin
-	      		if(nickelDetected) credit_state <= credit10;   
-	      		else if (dimeDetected) credit_state <= credit15;    
+	      if(nickelDetected) credit_state <= credit10;   
+	    	else if (dimeDetected) credit_state <= credit15;    
 				else if (quarterDetected) begin	
-					credit_state <= credit5;
-					dispense <= 1;
+				credit_state <= credit5;
+				dispense <= 1;
 				end
 			end
 
 			credit10: begin
 				if(nickelDetected) credit_state <= credit15;
-	      		else if (dimeDetected) credit_state <= credit20;    
+	      else if (dimeDetected) credit_state <= credit20;    
 				else if (quarterDetected) begin	
 					credit_state <= credit10;
 					dispense <= 1;
@@ -87,10 +87,18 @@ always_ff @(posedge clk) begin
 			end
 
 			credit20: begin
-				if(nickelDetected) credit_state <= credit0;   
-	      		else if (dimeDetected) credit_state <= credit5;    
-				else if (quarterDetected) credit_state <= credit20;
-				dispense <= 1;
+				if(nickelDetected) begin
+					credit_state <= credit15; //added error   
+					dispense <= 1;
+				end
+	            else if (dimeDetected) begin 
+					credit_state <= credit5;
+					dispense <= 1;
+				end
+				else if (quarterDetected) begin 
+					credit_state <= credit20;
+					dispense <= 1;
+			    end
 			end
 		endcase
 	end
