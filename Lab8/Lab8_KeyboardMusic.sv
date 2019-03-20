@@ -168,19 +168,21 @@ always_comb begin
 		    if (rx_done_tick) nextState = IDLE; // this state completes the break code sequence, so the second byte isn't interpreted as a make code.
 		end
 		
+		// -- enters this state when extbyte recieved --
 		EXT_BYTE_AFTER_IDLE: begin
 			if(rx_done_tick) begin
 				if(rxData == BREAK_BYTE) begin
-					increaseVolume = 1;
-					nextState = BREAK_BYTE_AFTER_EXT_BYTE;
+					increaseVolume = 1;							//increases volume
+					nextState = BREAK_BYTE_AFTER_EXT_BYTE;		//goes to next state
 				end
 			end
 		end
 	
+		// -- state breaks back to IDLE --
 		BREAK_BYTE_AFTER_EXT_BYTE: begin
 			if (rx_done_tick) begin
-				keyReleased = 1;
-				nextState = IDLE;
+				keyReleased = 1;				//key released
+				nextState = IDLE;				//back to IDLE
 			end
 		end
 		
