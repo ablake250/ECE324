@@ -98,10 +98,21 @@ always_ff @(posedge clk) begin
 
 			// -- state credit20 --
 			credit20: begin
-				if(nickelDetected) begin													//if nickel added, go to state credit0 & dispense
-					credit_state <= credit0;    
+				if(nickelDetected) begin													//if nickel added...
+					/*
+						This is the state that was broken on purpose to be caught with the testbench.
+						Before it was broken, the if statement was the following:
+
+							credit_state <= credit0;
+							dispense <= 1;
+						
+						Instead, it was changed to the below:
+					*/
+					credit_state <= credit15;    
 					dispense <= 1;
 				end
+
+				// -- The rest of the code below is not modified like the above was...  --
 	      else if (dimeDetected) begin 											//if dime detected, go to state credit5 & dispense
 					credit_state <= credit5;
 					dispense <= 1;

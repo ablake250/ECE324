@@ -1,4 +1,2 @@
 Vivado Simulator 2018.3
 Time resolution is 1 ps
-Error: dispense is 1, but expected 0
-Time: 170 ns  Iteration: 0  Process: /VendingMachine_tb/depositCoin  File: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Homework7/VendingMachine_tb.sv

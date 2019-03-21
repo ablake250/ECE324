@@ -1,3 +1,9 @@
+/*********************************************************
+* ECE 324 Homework 7: Vending Machine Test Bench
+* Alex Blake 21 Mar 2019
+*********************************************************/
+
+
 /************************************************
 * ECE 324 HW 7
 * File VendingMachine_tb.sv
@@ -81,6 +87,8 @@ begin
 	depositCoin(DIME, EXPECTED_DISPENSE_0); // 10 cents + 10 cents -  0 cents = 20 cents
 	depositCoin(DIME, EXPECTED_DISPENSE_1); // 20 cents + 10 cents - 25 cents =  5 cents
 	// FINISH THIS TASK AND TASK RQNQNQNQNQNDD HERE
+
+	// - Added --
 	depositCoin(DIME, EXPECTED_DISPENSE_0); //  5 cents + 10 cents -  0 cents = 15 cents
 	depositCoin(DIME, EXPECTED_DISPENSE_1); // 15 cents + 10 cents - 25 cents =  0 cents
 	depositCoin(DIME, EXPECTED_DISPENSE_0); //  0 cents + 10 cents -  0 cents = 10 cents
@@ -88,9 +96,10 @@ begin
 end
 endtask
 
+	// - Task RQNQNQNQNQNDD Below -
 task RQNQNQNQNQNDD();
 begin
-	rst();
+	rst();											// reset
 	depositCoin(QUARTER, EXPECTED_DISPENSE_1);		// 0+25-25=0
 	depositCoin(NICKEL, EXPECTED_DISPENSE_0);		// 0+5-0=5
 	depositCoin(QUARTER, EXPECTED_DISPENSE_1);		// 5+25-25=5
