@@ -1,3 +1,9 @@
+/*********************************************************
+* ECE 324 Lab 9: PacMan
+* Alex Blake & Jameson Shaw 26 Mar 2019
+*********************************************************/
+
+
 /*********************************************************************
 File: Lab9_PacMan.sv
 Module: Lab9_PacMan
@@ -382,6 +388,12 @@ end
 // Generate video signals to be sent to monitor
 always_ff @(posedge clk108MHz) begin
 	// Overlay black outside the tile locations	(including outside the display area)
+	/*
+		Changes made here to blank out edges of map so they line up
+		Changed 'if statement' below from:
+		if ((videoColumn_stg9 >= 1024) | (videoRow_stg9 >= VD)) {VGA_R, VGA_G, VGA_B} <= 12'h000; // Blanking
+		It is now changed to:
+	*/
 	if ((videoColumn_stg9 >= 1024-64) | (videoRow_stg9 >= VD) | (videoColumn_stg9 <= 64)) {VGA_R, VGA_G, VGA_B} <= 12'h000; // Blanking
 	else {VGA_R, VGA_G, VGA_B} <= videoPixelRGB_stg9[11:0];
 	// generate video sync signals

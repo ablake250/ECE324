@@ -1,3 +1,8 @@
+/*********************************************************
+* ECE 324 Lab 9: spriteMotion
+* Alex Blake & Jameson Shaw 26 Mar 2019
+*********************************************************/
+
 // File: spriteMotion.sv
 // Module: spriteMotion
 //
@@ -129,6 +134,13 @@ always_ff @(posedge clk108MHz) begin
     moveBlinky <= max_tick_Blinky; // synchronize, since max_tick_Blinky is driven by a lot of combinational logic
 	if (resetPressed | pacmanColumn==blinkyColumn & pacmanRow==blinkyRow) begin blinkyColumnChange <= 2'b00; blinkyRowChange <= 2'b00; end
        // stop blinky if reset button is pushed, or if pacman and blinky are in the same location
+    /*
+        The 'else if' statement below was modified from:
+        else if ((blinkyColumnChange == 2'b00) & (blinkyRowChange == 2'b00) & (leftPressed | rightPressed)) blinkyColumnChange <= 2'b01; 
+        to
+        else if ((blinkyColumnChange == 2'b00) & (blinkyRowChange == 2'b00) & (leftPressed | rightPressed)) blinkyColumnChange <= 2'b11; 
+        where blinkyColumnChange is changed from 2'b01 to 2'b11 which changes the direction from right to left
+    */
 	else if ((blinkyColumnChange == 2'b00) & (blinkyRowChange == 2'b00) & (leftPressed | rightPressed)) blinkyColumnChange <= 2'b11; 
        // start blinky moving when pacman starts
     else if(moveBlinky & blinkyCenterColumn & blinkyCenterRow) begin // tile center

@@ -298,6 +298,7 @@
 0 0 0 0 0 0 0 0 
 
 // 6'h1D : door
+//changed 1's to 2's for color change for door
 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 
 0 0 0 0 0 0 0 0 
