@@ -1,0 +1,1 @@
+--relax --debug typical --mt auto -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot videoClk108MHz xil_defaultlib.videoClk108MHz xil_defaultlib.glbl -log elaborate.log

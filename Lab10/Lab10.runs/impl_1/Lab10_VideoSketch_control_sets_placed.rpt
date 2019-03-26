@@ -1,0 +1,110 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Mar 26 14:45:46 2019
+| Host         : Alex-XPS running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Lab10_VideoSketch_control_sets_placed.rpt
+| Design       : Lab10_VideoSketch
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    35 |
+| Unused register locations in slices containing registers |    88 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            2 |
+|      5 |            2 |
+|      6 |            1 |
+|      8 |            3 |
+|      9 |            1 |
+|     10 |            4 |
+|     11 |            2 |
+|     12 |            1 |
+|     13 |            2 |
+|     15 |            2 |
+|    16+ |           14 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             490 |          169 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              82 |           22 |
+| Yes          | No                    | No                     |             299 |          155 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              97 |           31 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+-------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|           Clock Signal           |                        Enable Signal                        |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++----------------------------------+-------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/newMousePacketTick                                   | mouse0/mouseColumn[0]                                  |                1 |              2 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/ps2_top0/ps2_tx_unit/n_next                          | reset                                                  |                1 |              4 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/ps2_top0/ps2_rx_unit/n_next                          | reset                                                  |                1 |              4 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/ps2_top0/ps2_tx_unit/FSM_onehot_state_reg[4]_i_1_n_0 | reset                                                  |                2 |              5 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/ps2_top0/ps2_rx_unit/y_next[1]                       | reset                                                  |                3 |              5 |
+|  videoClk108MHz_0/inst/clk108MHz |                                                             | configColors0/pixlRGB_Stg4[23]_i_1_n_0                 |                2 |              6 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/ps2_top0/ps2_tx_unit/b_next                          | reset                                                  |                2 |              8 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/ps2_top0/ps2_rx_unit/y_next[0]                       | reset                                                  |                4 |              8 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/ps2_top0/ps2_rx_unit/E[0]                            | reset                                                  |                1 |              8 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/newMousePacketTick                                   | mouse0/FSM_sequential_state_reg_reg[0]_0               |                2 |              9 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/FSM_sequential_state_reg_reg[2]_0                    | mouse0/mouseRow                                        |                2 |             10 |
+|  videoClk108MHz_0/inst/clk108MHz |                                                             | sketchFrame0/div3b/vidClmn_reg[5]                      |                4 |             10 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/ps2_top0/ps2_rx_unit/b_next                          | reset                                                  |                3 |             10 |
+|  videoClk108MHz_0/inst/clk108MHz | BresenhamLineDraw0/sel                                      |                                                        |                3 |             10 |
+|  videoClk108MHz_0/inst/clk108MHz | sketchFrame0/div3b/vidClmn_reg[5]                           | vidRow[10]_i_1_n_0                                     |                3 |             11 |
+|  videoClk108MHz_0/inst/clk108MHz | BresenhamLineDraw0/E[0]                                     |                                                        |                4 |             11 |
+|  videoClk108MHz_0/inst/clk108MHz |                                                             | orderedDither0/vidRow__DitherOut_reg[10]_0             |                3 |             12 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/ps2_top0/ps2_tx_unit/c_next                          | reset                                                  |                6 |             13 |
+|  videoClk108MHz_0/inst/clk108MHz | BresenhamLineDraw0/D[12]_i_1_n_0                            |                                                        |                4 |             13 |
+|  videoClk108MHz_0/inst/clk108MHz |                                                             | reset                                                  |                5 |             15 |
+|  videoClk108MHz_0/inst/clk108MHz |                                                             | configColors0/pixlRGB_Stg4[21]_i_1_n_0                 |                3 |             15 |
+|  CLK100MHZ_IBUF                  |                                                             |                                                        |                5 |             18 |
+|  videoClk108MHz_0/inst/clk108MHz | configColors0/palette5Color[23]_i_1_n_0                     |                                                        |               14 |             24 |
+|  videoClk108MHz_0/inst/clk108MHz | configColors0/palette7Color[23]_i_1_n_0                     |                                                        |                9 |             24 |
+|  videoClk108MHz_0/inst/clk108MHz | configColors0/palette3Color[23]_i_1_n_0                     |                                                        |               15 |             24 |
+|  videoClk108MHz_0/inst/clk108MHz | configColors0/palette1Color[23]_i_1_n_0                     |                                                        |               16 |             24 |
+|  videoClk108MHz_0/inst/clk108MHz | configColors0/palette6Color[23]_i_1_n_0                     |                                                        |               13 |             24 |
+|  videoClk108MHz_0/inst/clk108MHz | configColors0/palette4Color[23]_i_1_n_0                     |                                                        |               14 |             24 |
+|  videoClk108MHz_0/inst/clk108MHz | configColors0/colorAtMouseLocation0                         |                                                        |                8 |             24 |
+|  videoClk108MHz_0/inst/clk108MHz | configColors0/palette2Color[23]_i_1_n_0                     |                                                        |               16 |             24 |
+|  videoClk108MHz_0/inst/clk108MHz |                                                             | displayMouseSprite0/pixlRGB_MouseSpriteOut[23]_i_1_n_0 |                5 |             24 |
+|  videoClk108MHz_0/inst/clk108MHz | mouse0/newMousePacketTick                                   |                                                        |               12 |             24 |
+|  videoClk108MHz_0/inst/clk108MHz | configColors0/palette0Color[23]_i_1_n_0                     |                                                        |               14 |             24 |
+|  videoClk108MHz_0/inst/clk108MHz | BresenhamLineDraw0/ena                                      |                                                        |               13 |             25 |
+|  videoClk108MHz_0/inst/clk108MHz |                                                             |                                                        |              164 |            497 |
++----------------------------------+-------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

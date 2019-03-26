@@ -1,0 +1,728 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 26 14:42:49 2019
+# Process ID: 20664
+# Current directory: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.runs/synth_1
+# Command line: vivado.exe -log Lab10_VideoSketch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Lab10_VideoSketch.tcl
+# Log file: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.runs/synth_1/Lab10_VideoSketch.vds
+# Journal file: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Lab10_VideoSketch.tcl -notrace
+Command: synth_design -top Lab10_VideoSketch -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15116 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 396.879 ; gain = 103.109
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Lab10_VideoSketch' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10_VideoSketch.sv:10]
+	Parameter BITS_IN_FRAME_BUFFER_COLUMN bound to: 11 - type: integer 
+	Parameter BITS_IN_FRAME_BUFFER_ROW bound to: 10 - type: integer 
+	Parameter BITS_IN_FRAME_BUFFER_COORDINATES bound to: 11 - type: integer 
+	Parameter HD bound to: 1280 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HR bound to: 112 - type: integer 
+	Parameter HB bound to: 248 - type: integer 
+	Parameter HT bound to: 1688 - type: integer 
+	Parameter VD bound to: 1024 - type: integer 
+	Parameter VF bound to: 1 - type: integer 
+	Parameter VR bound to: 3 - type: integer 
+	Parameter VB bound to: 38 - type: integer 
+	Parameter VT bound to: 1066 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PULLUP' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:44843]
+INFO: [Synth 8-6155] done synthesizing module 'PULLUP' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:44843]
+INFO: [Synth 8-6157] synthesizing module 'videoClk108MHz' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.runs/synth_1/.Xil/Vivado-20664-Alex-XPS/realtime/videoClk108MHz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'videoClk108MHz' (2#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.runs/synth_1/.Xil/Vivado-20664-Alex-XPS/realtime/videoClk108MHz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mouse' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/mouse.v:8]
+	Parameter STRM bound to: 8'b11110100 
+	Parameter init1 bound to: 3'b000 
+	Parameter init2 bound to: 3'b001 
+	Parameter init3 bound to: 3'b010 
+	Parameter pack1 bound to: 3'b011 
+	Parameter pack2 bound to: 3'b100 
+	Parameter pack3 bound to: 3'b101 
+	Parameter done bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'ps2_top' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/ps2_top.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'ps2tx' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/ps2tx.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'ps2tx' (3#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/ps2tx.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'ps2rx' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/ps2rx.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'ps2rx' (4#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/ps2rx.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'ps2_top' (5#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/ps2_top.sv:6]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/mouse.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'mouse' (6#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/mouse.v:8]
+INFO: [Synth 8-6157] synthesizing module 'BresenhamLineDraw' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:14]
+	Parameter BITS_IN_FRAME_BUFFER_COLUMN bound to: 11 - type: integer 
+	Parameter BITS_IN_FRAME_BUFFER_ROW bound to: 10 - type: integer 
+	Parameter BITS_IN_FRAME_BUFFER_COORDINATES bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BresenhamLineDraw' (7#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'sketchFrame' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/sketchFrame.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'divideBy3' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/divideBy3.sv:11]
+	Parameter N bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divideBy3' (8#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/divideBy3.sv:11]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/sketchFrame.sv:84]
+INFO: [Synth 8-6157] synthesizing module 'frameBuffer' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.runs/synth_1/.Xil/Vivado-20664-Alex-XPS/realtime/frameBuffer_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'frameBuffer' (9#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.runs/synth_1/.Xil/Vivado-20664-Alex-XPS/realtime/frameBuffer_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sketchFrame' (10#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/sketchFrame.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'configColors' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/configColors.sv:8]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/configColors.sv:40]
+INFO: [Synth 8-3876] $readmem data file 'paletteTileMem.txt' is read successfully [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/configColors.sv:41]
+INFO: [Synth 8-6155] done synthesizing module 'configColors' (11#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/configColors.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'displayMouseSprite' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/displayMouseSprite.sv:8]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/displayMouseSprite.sv:27]
+INFO: [Synth 8-3876] $readmem data file 'mouseSpriteMem.txt' is read successfully [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/displayMouseSprite.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'displayMouseSprite' (12#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/displayMouseSprite.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'orderedDither' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/orderedDither.sv:8]
+WARNING: [Synth 8-5856] 3D RAM th_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'orderedDither' (13#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/orderedDither.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'hex_to_sseg_p' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/hex_to_sseg_p.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'hex_to_sseg_p' (14#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/hex_to_sseg_p.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'led_mux8_p' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/led_mux8_p.sv:4]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/led_mux8_p.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'led_mux8_p' (15#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/led_mux8_p.sv:4]
+WARNING: [Synth 8-6014] Unused sequential element initFrameBuffer_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10_VideoSketch.sv:120]
+WARNING: [Synth 8-6014] Unused sequential element wrInitFrameBuffer_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10_VideoSketch.sv:121]
+INFO: [Synth 8-6155] done synthesizing module 'Lab10_VideoSketch' (16#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10_VideoSketch.sv:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 457.906 ; gain = 164.137
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 457.906 ; gain = 164.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 457.906 ; gain = 164.137
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.srcs/sources_1/ip/videoClk108MHz/videoClk108MHz/videoClk108MHz_in_context.xdc] for cell 'videoClk108MHz_0'
+Finished Parsing XDC File [c:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.srcs/sources_1/ip/videoClk108MHz/videoClk108MHz/videoClk108MHz_in_context.xdc] for cell 'videoClk108MHz_0'
+Parsing XDC File [c:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.srcs/sources_1/ip/frameBuffer/frameBuffer/frameBuffer_in_context.xdc] for cell 'sketchFrame0/frameBuffer0'
+Finished Parsing XDC File [c:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.srcs/sources_1/ip/frameBuffer/frameBuffer/frameBuffer_in_context.xdc] for cell 'sketchFrame0/frameBuffer0'
+Parsing XDC File [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10_VideoSketch.xdc]
+Finished Parsing XDC File [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10_VideoSketch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10_VideoSketch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Lab10_VideoSketch_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Lab10_VideoSketch_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 818.945 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 818.945 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 818.945 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 818.945 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'sketchFrame0/frameBuffer0' at clock pin 'clka' is different from the actual clock period '9.259', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 818.945 ; gain = 525.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 818.945 ; gain = 525.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {c:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.srcs/sources_1/ip/videoClk108MHz/videoClk108MHz/videoClk108MHz_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK100MHZ. (constraint file  {c:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.srcs/sources_1/ip/videoClk108MHz/videoClk108MHz/videoClk108MHz_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for videoClk108MHz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sketchFrame0/frameBuffer0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 818.945 ; gain = 525.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'ps2tx'
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "n_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "tri_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ps2c_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tri_d" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tx_idle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'ps2rx'
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "rx_done_tick" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rx_idle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'mouse'
+INFO: [Synth 8-5544] ROM "m_done_tick" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_ps2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:47]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:46]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:52]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:67]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:57]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:66]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:65]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sketchFrame'
+INFO: [Synth 8-5545] ROM "grantWrBresenhamPixel" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5547] Trying to map ROM "paletteTileMem" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5544] ROM "palette0Color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "palette1Color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "palette2Color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "palette3Color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "palette4Color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "palette5Color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "palette6Color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "palette7Color" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5547] Trying to map ROM "mouseSpriteMem" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5546] ROM "vidRow" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                           000001 | 00000000000000000000000000000000
+                   waitr |                           000010 | 00000000000000000000000000000001
+                     rts |                           000100 | 00000000000000000000000000000010
+                   start |                           001000 | 00000000000000000000000000000011
+                    data |                           010000 | 00000000000000000000000000000100
+                  iSTATE |                           100000 | 00000000000000000000000000000101
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'ps2tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 | 00000000000000000000000000000000
+                     dps |                              010 | 00000000000000000000000000000001
+                  iSTATE |                              100 | 00000000000000000000000000000010
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'ps2rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   init1 |                              000 |                              000
+                   init2 |                              001 |                              001
+                   init3 |                              010 |                              010
+                   pack1 |                              011 |                              011
+                   pack2 |                              100 |                              100
+                   pack3 |                              101 |                              101
+                    done |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'mouse'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            stateGenAddr |                              000 | 00000000000000000000000000000000
+           stateReadSram |                              001 | 00000000000000000000000000000001
+        stateAccessBRAMs |                              010 | 00000000000000000000000000000010
+         stateChooseBRAM |                              011 | 00000000000000000000000000000011
+             stateGenDin |                              100 | 00000000000000000000000000000100
+          stateWriteSram |                              101 | 00000000000000000000000000000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sketchFrame'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 818.945 ; gain = 525.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 6     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 5     
++---XORs : 
+	   8 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               24 Bit    Registers := 18    
+	               13 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 34    
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 24    
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 6     
+	   4 Input     24 Bit        Muxes := 1     
+	   5 Input     24 Bit        Muxes := 1     
+	   6 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 7     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 7     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   6 Input      9 Bit        Muxes := 1     
+	   7 Input      9 Bit        Muxes := 4     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   3 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Lab10_VideoSketch 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module ps2tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     13 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 8     
+Module ps2rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+Module mouse 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      9 Bit        Muxes := 4     
+	   7 Input      3 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 4     
+Module BresenhamLineDraw 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 2     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 3     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 7     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module sketchFrame 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 12    
+	                9 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      9 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+Module configColors 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               24 Bit    Registers := 15    
+	               11 Bit    Registers := 8     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 6     
+	   4 Input     24 Bit        Muxes := 1     
+	   5 Input     24 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 8     
+Module displayMouseSprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               11 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module orderedDither 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   7 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+Module led_mux8_p 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "ps2_top0/ps2_tx_unit/state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ps2_top0/ps2_rx_unit/state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ps2_top0/ps2_tx_unit/state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'dx_reg[10:0]' into 'dx_reg[10:0]' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:46]
+INFO: [Synth 8-4471] merging register 'dy_reg[9:0]' into 'dy_reg[9:0]' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/BresenhamLineDraw.sv:47]
+WARNING: [Synth 8-3936] Found unconnected internal register 'div3a/dividend_x_11184811_reg' and it is trimmed from '35' to '34' bits. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/divideBy3.sv:22]
+WARNING: [Synth 8-3936] Found unconnected internal register 'div3b/dividend_x_11184811_reg' and it is trimmed from '35' to '34' bits. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/divideBy3.sv:22]
+DSP Report: Generating DSP div3a/dividend_x_11184811_reg, operation Mode is: ((A:0xaaaaab)*B)'.
+DSP Report: register div3a/dividend_x_11184811_reg is absorbed into DSP div3a/dividend_x_11184811_reg.
+DSP Report: operator div3a/dividend_x_111848110 is absorbed into DSP div3a/dividend_x_11184811_reg.
+DSP Report: Generating DSP div3b/dividend_x_11184811_reg, operation Mode is: ((A:0xaaaaab)*B)'.
+DSP Report: register div3b/dividend_x_11184811_reg is absorbed into DSP div3b/dividend_x_11184811_reg.
+DSP Report: operator div3b/dividend_x_111848110 is absorbed into DSP div3b/dividend_x_11184811_reg.
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5546] ROM "vidRow" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BresenhamLineDraw0/D_AddendDontAdvance_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BresenhamLineDraw0/D_AddendAdvance_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\BresenhamLineDraw0/D_AddendDontAdvance_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mouse0/ps2_top0/ps2_tx_unit/b_reg_reg[8] )
+INFO: [Synth 8-3886] merging instance 'mouse0/ps2_top0/ps2_rx_unit/filter_reg_reg[7]' (FDR) to 'mouse0/ps2_top0/ps2_tx_unit/filter_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mouse0/ps2_top0/ps2_tx_unit/filter_reg_reg[6]' (FDR) to 'mouse0/ps2_top0/ps2_rx_unit/filter_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'mouse0/ps2_top0/ps2_tx_unit/filter_reg_reg[5]' (FDR) to 'mouse0/ps2_top0/ps2_rx_unit/filter_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'mouse0/ps2_top0/ps2_tx_unit/filter_reg_reg[4]' (FDR) to 'mouse0/ps2_top0/ps2_rx_unit/filter_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'mouse0/ps2_top0/ps2_tx_unit/filter_reg_reg[3]' (FDR) to 'mouse0/ps2_top0/ps2_rx_unit/filter_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'mouse0/ps2_top0/ps2_tx_unit/filter_reg_reg[2]' (FDR) to 'mouse0/ps2_top0/ps2_rx_unit/filter_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'mouse0/ps2_top0/ps2_tx_unit/filter_reg_reg[1]' (FDR) to 'mouse0/ps2_top0/ps2_rx_unit/filter_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'mouse0/ps2_top0/ps2_rx_unit/filter_reg_reg[0]' (FDR) to 'mouse0/ps2_top0/ps2_tx_unit/filter_reg_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (mouse0/ps2_top0/ps2_tx_unit/FSM_onehot_state_reg_reg[5]) is unused and will be removed from module Lab10_VideoSketch.
+WARNING: [Synth 8-3332] Sequential element (mouse0/ps2_top0/ps2_rx_unit/FSM_onehot_state_reg_reg[2]) is unused and will be removed from module Lab10_VideoSketch.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 818.945 ; gain = 525.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+------------+---------------+----------------+
+|Module Name  | RTL Object | Depth x Width | Implemented As | 
++-------------+------------+---------------+----------------+
+|configColors | p_0_out    | 8192x2        | LUT            | 
+|configColors | p_0_out    | 8192x2        | LUT            | 
++-------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|divideBy3   | ((A:0xaaaaab)*B)' | 24     | 11     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|divideBy3   | ((A:0xaaaaab)*B)' | 24     | 11     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_5/displayMouseSprite0/mouseSpritePixel_Stg2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'videoClk108MHz_0/clk108MHz' to pin 'videoClk108MHz_0/bbstub_clk108MHz/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 854.887 ; gain = 561.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 953.285 ; gain = 659.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance displayMouseSprite0/mouseSpritePixel_Stg2_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 954.293 ; gain = 660.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 954.293 ; gain = 660.523
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 954.293 ; gain = 660.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 954.293 ; gain = 660.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 954.293 ; gain = 660.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 954.293 ; gain = 660.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 954.293 ; gain = 660.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------+-------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name       | RTL Name                                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------+-------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Lab10_VideoSketch | BresenhamLineDraw0/startDelayed2_reg            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Lab10_VideoSketch | sketchFrame0/vidClmn_SketchOut_reg[10]          | 6      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|Lab10_VideoSketch | sketchFrame0/vidRow__SketchOut_reg[9]           | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|Lab10_VideoSketch | sketchFrame0/subPointerToVideoPixel_stg5_reg[1] | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|Lab10_VideoSketch | configColors0/vidRow__ConfigStg2_reg[10]        | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|Lab10_VideoSketch | configColors0/vidRow__ConfigStg2_reg[1]         | 6      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|Lab10_VideoSketch | configColors0/vidClmn_ConfigStg2_reg[1]         | 7      | 2     | NO           | NO                 | YES               | 2      | 0       | 
++------------------+-------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |videoClk108MHz |         1|
+|2     |frameBuffer    |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |frameBuffer    |     1|
+|2     |videoClk108MHz |     1|
+|3     |CARRY4         |    55|
+|4     |DSP48E1_2      |     2|
+|5     |LUT1           |    34|
+|6     |LUT2           |   142|
+|7     |LUT3           |   169|
+|8     |LUT4           |   147|
+|9     |LUT5           |   118|
+|10    |LUT6           |   361|
+|11    |MUXF7          |    78|
+|12    |PULLUP         |     2|
+|13    |RAMB18E1       |     1|
+|14    |SRL16E         |    25|
+|15    |FDRE           |   909|
+|16    |FDSE           |     9|
+|17    |IBUF           |     1|
+|18    |IOBUF          |     2|
+|19    |OBUF           |    30|
++------+---------------+------+
+
+Report Instance Areas: 
++------+----------------------+-------------------+------+
+|      |Instance              |Module             |Cells |
++------+----------------------+-------------------+------+
+|1     |top                   |                   |  2104|
+|2     |  BresenhamLineDraw0  |BresenhamLineDraw  |   306|
+|3     |  configColors0       |configColors       |   930|
+|4     |  displayMouseSprite0 |displayMouseSprite |   202|
+|5     |  dm8_0               |led_mux8_p         |    35|
+|6     |  mouse0              |mouse              |   214|
+|7     |    ps2_top0          |ps2_top            |   137|
+|8     |      ps2_rx_unit     |ps2rx              |    47|
+|9     |      ps2_tx_unit     |ps2tx              |    90|
+|10    |  orderedDither0      |orderedDither      |    40|
+|11    |  sketchFrame0        |sketchFrame        |   226|
+|12    |    div3a             |divideBy3          |    10|
+|13    |    div3b             |divideBy3_0        |    17|
++------+----------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 954.293 ; gain = 660.523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 954.293 ; gain = 299.484
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 954.293 ; gain = 660.523
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 138 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 954.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+119 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 954.293 ; gain = 671.988
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 954.293 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/Lab10/Lab10.runs/synth_1/Lab10_VideoSketch.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Lab10_VideoSketch_utilization_synth.rpt -pb Lab10_VideoSketch_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 26 14:43:37 2019...

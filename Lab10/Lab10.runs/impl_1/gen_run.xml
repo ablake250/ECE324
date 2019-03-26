@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553636638">
+  <File Type="BITSTR-BMM" Name="Lab10_VideoSketch_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Lab10_VideoSketch_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Lab10_VideoSketch_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="Lab10_VideoSketch_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Lab10_VideoSketch.tcl"/>
+  <File Type="OPT-TIMING" Name="Lab10_VideoSketch_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Lab10_VideoSketch_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="Lab10_VideoSketch_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Lab10_VideoSketch_reports.tcl"/>
+  <File Type="OPT-DRC" Name="Lab10_VideoSketch_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Lab10_VideoSketch.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Lab10_VideoSketch_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Lab10_VideoSketch_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Lab10_VideoSketch_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Lab10_VideoSketch_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Lab10_VideoSketch_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Lab10_VideoSketch_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Lab10_VideoSketch_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Lab10_VideoSketch_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Lab10_VideoSketch_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Lab10_VideoSketch_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Lab10_VideoSketch_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Lab10_VideoSketch.bgn"/>
+  <File Type="PLACE-TIMING" Name="Lab10_VideoSketch_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Lab10_VideoSketch_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Lab10_VideoSketch.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Lab10_VideoSketch_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Lab10_VideoSketch_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Lab10_VideoSketch_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="Lab10_VideoSketch.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Lab10_VideoSketch_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Lab10_VideoSketch_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Lab10_VideoSketch_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Lab10_VideoSketch_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Lab10_VideoSketch_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Lab10_VideoSketch_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Lab10_VideoSketch.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Lab10_VideoSketch_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Lab10_VideoSketch.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Lab10_VideoSketch_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Lab10_VideoSketch_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="Lab10_VideoSketch.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Lab10_VideoSketch_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Lab10_VideoSketch_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Lab10_VideoSketch_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Lab10_VideoSketch_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Lab10_VideoSketch_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Lab10_VideoSketch_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Lab10_VideoSketch_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Lab10_VideoSketch_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Lab10_VideoSketch_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Lab10_VideoSketch_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Lab10_VideoSketch_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Lab10_VideoSketch_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Lab10_VideoSketch_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Lab10_VideoSketch_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Lab10_VideoSketch_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Lab10_VideoSketch_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Lab10_VideoSketch_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Lab10_VideoSketch_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Lab10_VideoSketch_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Lab10_VideoSketch.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Lab10_VideoSketch_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="Lab10_VideoSketch.rbt"/>
+  <File Type="BITSTR-NKY" Name="Lab10_VideoSketch.nky"/>
+  <File Type="BG-DRC" Name="Lab10_VideoSketch.drc"/>
+  <File Type="RDI-RDI" Name="Lab10_VideoSketch.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/mouse.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/BresenhamLineDraw.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/configColors.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/displayMouseSprite.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/divideBy3.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/hex_to_sseg_p.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/led_mux8_p.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/orderedDither.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ps2_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ps2rx.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/ps2tx.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sketchFrame.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Lab10_VideoSketch.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Lab10_VideoSketch"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Lab10_VideoSketch.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="frameBuffer"/>
+  <BlockFileSet Type="BlockSrcs" Name="videoClk108MHz"/>
+</GenRun>
