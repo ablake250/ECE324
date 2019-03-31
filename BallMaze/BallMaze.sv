@@ -9,8 +9,8 @@ module BallMaze(
     input logic BTNU, BTND, BTNL, BTNR,
 
     //VGA
-    input logic VGA_VS, VGA_HS,
-    input logic [3:0] VGA_R, VGA_G, VGA_B 
+    output logic VGA_VS, VGA_HS,
+    output logic [3:0] VGA_R, VGA_G, VGA_B 
 );
 
 ///////////////////////////////////////////////////////////////////
@@ -54,6 +54,8 @@ logic [10:0] videoRow_stg3, videoColumn_stg3;
 logic [11:0] videoPixelRGB_stg4;
 logic [10:0] videoRow_stg4, videoColumn_stg4;
 
+
+
 ////////////////////////////////////////////////////////////////////
 //Generate Reset
 ////////////////////////////////////////////////////////////////////
@@ -76,14 +78,19 @@ videoClk108MHz videoClk108MHz_0 (
 // Sprite Motion Generation
 /////////////////////////////////////////////////////////////////////
 // Perform synchronization and handle metastability of the four directional buttons.
+/*
 free_run_shift_reg #(.N(4)) BTNU_instance(.clk(clk108MHz), .s_in(BTNU), .s_out(upPressed));
 free_run_shift_reg #(.N(4)) BTNR_instance(.clk(clk108MHz), .s_in(BTNR), .s_out(rightPressed));
 free_run_shift_reg #(.N(4)) BTND_instance(.clk(clk108MHz), .s_in(BTND), .s_out(downPressed));
 free_run_shift_reg #(.N(4)) BTNL_instance(.clk(clk108MHz), .s_in(BTNL), .s_out(leftPressed));
+*/
 
 /////////////////////////////////////////////////////////////////////
 // Generate Video Display Column and Row.
 /////////////////////////////////////////////////////////////////////
+
+
+//increment location to display
 always_ff @(posedge clk108MHz) begin
     if (videoColumn_stg1 != HT-1) videoColumn_stg1 <= videoColumn_stg1 + 1;
 	else begin
@@ -96,6 +103,12 @@ end
 /////////////////////////////////////////////////////////////////////
 //Video Generation
 /////////////////////////////////////////////////////////////////////
+
+//tileType initialized to index to correct location in BallMazeTileSet
+always_ff @(posedge clk108MHz) begin
+	tileType_stg2[5:0] <= PacManTileMapRom[{videoRow_stg1[9:5],videoColumn_stg1[9:5]}];
+end
+
 
 //Draw Tiles
 always_ff @(posedge clk108MHz) begin
