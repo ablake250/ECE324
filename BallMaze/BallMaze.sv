@@ -39,15 +39,24 @@ logic clk108MHz;
 logic [10:0] videoColumn_stg1; // range needed is 0 to (1279 + 48 + 112 + 248)
 logic [10:0] videoRow_stg1;    // range needed is 0 to (1023 +  1 +   3 +  38)
 
+//ball motion
+logic up, down, left, right;
+logic wallInTile_stg3;
+logic wallAboveball, wallRightOfball, wallLeftOfball, wallBelowball;
+logic [7:0] ballColumn, ballRow;
+
+//Sprite (ball) border logic
+logic [7:0] ballLeftColumn, ballRightColumn, ballTopRow, ballBottomRow;
+
 //Ball Maze Tile Initialized in Memory
 (* rom_style = "block" *) logic [5:0] BallMazeTileMapRom [0:1023]; // memory array for tile map
-initial $readmemh ("BallMazeTileMapRom.txt", BallMazeTileMapRom, 0, 10'h3FF); // initialize PacManTileSet
+initial $readmemh ("BallMazeTileMapRom.txt", BallMazeTileMapRom, 0, 10'h3FF); // initialize ballTileSet
 logic [5:0] tileType_stg2;
 
 //Genearate video stage 2-4:
 logic [10:0] videoRow_stg2, videoColumn_stg2;
-(* rom_style = "block" *) logic [1:0] BallMazeTileSet [0:12'h8FF]; // memory array for PacMan tiles
-initial $readmemh ("BallMazeTileSet.txt", BallMazeTileSet, 0, 12'h8FF); // initialize PacManTileSet
+(* rom_style = "block" *) logic [1:0] BallMazeTileSet [0:12'h8FF]; // memory array for ball tiles
+initial $readmemh ("BallMazeTileSet.txt", BallMazeTileSet, 0, 12'h8FF); // initialize ballTileSet
 logic [1:0] tileVideoPixelIndex_stg3;
 logic pelletEaten_stg3;	
 logic [10:0] videoRow_stg3, videoColumn_stg3;
@@ -55,6 +64,14 @@ logic [11:0] videoPixelRGB_stg4;
 logic [10:0] videoRow_stg4, videoColumn_stg4;
 
 
+//
+logic [3:0] ballSpriteRow_stg3, ballSpriteColumn_stg3;
+(* rom_style = "block" *) logic ballSpriteSet [0:12'h8FF]; // memory array for ball sprite
+initial $readmemh ("BallMazeSprite.txt", ballSpriteSet, 0, 12'h8FF); // initialize ballSpriteSet
+logic ballVideoPixelIndex_stg4;
+logic videoPixelWithinball_stg4;	
+logic [11:0] videoPixelRGB_stg5;
+logic [10:0] videoRow_stg5, videoColumn_stg5;
 
 ////////////////////////////////////////////////////////////////////
 //Generate Reset
@@ -73,21 +90,37 @@ videoClk108MHz videoClk108MHz_0 (
 	.CLK100MHZ  // input
 );
 
+////////////////////////////////////////////////////////////////////
+//Directional Button Inputs
+////////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////////////////////////////
-// Sprite Motion Generation
-/////////////////////////////////////////////////////////////////////
-// Perform synchronization and handle metastability of the four directional buttons.
-/*
-free_run_shift_reg #(.N(4)) BTNU_instance(.clk(clk108MHz), .s_in(BTNU), .s_out(upPressed));
-free_run_shift_reg #(.N(4)) BTNR_instance(.clk(clk108MHz), .s_in(BTNR), .s_out(rightPressed));
-free_run_shift_reg #(.N(4)) BTND_instance(.clk(clk108MHz), .s_in(BTND), .s_out(downPressed));
-free_run_shift_reg #(.N(4)) BTNL_instance(.clk(clk108MHz), .s_in(BTNL), .s_out(leftPressed));
-*/
+free_run_shift_reg #(.N(4)) BTNU_instance(.clk(clk108MHz), .s_in(BTNU), .s_out(up));
+free_run_shift_reg #(.N(4)) BTNR_instance(.clk(clk108MHz), .s_in(BTNR), .s_out(right));
+free_run_shift_reg #(.N(4)) BTND_instance(.clk(clk108MHz), .s_in(BTND), .s_out(down));
+free_run_shift_reg #(.N(4)) BTNL_instance(.clk(clk108MHz), .s_in(BTNL), .s_out(left));
+
 
 /////////////////////////////////////////////////////////////////////
 // Generate Video Display Column and Row.
 /////////////////////////////////////////////////////////////////////
+
+// Generate Sprite Borders
+always_ff @(posedge clk108MHz) begin	
+	if (VGA_VS) begin // only allow sprite changes between video display frames
+		ballLeftColumn <= ballColumn-8;
+		ballRightColumn <= ballColumn+7;
+		ballTopRow <= ballRow-8;
+		ballBottomRow <= ballRow+7;
+	end
+end
+
+always_ff @(posedge clk108MHz) begin
+    wallInTile_stg3 <= tileType_stg2[5:0]!=6'h00 & tileType_stg2[5:0]!=6'h01 & tileType_stg2[5:0]!=6'h02; // only 3 tile types that aren't walls
+	if (videoColumn_stg3[9:5]==(ballColumn[7:3]  ) & videoRow_stg3[9:5]==(ballRow[7:3]-1)) wallAboveball   <= wallInTile_stg3;
+	if (videoColumn_stg3[9:5]==(ballColumn[7:3]+1) & videoRow_stg3[9:5]==(ballRow[7:3]  )) wallRightOfball <= wallInTile_stg3;
+	if (videoColumn_stg3[9:5]==(ballColumn[7:3]  ) & videoRow_stg3[9:5]==(ballRow[7:3]+1)) wallBelowball   <= wallInTile_stg3;
+	if (videoColumn_stg3[9:5]==(ballColumn[7:3]-1) & videoRow_stg3[9:5]==(ballRow[7:3]  )) wallLeftOfball  <= wallInTile_stg3;	
+end
 
 
 //increment location to display
@@ -106,7 +139,7 @@ end
 
 //tileType initialized to index to correct location in BallMazeTileSet
 always_ff @(posedge clk108MHz) begin
-	tileType_stg2[5:0] <= PacManTileMapRom[{videoRow_stg1[9:5],videoColumn_stg1[9:5]}];
+	tileType_stg2[5:0] <= BallMazeTileMapRom[{videoRow_stg1[9:5],videoColumn_stg1[9:5]}];
 end
 
 
@@ -133,14 +166,35 @@ always_ff @(posedge clk108MHz) begin
 	videoColumn_stg4[10:0] <= videoColumn_stg3[10:0];
 end
 
+//Ball Sprite
+// Overlay ball Sprite
+always_ff @(posedge clk108MHz) begin
+	ballSpriteRow_stg3[3:0]    <= videoRow_stg2[5:2]    - ballTopRow[3:0];
+	ballSpriteColumn_stg3[3:0] <= videoColumn_stg2[5:2] - ballLeftColumn[3:0];
+		// skipping videoRow and videoColumn bits 1 and 0 duplicates rows and columns
+
+	ballVideoPixelIndex_stg4 <= ballSpriteSet[{4'b0000,ballSpriteRow_stg3[3:0],ballSpriteColumn_stg3[3:0]}];
+	videoPixelWithinball_stg4 <= (videoColumn_stg3[9:2] >= ballLeftColumn) & 
+                                   (videoColumn_stg3[9:2] <= ballRightColumn) &
+								   (videoRow_stg3[9:2]    >= ballTopRow) & 
+                                   (videoRow_stg3[9:2]    <= ballBottomRow);	
+
+	if (!videoPixelWithinball_stg4) videoPixelRGB_stg5[11:0] <= videoPixelRGB_stg4[11:0]; // don't change
+    else if (!ballVideoPixelIndex_stg4) videoPixelRGB_stg5[11:0] <= videoPixelRGB_stg4[11:0]; // don't change
+    else videoPixelRGB_stg5[11:0] <= 12'hFF0; // yellow ball body
+
+	videoRow_stg5[10:0] <= videoRow_stg4[10:0];
+	videoColumn_stg5[10:0] <= videoColumn_stg4[10:0];
+end
+
 // Generate video signals to be sent to monitor
 always_ff @(posedge clk108MHz) begin
 	// Overlay black outside the tile locations	(including outside the display area)
-	if ((videoColumn_stg4 >= 1024-64) | (videoRow_stg4>= VD) | (videoColumn_stg4 <= 64)) {VGA_R, VGA_G, VGA_B} <= 12'h000; // Blanking
-	else {VGA_R, VGA_G, VGA_B} <= videoPixelRGB_stg4[11:0];
+	if ((videoColumn_stg5 >= 1024-64) | (videoRow_stg5>= VD) | (videoColumn_stg5 <= 64)) {VGA_R, VGA_G, VGA_B} <= 12'h000; // Blanking
+	else {VGA_R, VGA_G, VGA_B} <= videoPixelRGB_stg5[11:0];
 	// generate video sync signals
-	VGA_HS <= (videoColumn_stg4 >= (HD+HF)) && (videoColumn_stg4 <= (HD+HF+HR));
-    VGA_VS <= (videoRow_stg4    >= (VD+VF)) && (videoRow_stg4    <= (VD+VF+VR));
+	VGA_HS <= (videoColumn_stg5 >= (HD+HF)) && (videoColumn_stg5 <= (HD+HF+HR));
+    VGA_VS <= (videoRow_stg5    >= (VD+VF)) && (videoRow_stg5    <= (VD+VF+VR));
 end
 
 
