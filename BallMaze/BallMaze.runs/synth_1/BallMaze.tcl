@@ -29,7 +29,9 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo {c:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
+  {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv}
   {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/free_run_shift_reg.sv}
+  {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/mod_m_counter.sv}
   {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv}
 }
 read_verilog -library xil_defaultlib {{C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/videoClk108MHz.v}}

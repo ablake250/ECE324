@@ -8,11 +8,11 @@ module BallMotion(
 
     //Ball Inputs
     input logic up, down, left, right,
-    input logic wallAbove, wallRight, wallLeft, wallBelow
+    input logic wallAboveball, wallRightOfball, wallLeftOfball, wallBelowball,
 
     //Ball Outputs
-    output logic [7:0] ballColumn;
-    output logic [7:0] ballRow;
+    output logic [7:0] ballColumn,
+    output logic [7:0] ballRow
 );
 
 /*
@@ -29,13 +29,15 @@ logic xAccelPositive, yAccelPositive;
 logic xPos_stg2, yPos_stg2;
 
 //Velocity Logic Declarations
-logic [4:0] 
 
 localparam START_X = 128;
 localparam START_Y = 188;
 
-mod_m_counter #(.M(1350000)) ballRow(.clk(clk108MHz), .max_tick(maxTickY), .q());
-mod_m_counter #(.M(1350000)) ballColumn(.clk(clk108MHz), .max_tick(maxTickX), .q());
+
+logic maxTickX, maxTickY;
+
+mod_m_counter #(.M(1350000)) ballRowTick(.clk(clk108MHz), .max_tick(maxTickY), .q());
+mod_m_counter #(.M(1350000)) ballColumnTick(.clk(clk108MHz), .max_tick(maxTickX), .q());
 
 /*
 always_ff @(posedge clk108MHz) begin
@@ -71,8 +73,8 @@ always_ff @(posedge clk108MHz) begin
 
     if (resetPressed) ballRow[7:0] = STARTCOLUMN;
     else if (moveBallRow_stg2) begin
-        if (ballRowChange == 2'b11 & !wallAbove) ballRowVel <= ballRow - 1;
-        else if (ballRowChange == 2'b01 & !wallBelow) ballRowVel <= ballRow + 1;
+        if (ballRowChange == 2'b11 & !wallAboveball) ballRowVel <= ballRow - 1;
+        else if (ballRowChange == 2'b01 & !wallBelowball) ballRowVel <= ballRow + 1;
         else;
     end
 end
@@ -87,8 +89,8 @@ always_ff @(posedge clk108MHz) begin
 
     if (resetPressed) ballColumn[7:0] = STARTCOLUMN;
     else if (moveBallColumn_stg2) begin
-        if (ballColumnChange == 2'b11 & !wallLeft & !) ballColummVel <= ballColummVel - 1;
-        else if (ballColumnChange == 2'b01 & !wallRight) ballColummVel <= ballColummVel + 1;
+        if (ballColumnChange == 2'b11 & !wallLeftofball & !) ballColummVel <= ballColummVel - 1;
+        else if (ballColumnChange == 2'b01 & !wallRightofball) ballColummVel <= ballColummVel + 1;
         else;
     end
 end
@@ -157,7 +159,7 @@ always_ff @(posedge clk108MHz) begin
         end
     end
     yAccel_stg2 <= YAcceleration;
-    yAccelPos_stg2 <= yAccelPositive;
+    yPos_stg2 <= yAccelPositive;
 end
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -173,7 +175,9 @@ end
 
 //y-axis Velocity
 always_ff @(posedge clk108MHz) begin
+    if (resetPressed) begin
 
+    end
 end
 
 
@@ -183,12 +187,19 @@ end
 
 //x-axis Velocity
 always_ff @(posedge clk108MHz) begin
+    ballColumn <= 80;
+    if (resetPressed) begin
+
+    end
 
 end
 
 //y-axis Velocity
 always_ff @(posedge clk108MHz) begin
+    ballRow <= 80;
+    if (resetPressed) begin
 
+    end
 end
 
 endmodule

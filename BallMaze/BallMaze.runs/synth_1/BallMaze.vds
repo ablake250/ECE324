@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Apr  1 12:56:13 2019
-# Process ID: 10056
+# Start of session at: Mon Apr  1 13:35:46 2019
+# Process ID: 476
 # Current directory: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.runs/synth_1
 # Command line: vivado.exe -log BallMaze.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BallMaze.tcl
 # Log file: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.runs/synth_1/BallMaze.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15264 
+INFO: Helper process launched with PID 17008 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 362.676 ; gain = 101.082
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 361.980 ; gain = 100.496
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'BallMaze' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:3]
 	Parameter HD bound to: 1280 - type: integer 
@@ -31,7 +31,7 @@ INFO: [Synth 8-6157] synthesizing module 'BallMaze' [C:/Users/Axelb/Documents/Sc
 	Parameter VB bound to: 38 - type: integer 
 	Parameter VT bound to: 1066 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'BallMazeTileMapRom.txt'; please make sure the file is added to project and has read permission, ignoring [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:53]
+INFO: [Synth 8-3876] $readmem data file 'BallMazeTileRom.txt' is read successfully [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:53]
 INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:58]
 INFO: [Synth 8-3876] $readmem data file 'BallMazeTileSet.txt' is read successfully [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:59]
 INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:69]
@@ -100,120 +100,35 @@ INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (3#1) [C:/Xilinx/Viva
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
 INFO: [Synth 8-6155] done synthesizing module 'videoClk108MHz' (5#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/videoClk108MHz.v:3]
-WARNING: [Synth 8-6014] Unused sequential element wallInTile_stg3_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:118]
-WARNING: [Synth 8-6014] Unused sequential element wallAboveball_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:119]
-WARNING: [Synth 8-6014] Unused sequential element wallRightOfball_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:120]
-WARNING: [Synth 8-6014] Unused sequential element wallBelowball_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:121]
-WARNING: [Synth 8-6014] Unused sequential element wallLeftOfball_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:122]
-
-Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
-	1: Unable to determine number of words or word size in RAM. 
-	2: No valid read/write found for RAM. 
-RAM dissolved into registers
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-WARNING: [Synth 8-3848] Net BallMazeTileMapRom in module/entity BallMaze does not have driver. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:52]
-INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'BallMaze' (6#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BallMotion' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:4]
+	Parameter START_X bound to: 128 - type: integer 
+	Parameter START_Y bound to: 188 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mod_m_counter' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/mod_m_counter.sv:2]
+	Parameter M bound to: 1350000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mod_m_counter' (6#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/mod_m_counter.sv:2]
+WARNING: [Synth 8-6014] Unused sequential element xAccelPositive_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element xAcceleration_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:109]
+WARNING: [Synth 8-6014] Unused sequential element xAccel_stg2_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:130]
+WARNING: [Synth 8-6014] Unused sequential element xPos_stg2_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:131]
+WARNING: [Synth 8-6014] Unused sequential element yAccelPositive_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:137]
+WARNING: [Synth 8-6014] Unused sequential element YAcceleration_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:140]
+WARNING: [Synth 8-6014] Unused sequential element yAccel_stg2_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:161]
+WARNING: [Synth 8-6014] Unused sequential element yPos_stg2_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:162]
+INFO: [Synth 8-4471] merging register 'ballRow_reg[7:0]' into 'ballColumn_reg[7:0]' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:199]
+WARNING: [Synth 8-6014] Unused sequential element ballRow_reg was removed.  [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:199]
+INFO: [Synth 8-6155] done synthesizing module 'BallMotion' (7#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'BallMaze' (8#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:3]
+WARNING: [Synth 8-3331] design BallMotion has unconnected port resetPressed
+WARNING: [Synth 8-3331] design BallMotion has unconnected port up
+WARNING: [Synth 8-3331] design BallMotion has unconnected port down
+WARNING: [Synth 8-3331] design BallMotion has unconnected port left
+WARNING: [Synth 8-3331] design BallMotion has unconnected port right
+WARNING: [Synth 8-3331] design BallMotion has unconnected port wallAboveball
+WARNING: [Synth 8-3331] design BallMotion has unconnected port wallRightOfball
+WARNING: [Synth 8-3331] design BallMotion has unconnected port wallLeftOfball
+WARNING: [Synth 8-3331] design BallMotion has unconnected port wallBelowball
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 419.160 ; gain = 157.566
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 418.523 ; gain = 157.039
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -226,10 +141,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 419.160 ; gain = 157.566
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 418.523 ; gain = 157.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 419.160 ; gain = 157.566
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 418.523 ; gain = 157.039
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -243,36 +158,38 @@ Finished Parsing XDC File [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 3
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BallMaze_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/BallMaze_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 718.871 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 764.301 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 718.871 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 764.301 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 718.871 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 718.871 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 764.301 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 764.301 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 718.871 ; gain = 457.277
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 764.301 ; gain = 502.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 718.871 ; gain = 457.277
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 764.301 ; gain = 502.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 718.871 ; gain = 457.277
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 764.301 ; gain = 502.816
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5547] Trying to map ROM "BallMazeTileMapRom" into Block RAM due to explicit "ram_style" or "rom_style" specification
 INFO: [Synth 8-5547] Trying to map ROM "BallMazeTileSet" into Block RAM due to explicit "ram_style" or "rom_style" specification
 INFO: [Synth 8-5547] Trying to map ROM "ballSpriteSet" into Block RAM due to explicit "ram_style" or "rom_style" specification
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 718.871 ; gain = 457.277
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 764.301 ; gain = 502.816
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'ballMotion0/ballRowTick' (mod_m_counter) to 'ballMotion0/ballColumnTick'
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -284,19 +201,25 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     21 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
 	   3 Input      4 Bit       Adders := 2     
 +---Registers : 
+	               21 Bit    Registers := 1     
 	               12 Bit    Registers := 3     
 	               11 Bit    Registers := 10    
-	                8 Bit    Registers := 5     
+	                8 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 8     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 9     
 +---ROMs : 
 	                              ROMs := 2     
 +---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
 	   4 Input     12 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -308,16 +231,19 @@ Hierarchical RTL Component report
 Module BallMaze 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 2     
 	   2 Input     11 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
 	   3 Input      4 Bit       Adders := 2     
 +---Registers : 
 	               12 Bit    Registers := 3     
 	               11 Bit    Registers := 10    
 	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 9     
 +---ROMs : 
 	                              ROMs := 2     
 +---Muxes : 
@@ -326,6 +252,18 @@ Module free_run_shift_reg
 Detailed RTL Component Info : 
 +---Registers : 
 	                4 Bit    Registers := 1     
+Module mod_m_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+Module BallMotion 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -342,43 +280,24 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'ballTopRow_reg[7:0]' into 'ballLeftColumn_reg[7:0]' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:118]
+INFO: [Synth 8-4471] merging register 'ballBottomRow_reg[7:0]' into 'ballRightColumn_reg[7:0]' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:119]
+INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
 WARNING: [Synth 8-3331] design BallMaze has unconnected port CPU_RESETN
 WARNING: [Synth 8-3331] design BallMaze has unconnected port BTNU
 WARNING: [Synth 8-3331] design BallMaze has unconnected port BTND
 WARNING: [Synth 8-3331] design BallMaze has unconnected port BTNL
 WARNING: [Synth 8-3331] design BallMaze has unconnected port BTNR
-INFO: [Synth 8-3886] merging instance 'ballBottomRow_reg[0]' (FDE) to 'ballRightColumn_reg[0]'
-INFO: [Synth 8-3886] merging instance 'ballBottomRow_reg[1]' (FDE) to 'ballRightColumn_reg[0]'
-INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[0]' (FDE) to 'ballRightColumn_reg[1]'
-INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[1]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[0]' (FDE) to 'ballRightColumn_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[1]' (FDE) to 'ballRightColumn_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ballTopRow_reg[0]' (FDE) to 'ballRightColumn_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ballTopRow_reg[1]' (FDE) to 'ballRightColumn_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[2]' (FDE) to 'ballRightColumn_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[3]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[4]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[5]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[6]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[7]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ballBottomRow_reg[2]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ballBottomRow_reg[3]' (FDE) to 'ballRightColumn_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ballBottomRow_reg[4]' (FDE) to 'ballRightColumn_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ballBottomRow_reg[5]' (FDE) to 'ballRightColumn_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ballBottomRow_reg[6]' (FDE) to 'ballRightColumn_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ballBottomRow_reg[7]' (FDE) to 'ballRightColumn_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ballTopRow_reg[2]' (FDE) to 'ballRightColumn_reg[3]'
-INFO: [Synth 8-3886] merging instance 'ballTopRow_reg[3]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ballTopRow_reg[4]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ballTopRow_reg[5]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ballTopRow_reg[6]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3886] merging instance 'ballTopRow_reg[7]' (FDE) to 'ballRightColumn_reg[2]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ballRightColumn_reg[2] )
-INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[3]' (FDE) to 'ballRightColumn_reg[4]'
-INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[4]' (FDE) to 'ballRightColumn_reg[5]'
-INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[5]' (FDE) to 'ballRightColumn_reg[6]'
-INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[6]' (FDE) to 'ballRightColumn_reg[7]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballRightColumn_reg[7] )
+INFO: [Synth 8-3886] merging instance 'ballMotion0/ballColumn_reg[6]' (FD) to 'ballMotion0/ballColumn_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ballMotion0/ballColumn_reg[5]' (FD) to 'videoPixelRGB_stg4_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ballMotion0/ballColumn_reg[4] )
+INFO: [Synth 8-3886] merging instance 'ballMotion0/ballColumn_reg[3]' (FD) to 'videoPixelRGB_stg4_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ballMotion0/ballColumn_reg[0]' (FD) to 'videoPixelRGB_stg4_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ballMotion0/ballColumn_reg[1]' (FD) to 'videoPixelRGB_stg4_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ballMotion0/ballColumn_reg[2]' (FD) to 'videoPixelRGB_stg4_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ballMotion0/ballColumn_reg[7]' (FD) to 'videoPixelRGB_stg4_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[0]' (FDE) to 'ballLeftColumn_reg[1]'
+INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[1]' (FDE) to 'ballLeftColumn_reg[2]'
 INFO: [Synth 8-3886] merging instance 'videoPixelRGB_stg4_reg[0]' (FD) to 'videoPixelRGB_stg4_reg[2]'
 INFO: [Synth 8-3886] merging instance 'videoPixelRGB_stg4_reg[1]' (FD) to 'videoPixelRGB_stg4_reg[3]'
 INFO: [Synth 8-3886] merging instance 'videoPixelRGB_stg4_reg[4]' (FD) to 'videoPixelRGB_stg4_reg[5]'
@@ -404,8 +323,37 @@ INFO: [Synth 8-3886] merging instance 'VGA_G_reg[3]' (FDR) to 'VGA_R_reg[3]'
 INFO: [Synth 8-3886] merging instance 'VGA_R_reg[0]' (FDR) to 'VGA_R_reg[3]'
 INFO: [Synth 8-3886] merging instance 'VGA_R_reg[1]' (FDR) to 'VGA_R_reg[3]'
 INFO: [Synth 8-3886] merging instance 'VGA_R_reg[2]' (FDR) to 'VGA_R_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[0]' (FDE) to 'ballLeftColumn_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[1]' (FDE) to 'ballLeftColumn_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[2]' (FDE) to 'ballLeftColumn_reg[4]'
+INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[3]' (FDE) to 'ballLeftColumn_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[4]' (FDE) to 'ballLeftColumn_reg[5]'
+INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[5]' (FDE) to 'ballLeftColumn_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[6]' (FDE) to 'ballRightColumn_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ballLeftColumn_reg[7]' (FDE) to 'ballRightColumn_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[2]' (FDE) to 'ballRightColumn_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[3]' (FDE) to 'ballRightColumn_reg[7]'
+INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[4]' (FDE) to 'ballRightColumn_reg[6]'
+INFO: [Synth 8-3886] merging instance 'ballRightColumn_reg[5]' (FDE) to 'ballRightColumn_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ballRightColumn_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballRightColumn_reg[7] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 718.871 ; gain = 457.277
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 764.301 ; gain = 502.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|BallMaze    | p_0_out    | 1024x6        | LUT            | 
+|BallMaze    | p_0_out    | 1024x6        | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6837] The timing for the instance i_16/i_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance i_23/i_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
@@ -419,13 +367,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 759.449 ; gain = 497.855
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 764.301 ; gain = 502.816
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 761.211 ; gain = 499.617
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 782.703 ; gain = 521.219
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -437,7 +385,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 780.363 ; gain = 518.770
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 784.480 ; gain = 522.996
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -461,7 +409,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 780.363 ; gain = 518.770
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 784.480 ; gain = 522.996
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -474,7 +422,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 780.363 ; gain = 518.770
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 784.480 ; gain = 522.996
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -486,25 +434,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 780.363 ; gain = 518.770
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 784.480 ; gain = 522.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 780.363 ; gain = 518.770
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 784.480 ; gain = 522.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 780.363 ; gain = 518.770
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 784.480 ; gain = 522.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 780.363 ; gain = 518.770
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 784.480 ; gain = 522.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -538,50 +486,52 @@ Report Cell Usage:
 |1     |BUFG       |     2|
 |2     |CARRY4     |     4|
 |3     |LUT1       |     4|
-|4     |LUT2       |    29|
-|5     |LUT3       |     6|
-|6     |LUT4       |     5|
-|7     |LUT5       |     7|
-|8     |LUT6       |    15|
+|4     |LUT2       |    35|
+|5     |LUT3       |     7|
+|6     |LUT4       |     6|
+|7     |LUT5       |     8|
+|8     |LUT6       |   102|
 |9     |MMCME2_ADV |     1|
-|10    |RAMB18E1_3 |     1|
-|11    |RAMB18E1_4 |     1|
-|12    |SRL16E     |     6|
-|13    |FDRE       |   104|
-|14    |FDSE       |     2|
-|15    |IBUF       |     1|
-|16    |OBUF       |    14|
+|10    |MUXF7      |    38|
+|11    |MUXF8      |    19|
+|12    |RAMB18E1_3 |     1|
+|13    |RAMB18E1_4 |     1|
+|14    |SRL16E     |     6|
+|15    |FDRE       |   104|
+|16    |FDSE       |     2|
+|17    |IBUF       |     1|
+|18    |OBUF       |    14|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+-------------------+---------------+------+
 |      |Instance           |Module         |Cells |
 +------+-------------------+---------------+------+
-|1     |top                |               |   202|
+|1     |top                |               |   355|
 |2     |  videoClk108MHz_0 |videoClk108MHz |     4|
 +------+-------------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 780.363 ; gain = 518.770
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 784.480 ; gain = 522.996
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 780.363 ; gain = 219.059
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 780.363 ; gain = 518.770
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 784.480 ; gain = 177.219
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 784.480 ; gain = 522.996
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 780.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 786.012 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-94 Infos, 110 Warnings, 1 Critical Warnings and 0 Errors encountered.
+96 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 780.363 ; gain = 529.215
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 780.363 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 786.012 ; gain = 535.648
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 786.012 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.runs/synth_1/BallMaze.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file BallMaze_utilization_synth.rpt -pb BallMaze_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr  1 12:56:46 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  1 13:36:15 2019...

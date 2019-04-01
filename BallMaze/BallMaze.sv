@@ -50,7 +50,7 @@ logic [7:0] ballLeftColumn, ballRightColumn, ballTopRow, ballBottomRow;
 
 //Ball Maze Tile Initialized in Memory
 (* rom_style = "block" *) logic [5:0] BallMazeTileMapRom [0:1023]; // memory array for tile map
-initial $readmemh ("BallMazeTileMapRom.txt", BallMazeTileMapRom, 0, 10'h3FF); // initialize ballTileSet
+initial $readmemh ("BallMazeTileRom.txt", BallMazeTileMapRom, 0, 10'h3FF); // initialize ballTileSet
 logic [5:0] tileType_stg2;
 
 //Genearate video stage 2-4:
@@ -99,6 +99,12 @@ free_run_shift_reg #(.N(4)) BTNR_instance(.clk(clk108MHz), .s_in(BTNR), .s_out(r
 free_run_shift_reg #(.N(4)) BTND_instance(.clk(clk108MHz), .s_in(BTND), .s_out(down));
 free_run_shift_reg #(.N(4)) BTNL_instance(.clk(clk108MHz), .s_in(BTNL), .s_out(left));
 
+/////////////////////////////////////////////////////////////////////
+//Motion Calculations
+BallMotion ballMotion0 (
+	.*
+);
+/////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////
 // Generate Video Display Column and Row.

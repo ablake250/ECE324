@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Apr  1 12:57:30 2019
+| Date         : Mon Apr  1 13:37:29 2019
 | Host         : Alex-XPS running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file BallMaze_control_sets_placed.rpt
 | Design       : BallMaze
@@ -47,9 +47,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              76 |           19 |
+| No           | No                    | No                     |              76 |           30 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              27 |            9 |
+| No           | Yes                   | No                     |              27 |           12 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              11 |            3 |
@@ -62,11 +62,11 @@ Table of Contents
 +-----------------------------+------------------------------+------------------------------+------------------+----------------+
 |         Clock Signal        |         Enable Signal        |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
 +-----------------------------+------------------------------+------------------------------+------------------+----------------+
-|  videoClk108MHz_0/clk108MHz |                              | videoPixelRGB_stg5           |                1 |              4 |
+|  videoClk108MHz_0/clk108MHz |                              | videoPixelRGB_stg5           |                4 |              4 |
 |  videoClk108MHz_0/clk108MHz |                              | videoColumn_stg1[10]_i_1_n_0 |                3 |             11 |
 |  videoClk108MHz_0/clk108MHz | videoColumn_stg1[10]_i_1_n_0 | videoRow_stg1                |                3 |             11 |
 |  videoClk108MHz_0/clk108MHz |                              | VGA_G[1]_i_1_n_0             |                5 |             12 |
-|  videoClk108MHz_0/clk108MHz |                              |                              |               19 |             82 |
+|  videoClk108MHz_0/clk108MHz |                              |                              |               30 |             82 |
 +-----------------------------+------------------------------+------------------------------+------------------+----------------+
 
 
