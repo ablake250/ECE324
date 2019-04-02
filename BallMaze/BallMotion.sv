@@ -23,14 +23,14 @@ logic ballColummVel; ballRowVel;
 */
 
 //Acceleration Logic Declarations
-logic [4:0] xAcceleration, YAcceleration;
-logic [4:0] xAccel_stg2, yAccel_stg2;
+logic [3:0] xAcceleration, YAcceleration;
+logic [3:0] xAccel_stg2, yAccel_stg2;
 logic xAccelPositive, yAccelPositive;
 logic xAccelPos_stg2, yAccelPos_stg2;
 
 //Velocity Logic Declarations
-logic [4:0] xVelocity, yVelocity;
-logic [4:0] xVel_stg2, yVel_stg2
+logic [3:0] xVelocity, yVelocity;
+logic [3:0] xVel_stg2, yVel_stg2;
 logic xVelPos, yVelPos;
 logic xVelPos_stg2, yVelPos_stg2;
 
@@ -41,8 +41,8 @@ localparam START_Y = 188;
 
 logic maxTickX, maxTickY;
 
-mod_m_counter #(.M(1350000)) ballRowTick(.clk(clk108MHz), .max_tick(maxTickY), .q());
-mod_m_counter #(.M(1350000)) ballColumnTick(.clk(clk108MHz), .max_tick(maxTickX), .q());
+mod_m_counter #(.M(13500000)) ballRowTick(.clk(clk108MHz), .max_tick(maxTickY), .q());
+mod_m_counter #(.M(13500000)) ballColumnTick(.clk(clk108MHz), .max_tick(maxTickX), .q());
 
 /*
 always_ff @(posedge clk108MHz) begin
@@ -109,25 +109,34 @@ end
 always_ff @(posedge clk108MHz) begin
     if (resetPressed) begin
         xAccelPositive <= 1;
+        xAccelPos_stg2 <= 1;
+        xAcceleration <= 0;
+        xAccel_stg2 <= 0;
     end
     else if(maxTickX) begin
+        //negative to positive transition
         if (right & (xAccelPositive == 0) & (xAcceleration == 1)) begin
             xAccelPositive <= 1;
-            xAcceleration <= xAcceleration + 1;
+            xAcceleration <= 0;
         end
+        //increasing positive acceleration
         else if (right & (xAccelPositive == 1) & !(xAcceleration == 4'b1111)) begin
             xAcceleration <= xAcceleration + 1;
         end
-        else if (right & (xAccelPositive==0) & (xAcceleration > 1))begin
+        //decreasing negative acceleration
+        else if (right & (xAccelPositive==0) & (xAcceleration > 0))begin
             xAcceleration <= xAcceleration - 1;
         end
+        //positive to negative transition
         else if (left & (xAccelPositive == 1) & (xAcceleration == 0)) begin
             xAccelPositive <= 0;
-            xAcceleration <= xAcceleration + 1;
+            xAcceleration <= 1;
         end
+        //increasing negative acceleration
         else if (left & (xAccelPositive == 0) & !(xAcceleration == 4'b1111)) begin
             xAcceleration <= xAcceleration + 1;
         end
+        // decreasing positive acceleration
         else if (left & (xAccelPositive == 1) & (xAcceleration > 0)) begin
             xAcceleration <= xAcceleration - 1;
         end
@@ -176,33 +185,44 @@ always_ff @(posedge clk108MHz) begin
     if (resetPressed) begin
         xVelocity <= 0;
         xVelPos <= 1;
+        xVelPos_stg2 <= 0;
+        xVel_stg2 <= 0;
     end
-    else if(maxTickY)
+    else if(maxTickY) begin
         if (xVelPos==0) begin
             if((xVelocity <= xAccel_stg2) & (xAccelPos_stg2)) begin
                 xVelocity <= xAccel_stg2 - xVelocity;
                 xVelPos <= 1;
             end
-            else if (({1'b0, xVelocity + xAccelPos_stg2} >= 4'b1111) & !(xAccelPos_stg2)) begin
+            else if ((({1'b0, xVelocity} + {1'b0, xAccelPos_stg2}) >= 4'b1111) & !(xAccelPos_stg2)) begin
                 xVelocity <= 4'b1111;
             end
-            else if (!xAccelPos_stg2) xVelocity <= xVelocity + xAccel_stg2;
-            else if (xAccelPos_stg2) xVelocity <= xVelocity - xAccel_stg2;
+            else if (!xAccelPos_stg2) begin 
+                xVelocity <= xVelocity + xAccel_stg2;
+            end
+            else if (xAccelPos_stg2) begin 
+                xVelocity <= xVelocity - xAccel_stg2;
+            end
         end
         else if (xVelPos == 1) begin
-            if ((xVelocity <= xAccel_stg2) & !(xAccelPos_stg2))
+            if ((xVelocity <= xAccel_stg2) & !(xAccelPos_stg2)) begin
                 xVelocity <= xAccel_stg2 - xVelocity;
                 xVelPos <= 0;
             end
-             else if (({1'b0, xVelocity + xAccelPos_stg2} >= 4'b1111) & (xAccelPos_stg2)) begin
+            else if ((({1'b0, xVelocity} + {1'b0,xAccelPos_stg2}) > 4'b1111) & (xAccelPos_stg2)) begin
                 xVelocity <= 4'b1111;
             end
-            else if (!xAccelPos_stg2) xVelocity <= xVelocity - xAccel_stg2;
-            else if (xAccelPos_stg2) xVelocity <= xVelocity + xAccel_stg2;
+
+            else if (!xAccelPos_stg2) begin 
+                xVelocity <= xVelocity - xAccel_stg2;
+            end
+            else if (xAccelPos_stg2) begin 
+                xVelocity <= xVelocity + xAccel_stg2;
+            end
         end
     end
-
     xVel_stg2 <= xVelocity;
+    xVelPos_stg2 <= xVelPos;
 end
 
 //y-axis Velocity
@@ -211,7 +231,7 @@ always_ff @(posedge clk108MHz) begin
         yVelocity <= 0;
         yVelPos <= 1;
     end
-    else if(maxTickY)
+    else if(maxTickY) begin
 
     end
 end
@@ -224,8 +244,9 @@ end
 //x-axis Velocity
 always_ff @(posedge clk108MHz) begin
     //ballColumn <= 80;
+    ballColumn <= xVel_stg2 + 100;
     if (resetPressed) begin
-        ballColumn = xVel_stg2;
+        
     end
 
 end
