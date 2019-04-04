@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/videoClk108MHz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module videoClk108MHz
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BallMotion
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/free_run_shift_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module free_run_shift_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/hex_to_sseg_p.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex_to_sseg_p
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/led_mux8_p.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module led_mux8_p
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/mod_m_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_m_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BallMaze
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

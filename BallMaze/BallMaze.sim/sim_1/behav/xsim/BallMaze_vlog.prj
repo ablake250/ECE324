@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../videoClk108MHz.v" \
+
+sv xil_defaultlib  \
+"../../../../BallMotion.sv" \
+"../../../../free_run_shift_reg.sv" \
+"../../../../hex_to_sseg_p.sv" \
+"../../../../led_mux8_p.sv" \
+"../../../../mod_m_counter.sv" \
+"../../../../BallMaze.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -32,6 +33,8 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
   {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv}
   {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/free_run_shift_reg.sv}
+  {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/hex_to_sseg_p.sv}
+  {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/led_mux8_p.sv}
   {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/mod_m_counter.sv}
   {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv}
 }

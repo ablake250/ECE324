@@ -6,13 +6,20 @@ module BallMotion(
     input logic clk108MHz,
     input logic resetPressed,
 
+    //
+
     //Ball Inputs
     input logic up, down, left, right,
     input logic wallAboveball, wallRightOfball, wallLeftOfball, wallBelowball,
 
     //Ball Outputs
     output logic [7:0] ballColumn,
-    output logic [7:0] ballRow
+    output logic [7:0] ballRow,
+
+    //output temp. x and y to find walls
+
+    output logic [7:0] AN,               // anodes of the 7-segment displays
+    output logic DP,CG,CF,CE,CD,CC,CB,CA
 );
 
 /*
@@ -34,72 +41,21 @@ logic [3:0] xVel_stg2, yVel_stg2;
 logic xVelPos, yVelPos;
 logic xVelPos_stg2, yVelPos_stg2;
 
+//Position Logic Declarations
+logic [7:0] xCoord, yCoord;
 
+//local parameters
 localparam START_X = 128;
 localparam START_Y = 188;
 
+//Seven-segment display
+logic [7:0] sseg7, sseg6, sseg5, sseg4, sseg3, sseg2, sseg1, sseg0;
 
-logic maxTickX, maxTickY;
+//logic for max_tick outputs of modulo counters below:
+logic maxTick;
 
-mod_m_counter #(.M(13500000)) ballRowTick(.clk(clk108MHz), .max_tick(maxTickY), .q());
-mod_m_counter #(.M(13500000)) ballColumnTick(.clk(clk108MHz), .max_tick(maxTickX), .q());
+mod_m_counter #(.M(10000000)) ballRowTick(.clk(clk108MHz), .max_tick(maxTick), .q());
 
-/*
-always_ff @(posedge clk108MHz) begin
-
-    moveBall <= maxTickRow;
-    if (resetPressed) begin ballRowChange <=2'b00; ballColumnChange <= 2'b00; end
-    else if (up & !left & !right) begin ballRowChange <= 2'b11; ballColumnChange <= 2'b00 end
-    else if (up & left) begin ballRowChange <= 2'b11; ballColumnChange <= 2'b11; end
-    else if (up & right) begin ballRowChange <= 2'b11; ballColumnChange <= 2'b01; end
-
-    else if (down & !left & !right) begin ballRowChange <= 2'b01; ballColumnChange <= 2'b00; end
-    else if (down & left) begin ballRowChange <= 2'b01; ballColumnChange <= 2'b11; end
-    else if (down & right) begin ballRowChange <= 2'b01; ballColumnChange <= 2'b01; end
-    else;
-
-    moveBall_stg2 <= moveBall;
-
-    if (resetPressed) begin ballColumn[7:0] = STARTCOLUMN; ballRow = STARTROW; end
-    else if (moveBall_stg2) begin
-        if ()
-    end
-end
-*/
-/*
-always_ff @(posedge clk108MHz) begin
-    moveBallRow <= maxTickRow;
-    if (resetPressed) ballRowChange = 2'b00;
-    else if (up) bballRowChange = 2'b11;
-    else if (down) ballRowChange = 2'b01;
-    else;
-
-    moveBallRow_stg2 <= moveBallRow;
-
-    if (resetPressed) ballRow[7:0] = STARTCOLUMN;
-    else if (moveBallRow_stg2) begin
-        if (ballRowChange == 2'b11 & !wallAboveball) ballRowVel <= ballRow - 1;
-        else if (ballRowChange == 2'b01 & !wallBelowball) ballRowVel <= ballRow + 1;
-        else;
-    end
-end
-always_ff @(posedge clk108MHz) begin
-    moveBallColumn <= maxTickColumn;
-    if (resetPressed) ballColumnChange = 2'b00;
-    else if (left) ballColumnChange = 2'b11;
-    else if (right) ballColumnChange = 2'b01;
-    else;
-
-    moveBallColumn_stg2 <= moveBallColumn;
-
-    if (resetPressed) ballColumn[7:0] = STARTCOLUMN;
-    else if (moveBallColumn_stg2) begin
-        if (ballColumnChange == 2'b11 & !wallLeftofball & !) ballColummVel <= ballColummVel - 1;
-        else if (ballColumnChange == 2'b01 & !wallRightofball) ballColummVel <= ballColummVel + 1;
-        else;
-    end
-end
-*/
 
 ///////////////////////////////////////////////////////////////////////////////////
 //Acceleration of Ball
@@ -113,7 +69,7 @@ always_ff @(posedge clk108MHz) begin
         xAcceleration <= 0;
         xAccel_stg2 <= 0;
     end
-    else if(maxTickX) begin
+    else if(maxTick) begin
         //negative to positive transition
         if (right & (xAccelPositive == 0) & (xAcceleration == 1)) begin
             xAccelPositive <= 1;
@@ -149,8 +105,12 @@ end
 always_ff @(posedge clk108MHz) begin
     if (resetPressed) begin
         yAccelPositive <= 1;
+        YAcceleration <= 0;
+        yAccelPos_stg2 <= 1;
+        yAccel_stg2 <= 0;
+        
     end
-    else if(maxTickY) begin
+    else if(maxTick) begin
         if (down & (yAccelPositive == 0) & (YAcceleration == 1)) begin
             yAccelPositive <= 1;
             YAcceleration <= YAcceleration + 1;
@@ -185,16 +145,16 @@ always_ff @(posedge clk108MHz) begin
     if (resetPressed) begin
         xVelocity <= 0;
         xVelPos <= 1;
-        xVelPos_stg2 <= 0;
+        xVelPos_stg2 <= 1;
         xVel_stg2 <= 0;
     end
-    else if(maxTickY) begin
+    else if(maxTick) begin
         if (xVelPos==0) begin
             if((xVelocity <= xAccel_stg2) & (xAccelPos_stg2)) begin
                 xVelocity <= xAccel_stg2 - xVelocity;
                 xVelPos <= 1;
             end
-            else if ((({1'b0, xVelocity} + {1'b0, xAccelPos_stg2}) >= 4'b1111) & !(xAccelPos_stg2)) begin
+            else if ((({1'b0, xVelocity} + {1'b0, xAccel_stg2}) >= 4'b1111) & !(xAccelPos_stg2)) begin
                 xVelocity <= 4'b1111;
             end
             else if (!xAccelPos_stg2) begin 
@@ -209,7 +169,7 @@ always_ff @(posedge clk108MHz) begin
                 xVelocity <= xAccel_stg2 - xVelocity;
                 xVelPos <= 0;
             end
-            else if ((({1'b0, xVelocity} + {1'b0,xAccelPos_stg2}) > 4'b1111) & (xAccelPos_stg2)) begin
+            else if ((({1'b0, xVelocity} + {1'b0,xAccel_stg2}) > 4'b1111) & (xAccelPos_stg2)) begin
                 xVelocity <= 4'b1111;
             end
 
@@ -230,10 +190,44 @@ always_ff @(posedge clk108MHz) begin
     if (resetPressed) begin
         yVelocity <= 0;
         yVelPos <= 1;
+        yVelPos_stg2 <= 1;
+        yVel_stg2 <= 0;
     end
-    else if(maxTickY) begin
+    else if(maxTick) begin
+        if (yVelPos==0) begin
+            if((yVelocity <= yAccel_stg2) & (yAccelPos_stg2)) begin
+                yVelocity <= yAccel_stg2 - yVelocity;
+                yVelPos <= 1;
+            end
+            else if ((({1'b0, yVelocity} + {1'b0, yAccel_stg2}) >= 4'b1111) & !(yAccelPos_stg2)) begin
+                yVelocity <= 4'b1111;
+            end
+            else if (!yAccelPos_stg2) begin 
+                yVelocity <= yVelocity + yAccel_stg2;
+            end
+            else if (yAccelPos_stg2) begin 
+                yVelocity <= yVelocity - yAccel_stg2;
+            end
+        end
+        else if (yVelPos == 1) begin
+            if ((yVelocity <= yAccel_stg2) & !(yAccelPos_stg2)) begin
+                yVelocity <= yAccel_stg2 - yVelocity;
+                yVelPos <= 0;
+            end
+            else if ((({1'b0, yVelocity} + {1'b0,yAccel_stg2}) > 4'b1111) & (yAccelPos_stg2)) begin
+                yVelocity <= 4'b1111;
+            end
 
+            else if (!yAccelPos_stg2) begin 
+                yVelocity <= yVelocity - yAccel_stg2;
+            end
+            else if (yAccelPos_stg2) begin 
+                yVelocity <= yVelocity + yAccel_stg2;
+            end
+        end
     end
+    yVel_stg2 <= yVelocity;
+    yVelPos_stg2 <= yVelPos;
 end
 
 
@@ -241,22 +235,88 @@ end
 //Position of Ball
 ///////////////////////////////////////////////////////////////////////////////////
 
-//x-axis Velocity
+//x-axis Coordinates
 always_ff @(posedge clk108MHz) begin
     //ballColumn <= 80;
-    ballColumn <= xVel_stg2 + 100;
+    //ballColumn <= xVel_stg2 + 100;
     if (resetPressed) begin
-        
+        xCoord <= START_X;
+        ballColumn <= START_X;
     end
-
+    else if (maxTick) begin
+        if (xVelPos_stg2) begin
+            if (({1'b0, xCoord} + xVel_stg2) >= 8'b11111000) begin
+                xCoord <= 8'b11111000;
+            end
+            if (wallAboveball)
+            else begin
+                xCoord <= xCoord + xVel_stg2;
+            end
+        end
+        else if (!(xVelPos_stg2)) begin
+            if ((xCoord +8'b00000111) <= xVel_stg2) begin
+                xCoord <= 8'b00000111;
+            end
+            else begin
+                xCoord <= xCoord - xVel_stg2;
+            end
+        end
+    end
+    ballColumn <= xCoord;
 end
 
-//y-axis Velocity
+//y-axis Coordinates
 always_ff @(posedge clk108MHz) begin
-    ballRow <= 80;
+    //ballRow <= yVel_stg2 + 80;
     if (resetPressed) begin
-
+        yCoord <= START_Y;
+        ballRow <= START_Y;
     end
+    else  if (maxTick)begin
+        if (yVelPos_stg2) begin
+            if (({1'b0, yCoord} + yVel_stg2) >= 8'b11111000) begin
+                yCoord <= 8'b11111000;
+            end
+            else begin
+                yCoord <= yCoord + yVel_stg2;
+            end
+        end
+        else if (!(yVelPos_stg2)) begin
+            if (yCoord + 8'b0000111 <= yVel_stg2) begin
+                yCoord <= 8'b00000111;
+            end
+            else begin
+                yCoord <= yCoord - yVel_stg2;
+            end
+        end
+    end
+    ballRow <= yCoord;
 end
+
+//////////////////////////////////////////////////////////////////
+//Conversion for SSEG
+//////////////////////////////////////////////////////////////////
+
+hex_to_sseg_p hts7 (.hex(xAccel_stg2), .dp(xAccelPos_stg2), .sseg_p(sseg7));
+hex_to_sseg_p hts6 (.hex(yAccel_stg2), .dp(yAccelPos_stg2), .sseg_p(sseg6));
+
+hex_to_sseg_p hts5 (.hex(xVel_stg2), .dp(xVelPos_stg2), .sseg_p(sseg5));
+hex_to_sseg_p hts4 (.hex(yVel_stg2), .dp(yVelPos_stg2), .sseg_p(sseg4));
+
+hex_to_sseg_p hts3 (.hex(ballColumn[7:4]), .dp(1'b0), .sseg_p(sseg3));
+hex_to_sseg_p hts2 (.hex(ballColumn[3:0]), .dp(1'b0), .sseg_p(sseg2));
+
+hex_to_sseg_p hts1 (.hex(ballRow[7:4]), .dp(1'b0), .sseg_p(sseg1));
+hex_to_sseg_p hts0 (.hex(ballRow[3:0]), .dp(1'b0), .sseg_p(sseg0));
+
+
+//////////////////////////////////////////////////////////////////
+//generate SSEG for Acceleration, Velocity, and Position
+//////////////////////////////////////////////////////////////////
+
+led_mux8_p dm8_0(
+    .clk(clk108MHz), .reset(1'b0), 
+    .in7(sseg7), .in6(sseg6), .in5(sseg5), .in4(sseg4), .in3(sseg3), .in2(sseg2), .in1(sseg1), .in0(sseg0),
+    .an(AN[7:0]), .sseg({DP,CG,CF,CE,CD,CC,CB,CA}));
 
 endmodule

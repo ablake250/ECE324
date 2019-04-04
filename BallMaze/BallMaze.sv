@@ -1,5 +1,3 @@
-
-
 module BallMaze(
     //clock signal
     input logic CLK100MHZ,
@@ -10,7 +8,11 @@ module BallMaze(
 
     //VGA
     output logic VGA_VS, VGA_HS,
-    output logic [3:0] VGA_R, VGA_G, VGA_B 
+    output logic [3:0] VGA_R, VGA_G, VGA_B,
+    
+    //SSEG
+    output logic [7:0] AN,               
+    output logic DP,CG,CF,CE,CD,CC,CB,CA
 );
 
 ///////////////////////////////////////////////////////////////////
@@ -43,6 +45,8 @@ logic [10:0] videoRow_stg1;    // range needed is 0 to (1023 +  1 +   3 +  38)
 logic up, down, left, right;
 logic wallInTile_stg3;
 logic wallAboveball, wallRightOfball, wallLeftOfball, wallBelowball;
+logic [3:0] ballLookAhead;
+logic [3:0] xVel_stg2, yVel_stg2;
 logic [7:0] ballColumn, ballRow;
 
 //Sprite (ball) border logic
@@ -187,7 +191,7 @@ always_ff @(posedge clk108MHz) begin
 
 	if (!videoPixelWithinball_stg4) videoPixelRGB_stg5[11:0] <= videoPixelRGB_stg4[11:0]; // don't change
     else if (!ballVideoPixelIndex_stg4) videoPixelRGB_stg5[11:0] <= videoPixelRGB_stg4[11:0]; // don't change
-    else videoPixelRGB_stg5[11:0] <= 12'hFF0; // yellow ball body
+    else videoPixelRGB_stg5[11:0] <= 12'hFAA; // yellow ball body
 
 	videoRow_stg5[10:0] <= videoRow_stg4[10:0];
 	videoColumn_stg5[10:0] <= videoColumn_stg4[10:0];

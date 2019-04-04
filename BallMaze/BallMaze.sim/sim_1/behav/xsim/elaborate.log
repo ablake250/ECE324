@@ -1,0 +1,25 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto abde09b9d9004461b96a9a79fef0ba97 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot BallMaze_behav xil_defaultlib.BallMaze xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/IBUF.v" Line 29. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/MMCME2_ADV.v" Line 123. Module MMCME2_ADV(CLKFBOUT_MULT_F=10.125,CLKIN1_PERIOD=10.0,CLKOUT0_DIVIDE_F=9.375) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2018.3/continuous/2018_12_06_2405991/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.free_run_shift_reg(N=4)
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.12...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.videoClk108MHz
+Compiling module xil_defaultlib.mod_m_counter(M=13500000)
+Compiling module xil_defaultlib.hex_to_sseg_p
+Compiling module xil_defaultlib.led_mux8_p
+Compiling module xil_defaultlib.BallMotion
+Compiling module xil_defaultlib.BallMaze
+Compiling module xil_defaultlib.glbl
