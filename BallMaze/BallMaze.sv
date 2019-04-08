@@ -16,8 +16,6 @@ module BallMaze(
 );
 
 ///////////////////////////////////////////////////////////////////
-
-///////////////////////////////////////////////////////////////////
 //Parameters
 ///////////////////////////////////////////////////////////////////
 
@@ -111,7 +109,6 @@ free_run_shift_reg #(.N(4)) BTNL_instance(.clk(clk108MHz), .s_in(BTNL), .s_out(l
 BallMotion ballMotion0 (
 	.*
 );
-/////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////
 // Generate Video Display Column and Row.
@@ -127,7 +124,7 @@ always_ff @(posedge clk108MHz) begin
 	end
 end
 
-
+// Find wall collisions
 always_ff @(posedge clk108MHz) begin
     wallInTile_stg3 <= tileType_stg2[5:0]!=6'h00 & tileType_stg2[5:0]!=6'h01 & tileType_stg2[5:0]!=6'h02; // only 3 tile types that aren't walls
 	if (videoColumn_stg3[9:5]==(ballColumn[7:3]  ) & videoRow_stg3[9:5]==(ballRow[7:3]-1)) wallAboveball   <= wallInTile_stg3;
@@ -155,7 +152,6 @@ always_ff @(posedge clk108MHz) begin
 	tileType_stg2[5:0] <= BallMazeTileMapRom[{videoRow_stg1[9:5],videoColumn_stg1[9:5]}];
 end
 
-
 //Draw Tiles
 always_ff @(posedge clk108MHz) begin
 	// generate pipeline stage 2 signals
@@ -164,7 +160,7 @@ always_ff @(posedge clk108MHz) begin
 	
 	// generate pipeline stage 3 signals
 	tileVideoPixelIndex_stg3[1:0] <= BallMazeTileSet[{tileType_stg2[5:0],videoRow_stg2[4:2],videoColumn_stg2[4:2]}]; 
-		// skipping video bits 1 and 0 duplicates rows and columns	
+	// skipping video bits 1 and 0 duplicates rows and columns	
 	videoRow_stg3[10:0] <= videoRow_stg2[10:0];
 	videoColumn_stg3[10:0] <= videoColumn_stg2[10:0];
 
@@ -180,7 +176,6 @@ always_ff @(posedge clk108MHz) begin
 end
 
 //Ball Sprite
-// Overlay ball Sprite
 always_ff @(posedge clk108MHz) begin
 	ballSpriteRow_stg3[3:0]    <= videoRow_stg2[5:2]    - ballTopRow[3:0];
 	ballSpriteColumn_stg3[3:0] <= videoColumn_stg2[5:2] - ballLeftColumn[3:0];
@@ -209,6 +204,5 @@ always_ff @(posedge clk108MHz) begin
 	VGA_HS <= (videoColumn_stg5 >= (HD+HF)) && (videoColumn_stg5 <= (HD+HF+HR));
     VGA_VS <= (videoRow_stg5    >= (VD+VF)) && (videoRow_stg5    <= (VD+VF+VR));
 end
-
 
 endmodule

@@ -5,31 +5,20 @@ module BallMotion(
     //Reset and clock signals
     input logic clk108MHz,
     input logic resetPressed,
-
-    //
-
     //Ball Inputs
     input logic up, down, left, right,
     input logic wallAboveball, wallRightOfball, wallLeftOfball, wallBelowball,
-
     //Ball Outputs
     output logic [7:0] ballColumn,
     output logic [7:0] ballRow,
-
-    //output temp. x and y to find walls
-    output logic [3:0] vertOffset, horizOffset,
-
-    output logic [7:0] AN,               // anodes of the 7-segment displays
+    //Output logic to drive 7-segment displays
+    output logic [7:0] AN,
     output logic DP,CG,CF,CE,CD,CC,CB,CA
-
 );
 
-/*
-logic maxTickRow; moveBallRow; moveBallRow_stg2;
-logic maxTickColumn; moveBallColumn; moveBallColumn_stg2;
-logic [1:0] ballColumnChange=2'b00, ballRowChange=2'b00;
-logic ballColummVel; ballRowVel;
-*/
+//////////////////////////////////////////////////////////////////////////////////
+//logic declarations
+//////////////////////////////////////////////////////////////////////////////////
 
 //Acceleration Logic Declarations
 logic [3:0] xAcceleration, YAcceleration;
@@ -56,7 +45,10 @@ logic [7:0] sseg7, sseg6, sseg5, sseg4, sseg3, sseg2, sseg1, sseg0;
 //logic for max_tick outputs of modulo counters below:
 logic maxTick;
 
-mod_m_counter #(.M(10000000)) ballRowTick(.clk(clk108MHz), .max_tick(maxTick), .q());
+////////////////////////////////////////////////////////////////////////////////////
+//Generate tick rate for ball movement calculations
+////////////////////////////////////////////////////////////////////////////////////
+mod_m_counter #(.M(10000000)) ballTick(.clk(clk108MHz), .max_tick(maxTick), .q());
 
 
 ///////////////////////////////////////////////////////////////////////////////////
@@ -110,7 +102,6 @@ always_ff @(posedge clk108MHz) begin
         YAcceleration <= 0;
         yAccelPos_stg2 <= 1;
         yAccel_stg2 <= 0;
-        
     end
     else if(maxTick) begin
         if (down & (yAccelPositive == 0) & (YAcceleration == 1)) begin
@@ -232,15 +223,12 @@ always_ff @(posedge clk108MHz) begin
     yVelPos_stg2 <= yVelPos;
 end
 
-
 ///////////////////////////////////////////////////////////////////////////////////
 //Position of Ball
 ///////////////////////////////////////////////////////////////////////////////////
 
 //x-axis Coordinates
 always_ff @(posedge clk108MHz) begin
-    //ballColumn <= 80;
-    //ballColumn <= xVel_stg2 + 100;
     if (resetPressed) begin
         xCoord <= START_X;
         ballColumn <= START_X;
@@ -274,7 +262,6 @@ end
 
 //y-axis Coordinates
 always_ff @(posedge clk108MHz) begin
-    //ballRow <= yVel_stg2 + 80;
     if (resetPressed) begin
         yCoord <= START_Y;
         ballRow <= START_Y;
@@ -307,25 +294,17 @@ always_ff @(posedge clk108MHz) begin
 end
 
 //////////////////////////////////////////////////////////////////
-//Conversion for SSEG
+//SSEG
 //////////////////////////////////////////////////////////////////
 
 hex_to_sseg_p hts7 (.hex(xAccel_stg2), .dp(xAccelPos_stg2), .sseg_p(sseg7));
 hex_to_sseg_p hts6 (.hex(yAccel_stg2), .dp(yAccelPos_stg2), .sseg_p(sseg6));
-
 hex_to_sseg_p hts5 (.hex(xVel_stg2), .dp(xVelPos_stg2), .sseg_p(sseg5));
 hex_to_sseg_p hts4 (.hex(yVel_stg2), .dp(yVelPos_stg2), .sseg_p(sseg4));
-
 hex_to_sseg_p hts3 (.hex(ballColumn[7:4]), .dp(1'b0), .sseg_p(sseg3));
 hex_to_sseg_p hts2 (.hex(ballColumn[3:0]), .dp(1'b0), .sseg_p(sseg2));
-
 hex_to_sseg_p hts1 (.hex(ballRow[7:4]), .dp(1'b0), .sseg_p(sseg1));
 hex_to_sseg_p hts0 (.hex(ballRow[3:0]), .dp(1'b0), .sseg_p(sseg0));
-
-
-//////////////////////////////////////////////////////////////////
-//generate SSEG for Acceleration, Velocity, and Position
-//////////////////////////////////////////////////////////////////
 
 led_mux8_p dm8_0(
     .clk(clk108MHz), .reset(1'b0), 
