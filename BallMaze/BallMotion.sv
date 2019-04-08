@@ -17,9 +17,11 @@ module BallMotion(
     output logic [7:0] ballRow,
 
     //output temp. x and y to find walls
+    output logic [3:0] vertOffset, horizOffset,
 
     output logic [7:0] AN,               // anodes of the 7-segment displays
     output logic DP,CG,CF,CE,CD,CC,CB,CA
+
 );
 
 /*
@@ -248,7 +250,9 @@ always_ff @(posedge clk108MHz) begin
             if (({1'b0, xCoord} + xVel_stg2) >= 8'b11111000) begin
                 xCoord <= 8'b11111000;
             end
-            if (wallAboveball)
+            else if (wallRightOfball) begin
+                xCoord[3:0] <= 4'b0000;
+            end
             else begin
                 xCoord <= xCoord + xVel_stg2;
             end
@@ -256,6 +260,9 @@ always_ff @(posedge clk108MHz) begin
         else if (!(xVelPos_stg2)) begin
             if ((xCoord +8'b00000111) <= xVel_stg2) begin
                 xCoord <= 8'b00000111;
+            end
+            else if (wallLeftOfball)  begin
+                xCoord[3:0] <= 4'b0000;
             end
             else begin
                 xCoord <= xCoord - xVel_stg2;
@@ -277,6 +284,9 @@ always_ff @(posedge clk108MHz) begin
             if (({1'b0, yCoord} + yVel_stg2) >= 8'b11111000) begin
                 yCoord <= 8'b11111000;
             end
+            else if (wallBelowball) begin
+                yCoord[3:0] <= 4'b0000;
+            end
             else begin
                 yCoord <= yCoord + yVel_stg2;
             end
@@ -284,6 +294,9 @@ always_ff @(posedge clk108MHz) begin
         else if (!(yVelPos_stg2)) begin
             if (yCoord + 8'b0000111 <= yVel_stg2) begin
                 yCoord <= 8'b00000111;
+            end
+            else if (wallAboveball) begin
+                yCoord[3:0] <= 4'b0000;
             end
             else begin
                 yCoord <= yCoord - yVel_stg2;

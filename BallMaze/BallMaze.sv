@@ -49,6 +49,9 @@ logic [3:0] ballLookAhead;
 logic [3:0] xVel_stg2, yVel_stg2;
 logic [7:0] ballColumn, ballRow;
 
+//ball collisions
+logic [3:0] vertOffset, horizOffset;
+
 //Sprite (ball) border logic
 logic [7:0] ballLeftColumn, ballRightColumn, ballTopRow, ballBottomRow;
 
@@ -124,6 +127,7 @@ always_ff @(posedge clk108MHz) begin
 	end
 end
 
+
 always_ff @(posedge clk108MHz) begin
     wallInTile_stg3 <= tileType_stg2[5:0]!=6'h00 & tileType_stg2[5:0]!=6'h01 & tileType_stg2[5:0]!=6'h02; // only 3 tile types that aren't walls
 	if (videoColumn_stg3[9:5]==(ballColumn[7:3]  ) & videoRow_stg3[9:5]==(ballRow[7:3]-1)) wallAboveball   <= wallInTile_stg3;
@@ -131,7 +135,6 @@ always_ff @(posedge clk108MHz) begin
 	if (videoColumn_stg3[9:5]==(ballColumn[7:3]  ) & videoRow_stg3[9:5]==(ballRow[7:3]+1)) wallBelowball   <= wallInTile_stg3;
 	if (videoColumn_stg3[9:5]==(ballColumn[7:3]-1) & videoRow_stg3[9:5]==(ballRow[7:3]  )) wallLeftOfball  <= wallInTile_stg3;	
 end
-
 
 //increment location to display
 always_ff @(posedge clk108MHz) begin
