@@ -48,7 +48,7 @@ logic [3:0] xVel_stg2, yVel_stg2;
 logic [7:0] ballColumn, ballRow;
 
 //ball collisions
-logic [3:0] vertOffset, horizOffset;
+logic [4:0] vertOffset, horizOffset;
 
 //Sprite (ball) border logic
 logic [7:0] ballLeftColumn, ballRightColumn, ballTopRow, ballBottomRow;
@@ -124,13 +124,43 @@ always_ff @(posedge clk108MHz) begin
 	end
 end
 
-// Find wall collisions
+// Find wall collisions (old)
+/*
 always_ff @(posedge clk108MHz) begin
     wallInTile_stg3 <= tileType_stg2[5:0]!=6'h00 & tileType_stg2[5:0]!=6'h01 & tileType_stg2[5:0]!=6'h02; // only 3 tile types that aren't walls
 	if (videoColumn_stg3[9:5]==(ballColumn[7:3]  ) & videoRow_stg3[9:5]==(ballRow[7:3]-1)) wallAboveball   <= wallInTile_stg3;
 	if (videoColumn_stg3[9:5]==(ballColumn[7:3]+1) & videoRow_stg3[9:5]==(ballRow[7:3]  )) wallRightOfball <= wallInTile_stg3;
 	if (videoColumn_stg3[9:5]==(ballColumn[7:3]  ) & videoRow_stg3[9:5]==(ballRow[7:3]+1)) wallBelowball   <= wallInTile_stg3;
 	if (videoColumn_stg3[9:5]==(ballColumn[7:3]-1) & videoRow_stg3[9:5]==(ballRow[7:3]  )) wallLeftOfball  <= wallInTile_stg3;	
+end
+*/
+
+//Horizontal Collisions
+always_ff @(posedge clk108MHz) begin
+	if (horizOffset[4] == 1) begin
+		//wall right case
+		if (videoColumn_stg3[ballColumn + horizOffset[3:0]] != 0) wallRightOfball <= 1;
+		else wallRightOfball <= 0;
+	else begin
+		// wall left case
+		if (videoColumn_stg3[ballColumn - horizOffset[3:0]] != 0;) wallLeftOfball <= 1;
+		else wallLeftOfball <= 0;
+	end
+end
+
+//Vertical Collisions
+always_ff @(posedge clk108MHz) begin
+	if (vertOffset[4] == 1) begin
+		//wall below case
+		if (videoRow_stg3[ballRow - vertOffset[3:0]] != 0) wallBelowball <= 1;
+		else wallBelowball <= 0;
+	end
+	else begin
+		//wall above case
+		if (videoRow_stg3[ballRow - vertOffset[3:0]] != 0) wallAboveball <= 1;
+		else wallAboveball <= 0;
+
+	end
 end
 
 //increment location to display
@@ -167,7 +197,7 @@ always_ff @(posedge clk108MHz) begin
 	// generate pipeline stage 4 signals
 	case(tileVideoPixelIndex_stg3[1:0])
 		0: videoPixelRGB_stg4[11:0] <= 12'h000; // black background
-		1: videoPixelRGB_stg4[11:0] <= 12'h00F; // blue wall
+		1: videoPixelRGB_stg4[11:0] <= 12'h0FF; // blue wall
 		2: videoPixelRGB_stg4[11:0] <= 12'hFCA; // peach pellets
 		3: videoPixelRGB_stg4[11:0] <= 12'hxxx; // unused
 	endcase

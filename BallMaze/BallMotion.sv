@@ -13,7 +13,9 @@ module BallMotion(
     output logic [7:0] ballRow,
     //Output logic to drive 7-segment displays
     output logic [7:0] AN,
-    output logic DP,CG,CF,CE,CD,CC,CB,CA
+    output logic DP,CG,CF,CE,CD,CC,CB,CA,
+    //Output logic for ball detection
+    output logic [4:0] vertOffset, horizOffset
 );
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -176,6 +178,7 @@ always_ff @(posedge clk108MHz) begin
     end
     xVel_stg2 <= xVelocity;
     xVelPos_stg2 <= xVelPos;
+    horizOffset <= {xVelPos_stg2, xVel_stg2};
 end
 
 //y-axis Velocity
@@ -221,6 +224,7 @@ always_ff @(posedge clk108MHz) begin
     end
     yVel_stg2 <= yVelocity;
     yVelPos_stg2 <= yVelPos;
+    vertOffset <= {yVelPos_stg2, yVelPos_stg2};
 end
 
 ///////////////////////////////////////////////////////////////////////////////////
