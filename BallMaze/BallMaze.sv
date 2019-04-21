@@ -5,6 +5,7 @@ module BallMaze(
     //Buttons
     input logic CPU_RESETN,
     input logic BTNU, BTND, BTNL, BTNR,
+	input logic SW[15:0], // 16 switches
 
     //VGA
     output logic VGA_VS, VGA_HS,
@@ -53,6 +54,8 @@ logic [4:0] vertOffset, horizOffset;
 //Sprite (ball) border logic
 logic [7:0] ballLeftColumn, ballRightColumn, ballTopRow, ballBottomRow;
 
+
+
 //Ball Maze Tile Initialized in Memory
 (* rom_style = "block" *) logic [5:0] BallMazeTileMapRom [0:1023]; // memory array for tile map
 initial $readmemh ("BallMazeTileRom.txt", BallMazeTileMapRom, 0, 10'h3FF); // initialize ballTileSet
@@ -67,7 +70,6 @@ logic pelletEaten_stg3;
 logic [10:0] videoRow_stg3, videoColumn_stg3;
 logic [11:0] videoPixelRGB_stg4;
 logic [10:0] videoRow_stg4, videoColumn_stg4;
-
 
 //
 logic [3:0] ballSpriteRow_stg3, ballSpriteColumn_stg3;
@@ -136,14 +138,16 @@ end
 */
 
 //Horizontal Collisions
+/*
 always_ff @(posedge clk108MHz) begin
 	if (horizOffset[4] == 1) begin
 		//wall right case
-		if (videoColumn_stg3[ballColumn + horizOffset[3:0]] != 0) wallRightOfball <= 1;
+		if(videoColumn_stg3[ballColumn + 8 + horizOffset[3:0]] != 0) wallRightOfball <= 1;
 		else wallRightOfball <= 0;
+	end
 	else begin
 		// wall left case
-		if (videoColumn_stg3[ballColumn - horizOffset[3:0]] != 0;) wallLeftOfball <= 1;
+		if(videoColumn_stg3[ballColumn - 8 - horizOffset[3:0]] != 0) wallLeftOfball <= 1;
 		else wallLeftOfball <= 0;
 	end
 end
@@ -152,16 +156,47 @@ end
 always_ff @(posedge clk108MHz) begin
 	if (vertOffset[4] == 1) begin
 		//wall below case
-		if (videoRow_stg3[ballRow - vertOffset[3:0]] != 0) wallBelowball <= 1;
+		if (videoRow_stg3[ballRow + 8 + vertOffset[3:0]] != 0) wallBelowball <= 1;
 		else wallBelowball <= 0;
 	end
 	else begin
 		//wall above case
-		if (videoRow_stg3[ballRow - vertOffset[3:0]] != 0) wallAboveball <= 1;
+		if (videoRow_stg3[ballRow - 8 - vertOffset[3:0]] != 0) wallAboveball <= 1;
 		else wallAboveball <= 0;
 
 	end
 end
+*/
+
+//Collisions Attempt 2, horizontal
+/*
+always_ff @(posedge clk108MHz) begin
+	if (BallMazeTileSet[{tileType_stg2[5:0],(ballRow[4:2]),ballColumn[4:2]+horizOffset[3:2]}] != 0) begin
+		wallRightOfball <= 1;
+	end
+	else wallRightOfball <= 0;
+end
+*/
+
+//Switch Collision test
+always_ff @(posedge clk108MHz) begin
+	if(SW[4]) begin
+    	wallRightOfball <= SW[0];
+		wallLeftOfball <= SW[3];
+		wallAboveball <= SW[2];
+		wallBelowball <= SW[1];
+	end
+	else begin
+		if (videoPixelRGB_stg4 == 12'h0FF) begin
+			if (ballRow == videoRow_stg4 & ballColumn <= videoColumn_stg4) begin
+				if (ballColumn + horizOffset >= videoColumn_stg4) wallRightOfball <= 1;
+			end
+		end
+	end
+end
+
+
+
 
 //increment location to display
 always_ff @(posedge clk108MHz) begin

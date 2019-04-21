@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Apr  8 16:47:33 2019
+| Date         : Thu Apr 18 13:48:43 2019
 | Host         : Alex-XPS running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file BallMaze_control_sets_placed.rpt
 | Design       : BallMaze
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    15 |
-| Unused register locations in slices containing registers |    51 |
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    42 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,11 +34,13 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      2 |            1 |
-|      4 |            6 |
+|      3 |            1 |
+|      4 |            3 |
 |      5 |            2 |
 |      6 |            1 |
-|     11 |            2 |
+|      8 |            2 |
+|     11 |            1 |
+|     12 |            1 |
 |    16+ |            3 |
 +--------+--------------+
 
@@ -49,36 +51,35 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             158 |           62 |
+| No           | No                    | No                     |             161 |           56 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              50 |           16 |
-| Yes          | No                    | No                     |              49 |           20 |
+| No           | Yes                   | No                     |              51 |           16 |
+| Yes          | No                    | No                     |              57 |           16 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              20 |            7 |
+| Yes          | Yes                   | No                     |              17 |           10 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------------+------------------------------------------+----------------------------------+------------------+----------------+
-|         Clock Signal        |               Enable Signal              |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
-+-----------------------------+------------------------------------------+----------------------------------+------------------+----------------+
-|  videoClk108MHz_0/clk108MHz | ballMotion0/ballTick/q_reg[0]_0          | ballMotion0/yCoord[1]_i_1_n_0    |                1 |              2 |
-|  videoClk108MHz_0/clk108MHz | ballMotion0/xVelocity[3]_i_1_n_0         | CPU_RESETN_instance/resetPressed |                1 |              4 |
-|  videoClk108MHz_0/clk108MHz | ballMotion0/yVelocity[3]_i_1_n_0         | CPU_RESETN_instance/resetPressed |                2 |              4 |
-|  videoClk108MHz_0/clk108MHz | ballMotion0/ballTick/q_reg[0]_0          |                                  |                2 |              4 |
-|  videoClk108MHz_0/clk108MHz | ballMotion0/ballTick/yVelPos_stg2_reg[0] |                                  |                2 |              4 |
-|  videoClk108MHz_0/clk108MHz | ballMotion0/ballTick/E[0]                | CPU_RESETN_instance/resetPressed |                1 |              4 |
-|  videoClk108MHz_0/clk108MHz | ballMotion0/ballTick/xVelPos_stg2_reg[0] |                                  |                2 |              4 |
-|  videoClk108MHz_0/clk108MHz |                                          | videoPixelRGB_stg5               |                2 |              5 |
-|  videoClk108MHz_0/clk108MHz | videoColumn_stg1[10]_i_1_n_0             |                                  |                2 |              5 |
-|  videoClk108MHz_0/clk108MHz | videoColumn_stg1[10]_i_1_n_0             | videoRow_stg1                    |                2 |              6 |
-|  videoClk108MHz_0/clk108MHz |                                          | VGA_G[2]_i_1_n_0                 |                4 |             11 |
-|  videoClk108MHz_0/clk108MHz |                                          | videoColumn_stg1[10]_i_1_n_0     |                4 |             11 |
-|  videoClk108MHz_0/clk108MHz |                                          | ballMotion0/ballTick/maxTick     |                6 |             23 |
-|  videoClk108MHz_0/clk108MHz | VGA_VS_OBUF                              |                                  |               12 |             32 |
-|  videoClk108MHz_0/clk108MHz |                                          |                                  |               62 |            169 |
-+-----------------------------+------------------------------------------+----------------------------------+------------------+----------------+
++-----------------------------+--------------------------------------------+----------------------------------------------+------------------+----------------+
+|         Clock Signal        |                Enable Signal               |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++-----------------------------+--------------------------------------------+----------------------------------------------+------------------+----------------+
+|  videoClk108MHz_0/clk108MHz | wallLeftOfball_reg_i_1_n_0                 |                                              |                2 |              3 |
+|  videoClk108MHz_0/clk108MHz | ballMotion0/ballTick/maxTick               | ballMotion0/ballTick/yAccelPos_stg2_reg_0[0] |                3 |              4 |
+|  videoClk108MHz_0/clk108MHz | ballMotion0/ballTick/maxTick               | ballMotion0/ballTick/SR[0]                   |                3 |              4 |
+|  videoClk108MHz_0/clk108MHz | ballMotion0/ballTick/yAccelPositive_reg[0] | CPU_RESETN_instance/resetPressed             |                2 |              4 |
+|  videoClk108MHz_0/clk108MHz |                                            | videoPixelRGB_stg5                           |                2 |              5 |
+|  videoClk108MHz_0/clk108MHz | videoColumn_stg1[10]_i_1_n_0               | videoRow_stg1                                |                2 |              5 |
+|  videoClk108MHz_0/clk108MHz | videoColumn_stg1[10]_i_1_n_0               |                                              |                2 |              6 |
+|  videoClk108MHz_0/clk108MHz | ballMotion0/ballTick/q_reg[0]_0[0]         |                                              |                2 |              8 |
+|  videoClk108MHz_0/clk108MHz | ballMotion0/ballTick/E[0]                  |                                              |                3 |              8 |
+|  videoClk108MHz_0/clk108MHz |                                            | videoColumn_stg1[10]_i_1_n_0                 |                4 |             11 |
+|  videoClk108MHz_0/clk108MHz |                                            | VGA_R[3]_i_1_n_0                             |                4 |             12 |
+|  videoClk108MHz_0/clk108MHz |                                            | ballMotion0/ballTick/maxTick                 |                6 |             23 |
+|  videoClk108MHz_0/clk108MHz | VGA_VS_OBUF                                |                                              |                7 |             32 |
+|  videoClk108MHz_0/clk108MHz |                                            |                                              |               56 |            172 |
++-----------------------------+--------------------------------------------+----------------------------------------------+------------------+----------------+
 
 

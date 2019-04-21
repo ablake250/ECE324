@@ -47,11 +47,43 @@ logic [7:0] sseg7, sseg6, sseg5, sseg4, sseg3, sseg2, sseg1, sseg0;
 //logic for max_tick outputs of modulo counters below:
 logic maxTick;
 
+//initialize ball location
+initial begin
+	ballColumn <= START_X;
+	xCoord <= START_X;
+	yCoord <= START_Y;
+    ballRow <= START_Y;
+end
+
 ////////////////////////////////////////////////////////////////////////////////////
 //Generate tick rate for ball movement calculations
 ////////////////////////////////////////////////////////////////////////////////////
+
 mod_m_counter #(.M(10000000)) ballTick(.clk(clk108MHz), .max_tick(maxTick), .q());
 
+univ_bin_counter #(.N(4)) ubc0(
+	
+	//inputs below
+	.clk(clk108MHz),	//clock signal
+	.syn_clr(0),		//synchronous clear (set to 0)
+	.load(xUpdate),	    //load (set to 0)
+	.d(xVel_stg2),		//d input set to 0
+	.en(maxTick),		//enabled every time timeBaseTick is high
+	.up(0),			    //direction of counter, determined by always_ff block below
+
+	//outputs below
+	.q(),				//q output to t (time)
+	.max_tick(),	    //output when counter maxes out
+	.min_tick(xUpdate)	//output when counter hits 0
+);
+
+///////////////////////////////////////////////////////////////////////////////////
+//Control Logic for binary counters
+///////////////////////////////////////////////////////////////////////////////////
+
+always_ff @(posedge clk108MHz) begin
+    if(xUpdate) 
+end
 
 ///////////////////////////////////////////////////////////////////////////////////
 //Acceleration of Ball
@@ -149,6 +181,10 @@ always_ff @(posedge clk108MHz) begin
                 xVelocity <= xAccel_stg2 - xVelocity;
                 xVelPos <= 1;
             end
+            else if (wallLeftOfball) begin
+                xVelocity <= 0;
+                xVelPos <= 1;
+            end
             else if ((({1'b0, xVelocity} + {1'b0, xAccel_stg2}) >= 4'b1111) & !(xAccelPos_stg2)) begin
                 xVelocity <= 4'b1111;
             end
@@ -164,6 +200,9 @@ always_ff @(posedge clk108MHz) begin
                 xVelocity <= xAccel_stg2 - xVelocity;
                 xVelPos <= 0;
             end
+            else if (wallRightOfball) begin
+                xVelocity <= 0;
+            end
             else if ((({1'b0, xVelocity} + {1'b0,xAccel_stg2}) > 4'b1111) & (xAccelPos_stg2)) begin
                 xVelocity <= 4'b1111;
             end
@@ -176,7 +215,15 @@ always_ff @(posedge clk108MHz) begin
             end
         end
     end
-    xVel_stg2 <= xVelocity;
+    //xVel_stg2 <= xVelocity;
+    case(xVelocity) begin
+        0:          xVel_stg2 <= 4;
+        1:          xVel_stg2 <= 3;
+        2:          xVel_stg2 <= 2;
+        3:          xVel_stg2 <= 1;
+        4:          xVel_stg2 <= 0;
+        default:    xVel_stg2 <= 0;
+    endcase
     xVelPos_stg2 <= xVelPos;
     horizOffset <= {xVelPos_stg2, xVel_stg2};
 end
@@ -195,6 +242,10 @@ always_ff @(posedge clk108MHz) begin
                 yVelocity <= yAccel_stg2 - yVelocity;
                 yVelPos <= 1;
             end
+            else if (wallAboveball) begin
+                yVelocity <= 0;
+                yVelPos <= 1;
+            end
             else if ((({1'b0, yVelocity} + {1'b0, yAccel_stg2}) >= 4'b1111) & !(yAccelPos_stg2)) begin
                 yVelocity <= 4'b1111;
             end
@@ -209,6 +260,9 @@ always_ff @(posedge clk108MHz) begin
             if ((yVelocity <= yAccel_stg2) & !(yAccelPos_stg2)) begin
                 yVelocity <= yAccel_stg2 - yVelocity;
                 yVelPos <= 0;
+            end
+            else if (wallBelowball) begin
+                yVelocity <= 0;
             end
             else if ((({1'b0, yVelocity} + {1'b0,yAccel_stg2}) > 4'b1111) & (yAccelPos_stg2)) begin
                 yVelocity <= 4'b1111;
@@ -231,7 +285,8 @@ end
 //Position of Ball
 ///////////////////////////////////////////////////////////////////////////////////
 
-//x-axis Coordinates
+//x-axis Coordinates (OLD)
+/*
 always_ff @(posedge clk108MHz) begin
     if (resetPressed) begin
         xCoord <= START_X;
@@ -243,7 +298,7 @@ always_ff @(posedge clk108MHz) begin
                 xCoord <= 8'b11111000;
             end
             else if (wallRightOfball) begin
-                xCoord[3:0] <= 4'b0000;
+                //xCoord[3:0] <= 4'b0000;
             end
             else begin
                 xCoord <= xCoord + xVel_stg2;
@@ -254,10 +309,43 @@ always_ff @(posedge clk108MHz) begin
                 xCoord <= 8'b00000111;
             end
             else if (wallLeftOfball)  begin
-                xCoord[3:0] <= 4'b0000;
+                //xCoord[3:0] <= 4'b0000;
             end
             else begin
                 xCoord <= xCoord - xVel_stg2;
+            end
+        end
+    end
+    ballColumn <= xCoord;
+end
+*/
+//x-axis Coordinates 
+always_ff @(posedge clk108MHz) begin
+    if (resetPressed) begin
+        xCoord <= START_X;
+        ballColumn <= START_X;
+    end
+    else if (xUpdate) begin
+        if (xVelPos_stg2) begin
+            if (({1'b0, xCoord} + xVel_stg2) >= 8'b11111000) begin
+                xCoord <= 8'b11111000;
+            end
+            else if (wallRightOfball) begin
+                //xCoord[3:0] <= 4'b0000;
+            end
+            else begin
+                xCoord <= xCoord + 1;
+            end
+        end
+        else if (!(xVelPos_stg2)) begin
+            if ((xCoord +8'b00000111) <= xVel_stg2) begin
+                xCoord <= 8'b00000111;
+            end
+            else if (wallLeftOfball)  begin
+                //xCoord[3:0] <= 4'b0000;
+            end
+            else begin
+                xCoord <= xCoord - 1;
             end
         end
     end
@@ -276,7 +364,7 @@ always_ff @(posedge clk108MHz) begin
                 yCoord <= 8'b11111000;
             end
             else if (wallBelowball) begin
-                yCoord[3:0] <= 4'b0000;
+                //yCoord[3:0] <= 4'b0000;
             end
             else begin
                 yCoord <= yCoord + yVel_stg2;
@@ -287,7 +375,7 @@ always_ff @(posedge clk108MHz) begin
                 yCoord <= 8'b00000111;
             end
             else if (wallAboveball) begin
-                yCoord[3:0] <= 4'b0000;
+                //yCoord[3:0] <= 4'b0000;
             end
             else begin
                 yCoord <= yCoord - yVel_stg2;
