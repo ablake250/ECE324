@@ -3,6 +3,7 @@
 
 module BallMotion(
     //Reset and clock signals
+    input logic CLK100MHZ,
     input logic clk108MHz,
     input logic resetPressed,
     //Ball Inputs
@@ -15,7 +16,10 @@ module BallMotion(
     output logic [7:0] AN,
     output logic DP,CG,CF,CE,CD,CC,CB,CA,
     //Output logic for ball detection
-    output logic [4:0] vertOffset, horizOffset
+    output logic [4:0] vertOffset, horizOffset,
+    //SPI
+    input logic ACL_MISO,
+    output logic ACL_MOSI, ACL_SCLK, ACL_CSN
 );
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -23,7 +27,7 @@ module BallMotion(
 //////////////////////////////////////////////////////////////////////////////////
 
 //Acceleration Logic Declarations
-logic [3:0] xAcceleration, YAcceleration;
+logic [7:0] xAcceleration, yAcceleration;
 logic [3:0] xAccel_stg2, yAccel_stg2;
 logic xAccelPositive, yAccelPositive;
 logic xAccelPos_stg2, yAccelPos_stg2;
@@ -47,6 +51,10 @@ logic [7:0] sseg7, sseg6, sseg5, sseg4, sseg3, sseg2, sseg1, sseg0;
 //logic for max_tick outputs of modulo counters below:
 logic maxTick;
 
+//binary logic:
+logic xUpdate;
+logic yUpdate;
+
 //initialize ball location
 initial begin
 	ballColumn <= START_X;
@@ -56,40 +64,51 @@ initial begin
 end
 
 ////////////////////////////////////////////////////////////////////////////////////
-//Generate tick rate for ball movement calculations
+//Generate tick rates for ball movement calculations
 ////////////////////////////////////////////////////////////////////////////////////
 
-mod_m_counter #(.M(10000000)) ballTick(.clk(clk108MHz), .max_tick(maxTick), .q());
-
-univ_bin_counter #(.N(4)) ubc0(
-	
-	//inputs below
-	.clk(clk108MHz),	//clock signal
-	.syn_clr(0),		//synchronous clear (set to 0)
-	.load(xUpdate),	    //load (set to 0)
-	.d(xVel_stg2),		//d input set to 0
-	.en(maxTick),		//enabled every time timeBaseTick is high
-	.up(0),			    //direction of counter, determined by always_ff block below
-
-	//outputs below
-	.q(),				//q output to t (time)
-	.max_tick(),	    //output when counter maxes out
-	.min_tick(xUpdate)	//output when counter hits 0
+mod_m_counter #(.M(5000000)) ballTick(
+    .clk(clk108MHz), 
+    .max_tick(maxTick), 
+    .q()
 );
 
-///////////////////////////////////////////////////////////////////////////////////
-//Control Logic for binary counters
-///////////////////////////////////////////////////////////////////////////////////
+univ_bin_counter #(.N(4)) ubc0(
+	//inputs below
+	.clk(clk108MHz),
+	.syn_clr(0),
+	.load(xUpdate),
+	.d(xVel_stg2),
+	.en(maxTick & (xVel_stg2 != 15)),
+	.up(0),
+	//outputs below
+	.q(),
+	.max_tick(),
+	.min_tick(xUpdate)
+);
 
-always_ff @(posedge clk108MHz) begin
-    if(xUpdate) 
-end
+univ_bin_counter #(.N(4)) ubc1(	
+	//inputs below
+	.clk(clk108MHz),
+	.syn_clr(0),
+	.load(yUpdate),
+	.d(yVel_stg2),
+	.en(maxTick & (yVel_stg2 != 15)),
+	.up(0),
+
+	//outputs below
+	.q(),
+	.max_tick(),
+	.min_tick(yUpdate)
+);
+
 
 ///////////////////////////////////////////////////////////////////////////////////
 //Acceleration of Ball
 ///////////////////////////////////////////////////////////////////////////////////
+/*
+//x-axis Acceleration 
 
-//x-axis Acceleration
 always_ff @(posedge clk108MHz) begin
     if (resetPressed) begin
         xAccelPositive <= 1;
@@ -162,7 +181,113 @@ always_ff @(posedge clk108MHz) begin
     yAccel_stg2 <= YAcceleration;
     yAccelPos_stg2 <= yAccelPositive;
 end
+*/
+    readAccel ra0(
+        .clk(clk108MHz),
+        .reset(resetPressed),
+        .miso(ACL_MISO),
+        .mosi(ACL_MOSI),
+        .sclk(ACL_SCLK),
+        .cs(ACL_CSN),
+        .xAxis(yAcceleration),
+        .yAxis(xAcceleration)
+    );
 
+
+
+    always_ff @(posedge clk108MHz) begin
+        case(xAcceleration[7:4])
+            4'h0: begin
+                xAccel_stg2 <= 1;
+                xAccelPos_stg2 <= 1;
+            end
+            4'h1: begin
+                xAccel_stg2 <= 2;
+                xAccelPos_stg2 <= 1;
+            end
+            4'h2: begin
+                xAccel_stg2 <= 3;
+                xAccelPos_stg2 <= 1;
+            end
+            4'h3: begin
+                xAccel_stg2 <= 4;
+                xAccelPos_stg2 <= 1;
+            end
+            4'h4: begin
+                xAccel_stg2 <= 4;
+                xAccelPos_stg2 <= 1;
+            end
+            4'hF: begin
+                xAccel_stg2 <= 0;
+                xAccelPos_stg2 <= 0;
+            end
+            4'hE: begin
+                xAccel_stg2 <= 1;
+                xAccelPos_stg2 <= 0;
+            end
+            4'hD: begin
+                xAccel_stg2 <= 2;
+                xAccelPos_stg2 <= 0;
+            end
+            4'hC: begin
+                xAccel_stg2 <= 3;
+                xAccelPos_stg2 <= 0;
+            end
+            4'hB: begin
+                xAccel_stg2 <= 4;
+                xAccelPos_stg2 <= 0;
+            end
+
+        endcase
+
+    end
+
+    always_ff @(posedge clk108MHz) begin
+        case(yAcceleration[7:4])
+            4'h0: begin
+                yAccel_stg2 <= 1;
+                yAccelPos_stg2 <= 0;
+            end
+            4'h1: begin
+                yAccel_stg2 <= 2;
+                yAccelPos_stg2 <= 0;
+            end
+            4'h2: begin
+                yAccel_stg2 <= 3;
+                yAccelPos_stg2 <= 0;
+            end
+            4'h3: begin
+                yAccel_stg2 <= 4;
+                yAccelPos_stg2 <= 0;
+            end
+            4'h4: begin
+                yAccel_stg2 <= 4;
+                yAccelPos_stg2 <= 0;
+            end
+            4'hF: begin
+                yAccel_stg2 <= 0;
+                yAccelPos_stg2 <= 1;
+            end
+            4'hE: begin
+                yAccel_stg2 <= 1;
+                yAccelPos_stg2 <= 1;
+            end
+            4'hD: begin
+                yAccel_stg2 <= 2;
+                yAccelPos_stg2 <= 1;
+            end
+            4'hC: begin
+                yAccel_stg2 <= 3;
+                yAccelPos_stg2 <= 1;
+            end
+            4'hB: begin
+                yAccel_stg2 <= 4;
+                yAccelPos_stg2 <= 01;
+            end
+
+        endcase
+
+    end
 ////////////////////////////////////////////////////////////////////////////////////
 //Velocity of Ball
 ////////////////////////////////////////////////////////////////////////////////////
@@ -175,7 +300,7 @@ always_ff @(posedge clk108MHz) begin
         xVelPos_stg2 <= 1;
         xVel_stg2 <= 0;
     end
-    else if(maxTick) begin
+    else if(xUpdate | (xVel_stg2==15 & maxTick)) begin
         if (xVelPos==0) begin
             if((xVelocity <= xAccel_stg2) & (xAccelPos_stg2)) begin
                 xVelocity <= xAccel_stg2 - xVelocity;
@@ -216,13 +341,22 @@ always_ff @(posedge clk108MHz) begin
         end
     end
     //xVel_stg2 <= xVelocity;
-    case(xVelocity) begin
-        0:          xVel_stg2 <= 4;
-        1:          xVel_stg2 <= 3;
-        2:          xVel_stg2 <= 2;
-        3:          xVel_stg2 <= 1;
-        4:          xVel_stg2 <= 0;
-        default:    xVel_stg2 <= 0;
+    case(xVelocity)
+        0:          xVel_stg2 <= 15;
+        1:          xVel_stg2 <= 7;
+        2:          xVel_stg2 <= 6;
+        3:          xVel_stg2 <= 5;
+        4:          xVel_stg2 <= 4;
+        5:          xVel_stg2 <= 3;
+        6:          xVel_stg2 <= 2;
+        7:          xVel_stg2 <= 1;
+        //8:          xVel_stg2 <= 7;
+        //9:          xVel_stg2 <= 6;
+        //10:         xVel_stg2 <= 5;
+        //11:         xVel_stg2 <= 4;
+        //12:         xVel_stg2 <= 3;
+        //13:         xVel_stg2 <= 2;
+        default:    xVel_stg2 <= 1;
     endcase
     xVelPos_stg2 <= xVelPos;
     horizOffset <= {xVelPos_stg2, xVel_stg2};
@@ -236,7 +370,7 @@ always_ff @(posedge clk108MHz) begin
         yVelPos_stg2 <= 1;
         yVel_stg2 <= 0;
     end
-    else if(maxTick) begin
+    else if(yUpdate | (yVel_stg2==15 & maxTick)) begin
         if (yVelPos==0) begin
             if((yVelocity <= yAccel_stg2) & (yAccelPos_stg2)) begin
                 yVelocity <= yAccel_stg2 - yVelocity;
@@ -276,7 +410,26 @@ always_ff @(posedge clk108MHz) begin
             end
         end
     end
-    yVel_stg2 <= yVelocity;
+    //yVel_stg2 <= yVelocity;
+    case(yVelocity)
+        0:          yVel_stg2 <= 15;
+        1:          yVel_stg2 <= 7;
+        2:          yVel_stg2 <= 6;
+        3:          yVel_stg2 <= 5;
+        4:          yVel_stg2 <= 4;
+        5:          yVel_stg2 <= 3;
+        6:          yVel_stg2 <= 2;
+        7:          yVel_stg2 <= 1;
+        //8:          yVel_stg2 <= 7;
+        //9:          yVel_stg2 <= 6;
+        //10:         yVel_stg2 <= 5;
+        //11:         yVel_stg2 <= 4;
+        //12:         yVel_stg2 <= 3;
+        //13:         yVel_stg2 <= 2;
+        default:    yVel_stg2 <= 1;
+
+
+    endcase
     yVelPos_stg2 <= yVelPos;
     vertOffset <= {yVelPos_stg2, yVelPos_stg2};
 end
@@ -285,40 +438,6 @@ end
 //Position of Ball
 ///////////////////////////////////////////////////////////////////////////////////
 
-//x-axis Coordinates (OLD)
-/*
-always_ff @(posedge clk108MHz) begin
-    if (resetPressed) begin
-        xCoord <= START_X;
-        ballColumn <= START_X;
-    end
-    else if (maxTick) begin
-        if (xVelPos_stg2) begin
-            if (({1'b0, xCoord} + xVel_stg2) >= 8'b11111000) begin
-                xCoord <= 8'b11111000;
-            end
-            else if (wallRightOfball) begin
-                //xCoord[3:0] <= 4'b0000;
-            end
-            else begin
-                xCoord <= xCoord + xVel_stg2;
-            end
-        end
-        else if (!(xVelPos_stg2)) begin
-            if ((xCoord +8'b00000111) <= xVel_stg2) begin
-                xCoord <= 8'b00000111;
-            end
-            else if (wallLeftOfball)  begin
-                //xCoord[3:0] <= 4'b0000;
-            end
-            else begin
-                xCoord <= xCoord - xVel_stg2;
-            end
-        end
-    end
-    ballColumn <= xCoord;
-end
-*/
 //x-axis Coordinates 
 always_ff @(posedge clk108MHz) begin
     if (resetPressed) begin
@@ -327,76 +446,47 @@ always_ff @(posedge clk108MHz) begin
     end
     else if (xUpdate) begin
         if (xVelPos_stg2) begin
-            if (({1'b0, xCoord} + xVel_stg2) >= 8'b11111000) begin
-                xCoord <= 8'b11111000;
-            end
-            else if (wallRightOfball) begin
-                //xCoord[3:0] <= 4'b0000;
-            end
-            else begin
-                xCoord <= xCoord + 1;
-            end
+            if (wallRightOfball);
+            else xCoord <= xCoord + 1;
         end
         else if (!(xVelPos_stg2)) begin
-            if ((xCoord +8'b00000111) <= xVel_stg2) begin
-                xCoord <= 8'b00000111;
-            end
-            else if (wallLeftOfball)  begin
-                //xCoord[3:0] <= 4'b0000;
-            end
-            else begin
-                xCoord <= xCoord - 1;
-            end
+            if (wallLeftOfball);
+            else xCoord <= xCoord - 1;
         end
     end
     ballColumn <= xCoord;
 end
 
-//y-axis Coordinates
 always_ff @(posedge clk108MHz) begin
     if (resetPressed) begin
         yCoord <= START_Y;
         ballRow <= START_Y;
     end
-    else  if (maxTick)begin
+    else if (yUpdate) begin
         if (yVelPos_stg2) begin
-            if (({1'b0, yCoord} + yVel_stg2) >= 8'b11111000) begin
-                yCoord <= 8'b11111000;
-            end
-            else if (wallBelowball) begin
-                //yCoord[3:0] <= 4'b0000;
-            end
-            else begin
-                yCoord <= yCoord + yVel_stg2;
-            end
+            if (wallBelowball);
+            else yCoord <= yCoord + 1;
         end
-        else if (!(yVelPos_stg2)) begin
-            if (yCoord + 8'b0000111 <= yVel_stg2) begin
-                yCoord <= 8'b00000111;
-            end
-            else if (wallAboveball) begin
-                //yCoord[3:0] <= 4'b0000;
-            end
-            else begin
-                yCoord <= yCoord - yVel_stg2;
-            end
+        else if (!(xVelPos_stg2)) begin
+            if (wallAboveball);
+            else yCoord <= yCoord - 1;
         end
     end
     ballRow <= yCoord;
 end
 
 //////////////////////////////////////////////////////////////////
-//SSEG
+//SSEG Driving Logic
 //////////////////////////////////////////////////////////////////
 
 hex_to_sseg_p hts7 (.hex(xAccel_stg2), .dp(xAccelPos_stg2), .sseg_p(sseg7));
 hex_to_sseg_p hts6 (.hex(yAccel_stg2), .dp(yAccelPos_stg2), .sseg_p(sseg6));
 hex_to_sseg_p hts5 (.hex(xVel_stg2), .dp(xVelPos_stg2), .sseg_p(sseg5));
 hex_to_sseg_p hts4 (.hex(yVel_stg2), .dp(yVelPos_stg2), .sseg_p(sseg4));
-hex_to_sseg_p hts3 (.hex(ballColumn[7:4]), .dp(1'b0), .sseg_p(sseg3));
-hex_to_sseg_p hts2 (.hex(ballColumn[3:0]), .dp(1'b0), .sseg_p(sseg2));
-hex_to_sseg_p hts1 (.hex(ballRow[7:4]), .dp(1'b0), .sseg_p(sseg1));
-hex_to_sseg_p hts0 (.hex(ballRow[3:0]), .dp(1'b0), .sseg_p(sseg0));
+hex_to_sseg_p hts3 (.hex(ballColumn[7:4]), .dp(wallLeftOfball), .sseg_p(sseg3));
+hex_to_sseg_p hts2 (.hex(ballColumn[3:0]), .dp(wallAboveball), .sseg_p(sseg2));
+hex_to_sseg_p hts1 (.hex(ballRow[7:4]), .dp(wallBelowball), .sseg_p(sseg1));
+hex_to_sseg_p hts0 (.hex(ballRow[3:0]), .dp(wallRightOfball), .sseg_p(sseg0));
 
 led_mux8_p dm8_0(
     .clk(clk108MHz), .reset(1'b0), 

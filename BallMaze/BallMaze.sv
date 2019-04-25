@@ -13,7 +13,11 @@ module BallMaze(
     
     //SSEG
     output logic [7:0] AN,               
-    output logic DP,CG,CF,CE,CD,CC,CB,CA
+    output logic DP,CG,CF,CE,CD,CC,CB,CA,
+    
+    //SPI
+    input logic ACL_MISO,
+    output logic ACL_MOSI, ACL_SCLK, ACL_CSN
 );
 
 ///////////////////////////////////////////////////////////////////
@@ -35,6 +39,7 @@ localparam VT = VD+VF+VR+VB; // vertical total height
 //Reset & Clock
 logic resetPressed;
 logic clk108MHz;
+logic resetSignal;
 
 //Video Display Column and Row Declarations
 logic [10:0] videoColumn_stg1; // range needed is 0 to (1279 + 48 + 112 + 248)
@@ -54,7 +59,8 @@ logic [4:0] vertOffset, horizOffset;
 //Sprite (ball) border logic
 logic [7:0] ballLeftColumn, ballRightColumn, ballTopRow, ballBottomRow;
 
-
+//wall detection incremented
+logic [7:0] ballColumnUp, ballColumnDown, ballRowUp,ballRowDown;
 
 //Ball Maze Tile Initialized in Memory
 (* rom_style = "block" *) logic [5:0] BallMazeTileMapRom [0:1023]; // memory array for tile map
@@ -71,7 +77,7 @@ logic [10:0] videoRow_stg3, videoColumn_stg3;
 logic [11:0] videoPixelRGB_stg4;
 logic [10:0] videoRow_stg4, videoColumn_stg4;
 
-//
+//Ball Sprite
 logic [3:0] ballSpriteRow_stg3, ballSpriteColumn_stg3;
 (* rom_style = "block" *) logic ballSpriteSet [0:12'h8FF]; // memory array for ball sprite
 initial $readmemh ("BallMazeSprite.txt", ballSpriteSet, 0, 12'h8FF); // initialize ballSpriteSet
@@ -80,13 +86,21 @@ logic videoPixelWithinball_stg4;
 logic [11:0] videoPixelRGB_stg5;
 logic [10:0] videoRow_stg5, videoColumn_stg5;
 
+//Win Condition Logic
+logic winGame;
+logic [30:0] winGameTimer;
+logic prevClkWinGame = 0;
+localparam WGTIMER = 30'hCDFE600;
+
+assign resetPressed = resetSignal | winGame;
+
 ////////////////////////////////////////////////////////////////////
 //Generate Reset
 ////////////////////////////////////////////////////////////////////
 free_run_shift_reg #(.N(4)) CPU_RESETN_instance(
     .clk(clk108MHz), 
     .s_in(!CPU_RESETN), 
-    .s_out(resetPressed)
+    .s_out(resetSignal)
     );
 
 ////////////////////////////////////////////////////////////////////
@@ -113,6 +127,69 @@ BallMotion ballMotion0 (
 );
 
 /////////////////////////////////////////////////////////////////////
+//Wall Detection
+/////////////////////////////////////////////////////////////////////
+
+assign ballColumnUp = ballColumn + 8;
+assign ballColumnDown = ballColumn - 8;
+assign ballRowUp = ballRow + 8;
+assign ballRowDown = ballRow - 8;
+
+always_ff @(posedge clk108MHz) begin
+	if(SW[4]) begin
+    	wallRightOfball <= SW[0];
+		wallLeftOfball <= SW[3];
+		wallAboveball <= SW[2];
+		wallBelowball <= SW[1];
+	end
+	else begin
+		//wall right
+		if (BallMazeTileSet[{BallMazeTileMapRom[{ballRow[7:3],ballColumnUp[7:3]}],ballRow[2:0],ballColumnUp[2:0]}] == 1) begin
+			wallRightOfball <= 1;
+		end
+		else wallRightOfball <= 0;
+		//wall left
+		if (BallMazeTileSet[{BallMazeTileMapRom[{ballRow[7:3],ballColumnDown[7:3]}],ballRow[2:0],ballColumnDown[2:0]}] == 1) begin
+			wallLeftOfball <= 1;
+		end
+		else wallLeftOfball <= 0;
+		//wall above
+		if (BallMazeTileSet[{BallMazeTileMapRom[{ballRowDown[7:3],ballColumn[7:3]}],ballRowDown[2:0],ballColumn[2:0]}] == 1) begin
+			wallAboveball <= 1;
+		end
+		else wallAboveball <= 0;
+		//wall below
+		if (BallMazeTileSet[{BallMazeTileMapRom[{ballRowUp[7:3],ballColumn[7:3]}],ballRowUp[2:0] + 1,ballColumn[2:0]}] == 1) begin
+			wallBelowball <= 1;
+		end
+		else wallBelowball <= 0;
+		if (BallMazeTileSet[{BallMazeTileMapRom[{ballRow[7:3],ballColumn[7:3]}],ballRow[2:0] + 1,ballColumn[2:0]}] == 2) begin
+			winGame <= 1;
+		end
+	end
+end
+
+/////////////////////////////////////////////////////////////////////
+//Win Game Condition
+/////////////////////////////////////////////////////////////////////
+
+always_ff @(posedge clk108MHz) begin
+	if(winGame) begin
+		if(!prevClkWinGame) begin
+			winGameTimer <= WGTIMER;
+			prevClkWinGame <= 1;
+		end
+		else begin
+			if(winGameTimer == 0) begin
+				winGame <= 0;
+				prevClkWinGame <= 0;
+			end
+			else winGameTimer <= winGameTimer - 1;
+		end
+	end
+end
+
+/////////////////////////////////////////////////////////////////////
 // Generate Video Display Column and Row.
 /////////////////////////////////////////////////////////////////////
 
@@ -125,78 +202,6 @@ always_ff @(posedge clk108MHz) begin
 		ballBottomRow <= ballRow+7;
 	end
 end
-
-// Find wall collisions (old)
-/*
-always_ff @(posedge clk108MHz) begin
-    wallInTile_stg3 <= tileType_stg2[5:0]!=6'h00 & tileType_stg2[5:0]!=6'h01 & tileType_stg2[5:0]!=6'h02; // only 3 tile types that aren't walls
-	if (videoColumn_stg3[9:5]==(ballColumn[7:3]  ) & videoRow_stg3[9:5]==(ballRow[7:3]-1)) wallAboveball   <= wallInTile_stg3;
-	if (videoColumn_stg3[9:5]==(ballColumn[7:3]+1) & videoRow_stg3[9:5]==(ballRow[7:3]  )) wallRightOfball <= wallInTile_stg3;
-	if (videoColumn_stg3[9:5]==(ballColumn[7:3]  ) & videoRow_stg3[9:5]==(ballRow[7:3]+1)) wallBelowball   <= wallInTile_stg3;
-	if (videoColumn_stg3[9:5]==(ballColumn[7:3]-1) & videoRow_stg3[9:5]==(ballRow[7:3]  )) wallLeftOfball  <= wallInTile_stg3;	
-end
-*/
-
-//Horizontal Collisions
-/*
-always_ff @(posedge clk108MHz) begin
-	if (horizOffset[4] == 1) begin
-		//wall right case
-		if(videoColumn_stg3[ballColumn + 8 + horizOffset[3:0]] != 0) wallRightOfball <= 1;
-		else wallRightOfball <= 0;
-	end
-	else begin
-		// wall left case
-		if(videoColumn_stg3[ballColumn - 8 - horizOffset[3:0]] != 0) wallLeftOfball <= 1;
-		else wallLeftOfball <= 0;
-	end
-end
-
-//Vertical Collisions
-always_ff @(posedge clk108MHz) begin
-	if (vertOffset[4] == 1) begin
-		//wall below case
-		if (videoRow_stg3[ballRow + 8 + vertOffset[3:0]] != 0) wallBelowball <= 1;
-		else wallBelowball <= 0;
-	end
-	else begin
-		//wall above case
-		if (videoRow_stg3[ballRow - 8 - vertOffset[3:0]] != 0) wallAboveball <= 1;
-		else wallAboveball <= 0;
-
-	end
-end
-*/
-
-//Collisions Attempt 2, horizontal
-/*
-always_ff @(posedge clk108MHz) begin
-	if (BallMazeTileSet[{tileType_stg2[5:0],(ballRow[4:2]),ballColumn[4:2]+horizOffset[3:2]}] != 0) begin
-		wallRightOfball <= 1;
-	end
-	else wallRightOfball <= 0;
-end
-*/
-
-//Switch Collision test
-always_ff @(posedge clk108MHz) begin
-	if(SW[4]) begin
-    	wallRightOfball <= SW[0];
-		wallLeftOfball <= SW[3];
-		wallAboveball <= SW[2];
-		wallBelowball <= SW[1];
-	end
-	else begin
-		if (videoPixelRGB_stg4 == 12'h0FF) begin
-			if (ballRow == videoRow_stg4 & ballColumn <= videoColumn_stg4) begin
-				if (ballColumn + horizOffset >= videoColumn_stg4) wallRightOfball <= 1;
-			end
-		end
-	end
-end
-
-
-
 
 //increment location to display
 always_ff @(posedge clk108MHz) begin
@@ -230,12 +235,15 @@ always_ff @(posedge clk108MHz) begin
 	videoColumn_stg3[10:0] <= videoColumn_stg2[10:0];
 
 	// generate pipeline stage 4 signals
-	case(tileVideoPixelIndex_stg3[1:0])
-		0: videoPixelRGB_stg4[11:0] <= 12'h000; // black background
-		1: videoPixelRGB_stg4[11:0] <= 12'h0FF; // blue wall
-		2: videoPixelRGB_stg4[11:0] <= 12'hFCA; // peach pellets
-		3: videoPixelRGB_stg4[11:0] <= 12'hxxx; // unused
-	endcase
+	if (winGame) videoPixelRGB_stg4 <= 12'h000;
+	else begin
+		case(tileVideoPixelIndex_stg3[1:0])
+			0: videoPixelRGB_stg4[11:0] <= 12'h000; // black background
+			1: videoPixelRGB_stg4[11:0] <= 12'h0FF; // blue wall
+			2: videoPixelRGB_stg4[11:0] <= 12'hFCA; // peach pellets
+			3: videoPixelRGB_stg4[11:0] <= 12'hxxx; // unused
+		endcase
+	end
 	videoRow_stg4[10:0] <= videoRow_stg3[10:0];
 	videoColumn_stg4[10:0] <= videoColumn_stg3[10:0];
 end
@@ -251,8 +259,8 @@ always_ff @(posedge clk108MHz) begin
                                    (videoColumn_stg3[9:2] <= ballRightColumn) &
 								   (videoRow_stg3[9:2]    >= ballTopRow) & 
                                    (videoRow_stg3[9:2]    <= ballBottomRow);	
-
-	if (!videoPixelWithinball_stg4) videoPixelRGB_stg5[11:0] <= videoPixelRGB_stg4[11:0]; // don't change
+	if(winGame);
+	else if (!videoPixelWithinball_stg4) videoPixelRGB_stg5[11:0] <= videoPixelRGB_stg4[11:0]; // don't change
     else if (!ballVideoPixelIndex_stg4) videoPixelRGB_stg5[11:0] <= videoPixelRGB_stg4[11:0]; // don't change
     else videoPixelRGB_stg5[11:0] <= 12'hFAA; // yellow ball body
 

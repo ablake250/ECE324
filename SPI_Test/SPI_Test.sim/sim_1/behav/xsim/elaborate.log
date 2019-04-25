@@ -1,0 +1,18 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto fa995a6c10824ac391c68b0b3fc3d288 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SPI_TB_behav xil_defaultlib.SPI_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/SPI_Test/readAccel.sv" Line 3. Module readAccel doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/SPI_Test/mod_m_counter.sv" Line 2. Module mod_m_counter(M=60) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/SPI_Test/spi.sv" Line 33. Module spi doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mod_m_counter(M=60)
+Compiling module xil_defaultlib.spi
+Compiling module xil_defaultlib.readAccel
+Compiling module xil_defaultlib.SPI_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SPI_TB_behav

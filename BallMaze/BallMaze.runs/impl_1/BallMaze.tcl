@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
@@ -69,7 +70,7 @@ set rc [catch {
   open_checkpoint BallMaze_routed.dcp
   set_property webtalk.parent_dir {C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.cache/wt} [current_project]
   catch { write_mem_info -force BallMaze.mmi }
-  write_bitstream -force BallMaze.bit 
+  write_bitstream -force BallMaze.bit -bin_file
   catch {write_debug_probes -quiet -force BallMaze}
   catch {file copy -force BallMaze.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb

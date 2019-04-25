@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1555620448">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1556234152">
   <File Type="PA-TCL" Name="BallMaze.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="BallMaze_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="BallMaze_reports.tcl"/>
@@ -47,6 +47,27 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/mod_m_counter.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/readAccel.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/spi.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/univ_bin_counter.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

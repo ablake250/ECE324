@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/SPI_Test/SPI_TB.sv,1556219258,systemVerilog,,,,SPI_TB,,,,,,,,
+C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/SPI_Test/SPI_Test.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/SPI_Test/mod_m_counter.sv,1553025027,systemVerilog,,C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/SPI_Test/readAccel.sv,,mod_m_counter,,,,,,,,
+C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/SPI_Test/readAccel.sv,1556225241,systemVerilog,,C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/SPI_Test/spi.sv,,readAccel,,,,,,,,
+C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/SPI_Test/spi.sv,1556146084,systemVerilog,,C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/SPI_Test/SPI_TB.sv,,spi,,,,,,,,
