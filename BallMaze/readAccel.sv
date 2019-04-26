@@ -2,7 +2,7 @@
 
 module readAccel(
     input logic clk, reset, miso,
-    output logic [7:0] xAxis, yAxis, zAxis,
+    output logic [7:0] xAxis, yAxis,
     output logic cs, mosi, sclk
 );
 
@@ -13,7 +13,7 @@ module readAccel(
     logic maxTick;
     
     localparam WRITE = 8'h0A;
-    localparam WADD = 8'h2D;
+    localparam WADDR = 8'h2D;
     localparam MMODE = 8'h02;
     localparam XINST = 8'h0B;
     localparam XADDR = 8'h08;
@@ -41,8 +41,20 @@ module readAccel(
     );
 
     //////////////////////////////////////////////////////////////////////////
-    //FSM
+    //SPI Controller FSM
     //////////////////////////////////////////////////////////////////////////
+
+    /*
+        - The FSM starts by sending the register write command and wakes the accelerometer up from standby.
+        - The code then reads from x-axis register
+        - The code then reads from y-axis register
+        - Loop back to read x-axis register, loops indefinetly
+        - Counter is used to add delay between actions, extra padding for timing is added to ensure 
+            timing of cs to go back high as well as din to change
+        - Mod_m_counter creates a slower clock signal than the input clock for the SCLK signal
+            which is used to sync the FSM
+        - The machine is very messy but effective
+    */
 
     typedef enum    { initialize0, initialize1, initialize2, idle, xInst0, xInst1, xAddr0, xAddr1, xWait0, xWait1,
                       yInst0, yInst1, yAddr0, yAddr1, yWait0, yWait1,
@@ -60,16 +72,16 @@ module readAccel(
         end
         else begin
             case(state)
-            
-            /////////////////////////////////
-            //initialize
-            ///////////////////////////////
+
+            /////////////////////////////////////////////////////////////////////////////////
+            // Write to register of Accelerometer: standby mode --> measurement mode
+            /////////////////////////////////////////////////////////////////////////////////
                 initialize0: begin
                     if(counter == 0) din <= WRITE;
                     cs <= 0;
                     start <= 1;
                     if(counter == 3) begin
-                        din <= WADD;
+                        din <= WADDR;
                         counter <= counter + 1;
                     end
                     else if (ready & counter > 4) begin
@@ -103,7 +115,10 @@ module readAccel(
                     else counter <= counter + 1;
                 end
                 
-                //X
+                
+            /////////////////////////////////////////////////////////////////////////////////
+            // Read x-axis register
+            /////////////////////////////////////////////////////////////////////////////////
                 idle: begin
                     cs = 1;
                     if(counter == 10) begin
@@ -135,7 +150,6 @@ module readAccel(
                     start <= 1;
                     state <= xAddr1;
                 end
-
                 xAddr1: begin
                     if(ready & counter > 4) begin
                         state <= xWait0;
@@ -147,7 +161,6 @@ module readAccel(
                 xWait0: begin
                     state <= xWait1;
                 end
-                
                 xWait1: begin
                     if(counter == 20) begin
                         state <= yInst0;
@@ -165,10 +178,10 @@ module readAccel(
                         din <= YINST;
                     end
                     else counter <= counter + 1;
-                end
-                
-                // Y
-
+                end    
+            /////////////////////////////////////////////////////////////////////////////////
+            // Read x-axis register
+            /////////////////////////////////////////////////////////////////////////////////
                 yInst0: begin
                     start <= 1;
                     cs <= 0;
@@ -190,7 +203,6 @@ module readAccel(
                     start <= 1;
                     state <= yAddr1;
                 end
-
                 yAddr1: begin
                     if(ready & counter > 4) begin
                         state <= yWait0;
@@ -202,11 +214,11 @@ module readAccel(
                 yWait0: begin
                     state <= yWait1;
                 end
-                
                 yWait1: begin
                     if(counter == 20) begin
                         counter <= 0;
-                        state <= zInst0;
+                        //state <= zInst0;
+                        state <= idle;
                     end
                     else if(ready & counter > 4) begin
                         counter <= counter + 1;
@@ -220,8 +232,18 @@ module readAccel(
                     end
                     else counter <= counter + 1;
                 end
+            /////////////////////////////////////////////////////////////////////////////////
+            // End of FSM sequence, loop back to idle state (x-axis read)
+            /////////////////////////////////////////////////////////////////////////////////
                 
-           
+
+                
+
+
+
+
+
+                /*
                 zInst0: begin
                     start <= 1;
                     cs <= 0;
@@ -273,6 +295,7 @@ module readAccel(
                     end
                     else counter <= counter + 1;
                 end
+                */
             endcase
         end
     end

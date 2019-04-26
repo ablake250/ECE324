@@ -21,7 +21,7 @@ module BallMaze(
 );
 
 ///////////////////////////////////////////////////////////////////
-//Parameters
+//Parameters / logic declarations / memory allocation
 ///////////////////////////////////////////////////////////////////
 
 //VGA Parameters
@@ -47,14 +47,9 @@ logic [10:0] videoRow_stg1;    // range needed is 0 to (1023 +  1 +   3 +  38)
 
 //ball motion
 logic up, down, left, right;
-logic wallInTile_stg3;
 logic wallAboveball, wallRightOfball, wallLeftOfball, wallBelowball;
-logic [3:0] ballLookAhead;
 logic [3:0] xVel_stg2, yVel_stg2;
 logic [7:0] ballColumn, ballRow;
-
-//ball collisions
-logic [4:0] vertOffset, horizOffset;
 
 //Sprite (ball) border logic
 logic [7:0] ballLeftColumn, ballRightColumn, ballTopRow, ballBottomRow;
@@ -92,7 +87,7 @@ logic [30:0] winGameTimer;
 logic prevClkWinGame = 0;
 localparam WGTIMER = 30'hCDFE600;
 
-assign resetPressed = resetSignal | winGame;
+assign resetPressed = resetSignal | winGame; //win game or resetbutton activates reset
 
 ////////////////////////////////////////////////////////////////////
 //Generate Reset
@@ -121,7 +116,7 @@ free_run_shift_reg #(.N(4)) BTND_instance(.clk(clk108MHz), .s_in(BTND), .s_out(d
 free_run_shift_reg #(.N(4)) BTNL_instance(.clk(clk108MHz), .s_in(BTNL), .s_out(left));
 
 /////////////////////////////////////////////////////////////////////
-//Motion Calculations
+//Motion Calculations in BallMotion module
 BallMotion ballMotion0 (
 	.*
 );
@@ -130,18 +125,21 @@ BallMotion ballMotion0 (
 //Wall Detection
 /////////////////////////////////////////////////////////////////////
 
+//increment variables of ballRow and ballColumn to test for wall colisions
 assign ballColumnUp = ballColumn + 8;
 assign ballColumnDown = ballColumn - 8;
 assign ballRowUp = ballRow + 8;
 assign ballRowDown = ballRow - 8;
 
 always_ff @(posedge clk108MHz) begin
+	//if SW[4], use switches for wall detection (debugging)
 	if(SW[4]) begin
     	wallRightOfball <= SW[0];
 		wallLeftOfball <= SW[3];
 		wallAboveball <= SW[2];
 		wallBelowball <= SW[1];
 	end
+	//actual wall detection:
 	else begin
 		//wall right
 		if (BallMazeTileSet[{BallMazeTileMapRom[{ballRow[7:3],ballColumnUp[7:3]}],ballRow[2:0],ballColumnUp[2:0]}] == 1) begin
@@ -163,6 +161,8 @@ always_ff @(posedge clk108MHz) begin
 			wallBelowball <= 1;
 		end
 		else wallBelowball <= 0;
+
+		//test for win condition
 		if (BallMazeTileSet[{BallMazeTileMapRom[{ballRow[7:3],ballColumn[7:3]}],ballRow[2:0] + 1,ballColumn[2:0]}] == 2) begin
 			winGame <= 1;
 		end
@@ -175,22 +175,25 @@ end
 
 always_ff @(posedge clk108MHz) begin
 	if(winGame) begin
+		//condition of start of win game sequence
 		if(!prevClkWinGame) begin
 			winGameTimer <= WGTIMER;
 			prevClkWinGame <= 1;
 		end
 		else begin
+			//if wingametimer runs out, reset ballmaze
 			if(winGameTimer == 0) begin
 				winGame <= 0;
 				prevClkWinGame <= 0;
 			end
+			//countdown timer
 			else winGameTimer <= winGameTimer - 1;
 		end
 	end
 end
 
 /////////////////////////////////////////////////////////////////////
-// Generate Video Display Column and Row.
+// Generate Video Display Column and Row (leveraged from PacMan)
 /////////////////////////////////////////////////////////////////////
 
 // Generate Sprite Borders
@@ -214,7 +217,7 @@ always_ff @(posedge clk108MHz) begin
 end
 
 /////////////////////////////////////////////////////////////////////
-//Video Generation
+//Video Generation (leveraged from PacMan)
 /////////////////////////////////////////////////////////////////////
 
 //tileType initialized to index to correct location in BallMazeTileSet

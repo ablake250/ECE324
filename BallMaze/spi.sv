@@ -32,11 +32,10 @@
 
 module spi (
    input  logic clk, reset,
-   input  logic [7:0] din,
-   input  logic [15:0] dvsr,  // 0.5*(# clk in SCK period) 
-   input  logic start, cpol, cpha,
+   input  logic [7:0] din, 
+   input  logic start,
    output logic [7:0] dout,
-   output logic spi_done_tick, ready,
+   output logic ready,
    output logic sclk,
    input  logic miso,
    output logic mosi
@@ -44,6 +43,11 @@ module spi (
 
    // fsm state type 
    typedef enum {idle, cpha_delay, p0, p1} state_type;
+
+   logic [15:0] dvsr = 0;
+   logic cpol = 0;
+   logic cpha = 0;
+   logic spi_done_tick;
 
    // declaration
    state_type state_reg, state_next;
