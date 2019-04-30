@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu Apr 25 16:15:54 2019
-# Process ID: 12884
+# Start of session at: Tue Apr 30 10:36:28 2019
+# Process ID: 13428
 # Current directory: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.runs/synth_1
 # Command line: vivado.exe -log BallMaze.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BallMaze.tcl
 # Log file: C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.runs/synth_1/BallMaze.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 27028 
+INFO: Helper process launched with PID 2156 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 362.133 ; gain = 101.313
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 362.039 ; gain = 101.039
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'BallMaze' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:1]
 	Parameter HD bound to: 1280 - type: integer 
@@ -31,12 +31,12 @@ INFO: [Synth 8-6157] synthesizing module 'BallMaze' [C:/Users/Axelb/Documents/Sc
 	Parameter VB bound to: 38 - type: integer 
 	Parameter VT bound to: 1066 - type: integer 
 	Parameter WGTIMER bound to: 30'b001100110111111110011000000000 
-INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:66]
-INFO: [Synth 8-3876] $readmem data file 'BallMazeTileRom.txt' is read successfully [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:67]
-INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:72]
-INFO: [Synth 8-3876] $readmem data file 'BallMazeTileSet.txt' is read successfully [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:73]
-INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:82]
-INFO: [Synth 8-3876] $readmem data file 'BallMazeSprite.txt' is read successfully [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:83]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:61]
+INFO: [Synth 8-3876] $readmem data file 'BallMazeTileRom.txt' is read successfully [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:62]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:67]
+INFO: [Synth 8-3876] $readmem data file 'BallMazeTileSet.txt' is read successfully [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:68]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:77]
+INFO: [Synth 8-3876] $readmem data file 'BallMazeSprite.txt' is read successfully [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:78]
 INFO: [Synth 8-6157] synthesizing module 'free_run_shift_reg' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/free_run_shift_reg.sv:3]
 	Parameter N bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'free_run_shift_reg' (1#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/free_run_shift_reg.sv:3]
@@ -101,18 +101,19 @@ INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (3#1) [C:/Xilinx/Viva
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
 INFO: [Synth 8-6155] done synthesizing module 'videoClk108MHz' (5#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/videoClk108MHz.v:3]
-INFO: [Synth 8-6157] synthesizing module 'BallMotion' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'BallMotion' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:2]
 	Parameter START_X bound to: 128 - type: integer 
 	Parameter START_Y bound to: 188 - type: integer 
 INFO: [Synth 8-6157] synthesizing module 'mod_m_counter' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/mod_m_counter.sv:2]
 	Parameter M bound to: 5000000 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'mod_m_counter' (6#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/mod_m_counter.sv:2]
+WARNING: [Synth 8-350] instance 'ballTick' of module 'mod_m_counter' requires 3 connections, but only 2 given [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:75]
 INFO: [Synth 8-6157] synthesizing module 'univ_bin_counter' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/univ_bin_counter.sv:2]
 	Parameter N bound to: 4 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'univ_bin_counter' (7#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/univ_bin_counter.sv:2]
 INFO: [Synth 8-6157] synthesizing module 'readAccel' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/readAccel.sv:3]
 	Parameter WRITE bound to: 8'b00001010 
-	Parameter WADD bound to: 8'b00101101 
+	Parameter WADDR bound to: 8'b00101101 
 	Parameter MMODE bound to: 8'b00000010 
 	Parameter XINST bound to: 8'b00001011 
 	Parameter XADDR bound to: 8'b00001000 
@@ -124,39 +125,14 @@ INFO: [Synth 8-6157] synthesizing module 'mod_m_counter__parameterized0' [C:/Use
 	Parameter M bound to: 250 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'mod_m_counter__parameterized0' (7#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/mod_m_counter.sv:2]
 INFO: [Synth 8-6157] synthesizing module 'spi' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/spi.sv:33]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/spi.sv:88]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/spi.sv:92]
 INFO: [Synth 8-6155] done synthesizing module 'spi' (8#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/spi.sv:33]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/readAccel.sv:62]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/readAccel.sv:74]
 INFO: [Synth 8-6155] done synthesizing module 'readAccel' (9#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/readAccel.sv:3]
-WARNING: [Synth 8-350] instance 'ra0' of module 'readAccel' requires 9 connections, but only 8 given [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:185]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:199]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:246]
-INFO: [Synth 8-6157] synthesizing module 'hex_to_sseg_p' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/hex_to_sseg_p.sv:8]
-INFO: [Synth 8-6155] done synthesizing module 'hex_to_sseg_p' (10#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/hex_to_sseg_p.sv:8]
-INFO: [Synth 8-6157] synthesizing module 'led_mux8_p' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/led_mux8_p.sv:4]
-	Parameter N bound to: 18 - type: integer 
-INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/led_mux8_p.sv:33]
-INFO: [Synth 8-6155] done synthesizing module 'led_mux8_p' (11#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/led_mux8_p.sv:4]
-INFO: [Synth 8-6155] done synthesizing module 'BallMotion' (12#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:4]
-INFO: [Synth 8-6155] done synthesizing module 'BallMaze' (13#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:1]
-WARNING: [Synth 8-3331] design BallMotion has unconnected port CLK100MHZ
-WARNING: [Synth 8-3331] design BallMotion has unconnected port up
-WARNING: [Synth 8-3331] design BallMotion has unconnected port down
-WARNING: [Synth 8-3331] design BallMotion has unconnected port left
-WARNING: [Synth 8-3331] design BallMotion has unconnected port right
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[15]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[14]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[13]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[12]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[11]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[10]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[9]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[8]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[7]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[6]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[5]
+INFO: [Synth 8-6155] done synthesizing module 'BallMotion' (10#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'BallMaze' (11#1) [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 431.121 ; gain = 170.301
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 430.082 ; gain = 169.082
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -169,10 +145,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 431.121 ; gain = 170.301
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 430.082 ; gain = 169.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 431.121 ; gain = 170.301
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 430.082 ; gain = 169.082
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -182,43 +158,137 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CA'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CB'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CC'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CD'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CE'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CF'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CG'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DP'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BallMaze_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/BallMaze_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 786.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 785.359 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 786.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 785.359 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 786.777 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 786.777 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 785.359 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 785.359 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 786.777 ; gain = 525.957
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 785.359 ; gain = 524.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 786.777 ; gain = 525.957
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 785.359 ; gain = 524.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 786.777 ; gain = 525.957
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 785.359 ; gain = 524.359
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/univ_bin_counter.sv:13]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'spi'
-INFO: [Synth 8-5544] ROM "spi_done_tick_i" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "si_next" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "so_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "ready_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'readAccel'
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
@@ -230,10 +300,12 @@ INFO: [Synth 8-5546] ROM "din" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "cs" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "start" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:448]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:466]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:411]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMotion.sv:439]
 INFO: [Synth 8-5544] ROM "xAccel_stg2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "xAccelPos_stg2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "yAccel_stg2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "yAccelPos_stg2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "xVel_stg2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "yVel_stg2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "wallRightOfball" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -260,40 +332,33 @@ INFO: [Synth 8-5547] Trying to map ROM "ballSpriteSet" into Block RAM due to exp
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
                     idle |                               00 | 00000000000000000000000000000000
-              cpha_delay |                               01 | 00000000000000000000000000000001
-                      p0 |                               10 | 00000000000000000000000000000010
-                      p1 |                               11 | 00000000000000000000000000000011
+                      p0 |                               01 | 00000000000000000000000000000010
+                      p1 |                               10 | 00000000000000000000000000000011
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'spi'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-             initialize0 |                            00000 | 00000000000000000000000000000000
-             initialize1 |                            00001 | 00000000000000000000000000000001
-             initialize2 |                            00010 | 00000000000000000000000000000010
-                    idle |                            00011 | 00000000000000000000000000000011
-                  xInst0 |                            00100 | 00000000000000000000000000000100
-                  xInst1 |                            00101 | 00000000000000000000000000000101
-                  xAddr0 |                            00110 | 00000000000000000000000000000110
-                  xAddr1 |                            00111 | 00000000000000000000000000000111
-                  xWait0 |                            01000 | 00000000000000000000000000001000
-                  xWait1 |                            01001 | 00000000000000000000000000001001
-                  yInst0 |                            01010 | 00000000000000000000000000001010
-                  yInst1 |                            01011 | 00000000000000000000000000001011
-                  yAddr0 |                            01100 | 00000000000000000000000000001100
-                  yAddr1 |                            01101 | 00000000000000000000000000001101
-                  yWait0 |                            01110 | 00000000000000000000000000001110
-                  yWait1 |                            01111 | 00000000000000000000000000001111
-                  zInst0 |                            10000 | 00000000000000000000000000010000
-                  zInst1 |                            10001 | 00000000000000000000000000010001
-                  zAddr0 |                            10010 | 00000000000000000000000000010010
-                  zAddr1 |                            10011 | 00000000000000000000000000010011
-                  zWait0 |                            10100 | 00000000000000000000000000010100
-                  zWait1 |                            10101 | 00000000000000000000000000010101
+             initialize0 |                             0000 | 00000000000000000000000000000000
+             initialize1 |                             0001 | 00000000000000000000000000000001
+             initialize2 |                             0010 | 00000000000000000000000000000010
+                    idle |                             0011 | 00000000000000000000000000000011
+                  xInst0 |                             0100 | 00000000000000000000000000000100
+                  xInst1 |                             0101 | 00000000000000000000000000000101
+                  xAddr0 |                             0110 | 00000000000000000000000000000110
+                  xAddr1 |                             0111 | 00000000000000000000000000000111
+                  xWait0 |                             1000 | 00000000000000000000000000001000
+                  xWait1 |                             1001 | 00000000000000000000000000001001
+                  yInst0 |                             1010 | 00000000000000000000000000001010
+                  yInst1 |                             1011 | 00000000000000000000000000001011
+                  yAddr0 |                             1100 | 00000000000000000000000000001100
+                  yAddr1 |                             1101 | 00000000000000000000000000001101
+                  yWait0 |                             1110 | 00000000000000000000000000001110
+                  yWait1 |                             1111 | 00000000000000000000000000001111
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'readAccel'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 786.777 ; gain = 525.957
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 785.359 ; gain = 524.359
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -319,39 +384,37 @@ Detailed RTL Component Info :
 	               16 Bit    Registers := 1     
 	               12 Bit    Registers := 3     
 	               11 Bit    Registers := 10    
-	                8 Bit    Registers := 17    
-	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 16    
-	                3 Bit    Registers := 1     
+	                8 Bit    Registers := 16    
+	                4 Bit    Registers := 14    
+	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 19    
+	                1 Bit    Registers := 18    
 +---ROMs : 
 	                              ROMs := 2     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 8     
-	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input     32 Bit        Muxes := 2     
 	   2 Input     23 Bit        Muxes := 1     
-	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
 	   4 Input     12 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 8     
-	   4 Input      8 Bit        Muxes := 1     
-	  22 Input      8 Bit        Muxes := 2     
-	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   3 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 1     
-	  22 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 14    
-	  11 Input      4 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 1     
 	   8 Input      4 Bit        Muxes := 2     
 	   4 Input      4 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 3     
-	   4 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 10    
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 37    
-	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 41    
 	   3 Input      1 Bit        Muxes := 7     
-	  22 Input      1 Bit        Muxes := 13    
-	  11 Input      1 Bit        Muxes := 3     
+	  16 Input      1 Bit        Muxes := 12    
+	  11 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -377,8 +440,7 @@ Detailed RTL Component Info :
 	                              ROMs := 2     
 +---Muxes : 
 	   4 Input     12 Bit        Muxes := 1     
-	   3 Input      1 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 8     
 Module free_run_shift_reg 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -420,35 +482,32 @@ Detailed RTL Component Info :
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 8     
-	   4 Input     32 Bit        Muxes := 2     
-	   4 Input     16 Bit        Muxes := 1     
-	   4 Input      8 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 3     
-	   4 Input      3 Bit        Muxes := 1     
-	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 4     
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 4     
 Module readAccel 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      8 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 5     
+	                8 Bit    Registers := 4     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 7     
-	  22 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	  16 Input      8 Bit        Muxes := 2     
 	   2 Input      6 Bit        Muxes := 1     
-	  22 Input      5 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 19    
 	   3 Input      1 Bit        Muxes := 1     
-	  22 Input      1 Bit        Muxes := 13    
-Module led_mux8_p 
-Detailed RTL Component Info : 
-+---Muxes : 
-	   8 Input      8 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 12    
 Module BallMotion 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -458,16 +517,16 @@ Detailed RTL Component Info :
 	   3 Input      4 Bit       Adders := 4     
 +---Registers : 
 	                8 Bit    Registers := 4     
-	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 6     
-	                1 Bit    Registers := 7     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
 +---Muxes : 
-	  11 Input      4 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 12    
 	   8 Input      4 Bit        Muxes := 2     
 	   4 Input      4 Bit        Muxes := 2     
+	  11 Input      3 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 2     
-	  11 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 6     
 	   3 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
@@ -486,13 +545,14 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5544] ROM "spi0/state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "din" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "din" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "din" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "start" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ra0/spi0/state_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ra0/spi0/si_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ra0/din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ra0/din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ra0/din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ra0/start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ra0/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ra0/state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
 INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
 INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
@@ -501,22 +561,10 @@ INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit 
 INFO: [Synth 8-5545] ROM "winGameTimer" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "prevClkWinGame" won't be mapped to RAM because address size (31) is larger than maximum supported(25)
 INFO: [Synth 8-5547] Trying to map ROM "p_0_out" into Block RAM due to explicit "ram_style" or "rom_style" specification
-WARNING: [Synth 8-3331] design BallMotion has unconnected port CLK100MHZ
-WARNING: [Synth 8-3331] design BallMotion has unconnected port up
-WARNING: [Synth 8-3331] design BallMotion has unconnected port down
-WARNING: [Synth 8-3331] design BallMotion has unconnected port left
-WARNING: [Synth 8-3331] design BallMotion has unconnected port right
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[15]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[14]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[13]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[12]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[11]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[10]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[9]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[8]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[7]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[6]
-WARNING: [Synth 8-3331] design BallMaze has unconnected port SW[5]
+WARNING: [Synth 8-3331] design BallMaze has unconnected port BTNU
+WARNING: [Synth 8-3331] design BallMaze has unconnected port BTND
+WARNING: [Synth 8-3331] design BallMaze has unconnected port BTNL
+WARNING: [Synth 8-3331] design BallMaze has unconnected port BTNR
 INFO: [Synth 8-3886] merging instance 'videoPixelRGB_stg4_reg[0]' (FDR) to 'videoPixelRGB_stg4_reg[2]'
 INFO: [Synth 8-3886] merging instance 'videoPixelRGB_stg4_reg[1]' (FDR) to 'videoPixelRGB_stg4_reg[3]'
 INFO: [Synth 8-3886] merging instance 'videoPixelRGB_stg4_reg[2]' (FDR) to 'videoPixelRGB_stg4_reg[4]'
@@ -540,8 +588,76 @@ INFO: [Synth 8-3886] merging instance 'VGA_B_reg[3]' (FDR) to 'VGA_G_reg[3]'
 INFO: [Synth 8-3886] merging instance 'VGA_R_reg[0]' (FDR) to 'VGA_R_reg[1]'
 INFO: [Synth 8-3886] merging instance 'VGA_R_reg[1]' (FDR) to 'VGA_R_reg[2]'
 INFO: [Synth 8-3886] merging instance 'VGA_R_reg[2]' (FDR) to 'VGA_R_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/din_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/so_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ballMotion0/ra0/din_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/so_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/din_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/so_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ballMotion0/ra0/din_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/so_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/din_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/so_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/din_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/FSM_sequential_state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/FSM_sequential_state_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/counter_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/counter_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/counter_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/counter_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/counter_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/counter_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/counter_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/counter_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/FSM_sequential_state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/FSM_sequential_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/so_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/din_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\videoPixelRGB_stg4_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\videoPixelRGB_stg4_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\videoPixelRGB_stg4_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/so_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/FSM_sequential_state_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/n_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/n_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/n_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/c_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/FSM_sequential_state_reg_reg[1] )
+INFO: [Synth 8-3886] merging instance 'videoPixelRGB_stg5_reg[5]' (FDSE) to 'videoPixelRGB_stg5_reg[11]'
+INFO: [Synth 8-3886] merging instance 'videoPixelRGB_stg5_reg[7]' (FDSE) to 'videoPixelRGB_stg5_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\videoPixelRGB_stg5_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/spi_clk_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ballMotion0/ra0/spi0/so_reg_reg[7] )
+INFO: [Synth 8-3886] merging instance 'VGA_G_reg[0]' (FDR) to 'VGA_G_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGA_G_reg[2]' (FDR) to 'VGA_G_reg[1]'
+INFO: [Synth 8-3886] merging instance 'VGA_G_reg[1]' (FDR) to 'VGA_G_reg[3]'
+INFO: [Synth 8-3886] merging instance 'VGA_G_reg[3]' (FDR) to 'VGA_R_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (ballMotion0/ra0/spi0/FSM_sequential_state_reg_reg[1]) is unused and will be removed from module BallMaze.
+WARNING: [Synth 8-3332] Sequential element (ballMotion0/ra0/spi0/FSM_sequential_state_reg_reg[0]) is unused and will be removed from module BallMaze.
+WARNING: [Synth 8-3332] Sequential element (ballMotion0/ra0/FSM_sequential_state_reg[3]) is unused and will be removed from module BallMaze.
+WARNING: [Synth 8-3332] Sequential element (ballMotion0/ra0/FSM_sequential_state_reg[2]) is unused and will be removed from module BallMaze.
+WARNING: [Synth 8-3332] Sequential element (ballMotion0/ra0/FSM_sequential_state_reg[1]) is unused and will be removed from module BallMaze.
+WARNING: [Synth 8-3332] Sequential element (ballMotion0/ra0/FSM_sequential_state_reg[0]) is unused and will be removed from module BallMaze.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'winGame_reg__0/Q' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:90]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:90]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.sv:90]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 786.777 ; gain = 525.957
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 785.359 ; gain = 524.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -578,8 +694,6 @@ ROM:
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6837] The timing for the instance i_16/i_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance i_24/i_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -590,13 +704,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 788.988 ; gain = 528.168
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 785.359 ; gain = 524.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 843.266 ; gain = 582.445
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 794.406 ; gain = 533.406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -608,7 +722,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 844.281 ; gain = 583.461
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 795.270 ; gain = 534.270
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -632,7 +746,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 844.281 ; gain = 583.461
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 795.270 ; gain = 534.270
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -645,7 +759,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 844.281 ; gain = 583.461
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 795.270 ; gain = 534.270
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -657,38 +771,37 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 844.281 ; gain = 583.461
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 795.270 ; gain = 534.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 844.281 ; gain = 583.461
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 795.270 ; gain = 534.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 844.281 ; gain = 583.461
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 795.270 ; gain = 534.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 844.281 ; gain = 583.461
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 795.270 ; gain = 534.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Static Shift Register Report:
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|BallMaze    | CPU_RESETN_instance/q_reg[0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
-|BallMaze    | videoRow_stg5_reg[10]        | 4      | 3     | NO           | NO                 | YES               | 3      | 0       | 
-|BallMaze    | videoColumn_stg5_reg[10]     | 4      | 3     | NO           | NO                 | YES               | 3      | 0       | 
-+------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|BallMaze    | videoRow_stg5_reg[10]    | 4      | 11    | NO           | NO                 | YES               | 11     | 0       | 
+|BallMaze    | videoColumn_stg5_reg[10] | 4      | 11    | NO           | NO                 | YES               | 11     | 0       | 
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -707,65 +820,49 @@ Report Cell Usage:
 +------+-----------+------+
 |      |Cell       |Count |
 +------+-----------+------+
-|1     |BUFG       |     3|
-|2     |CARRY4     |    19|
-|3     |LUT1       |    12|
-|4     |LUT2       |    56|
-|5     |LUT3       |    59|
-|6     |LUT4       |   128|
-|7     |LUT5       |   120|
-|8     |LUT6       |   263|
-|9     |MMCME2_ADV |     1|
-|10    |MUXF7      |    21|
-|11    |MUXF8      |     5|
-|12    |RAMB18E1_2 |     1|
-|13    |RAMB18E1_3 |     1|
-|14    |SRL16E     |     7|
-|15    |FDCE       |    22|
-|16    |FDRE       |   282|
-|17    |FDSE       |    11|
-|18    |IBUF       |     8|
-|19    |OBUF       |    33|
+|1     |BUFG       |     2|
+|2     |LUT1       |     2|
+|3     |LUT2       |     3|
+|4     |LUT3       |     5|
+|5     |LUT4       |     4|
+|6     |LUT5       |     6|
+|7     |LUT6       |    15|
+|8     |MMCME2_ADV |     1|
+|9     |SRL16E     |    22|
+|10    |FDRE       |    46|
+|11    |IBUF       |     1|
+|12    |OBUF       |    17|
 +------+-----------+------+
 
 Report Instance Areas: 
-+------+----------------------+------------------------------+------+
-|      |Instance              |Module                        |Cells |
-+------+----------------------+------------------------------+------+
-|1     |top                   |                              |  1052|
-|2     |  CPU_RESETN_instance |free_run_shift_reg            |     3|
-|3     |  ballMotion0         |BallMotion                    |   732|
-|4     |    ballTick          |mod_m_counter                 |    44|
-|5     |    dm8_0             |led_mux8_p                    |    77|
-|6     |    ra0               |readAccel                     |   181|
-|7     |      mc0             |mod_m_counter__parameterized0 |    19|
-|8     |      spi0            |spi                           |    85|
-|9     |    ubc0              |univ_bin_counter              |    10|
-|10    |    ubc1              |univ_bin_counter_0            |    10|
-|11    |  videoClk108MHz_0    |videoClk108MHz                |     4|
-+------+----------------------+------------------------------+------+
++------+-------------------+---------------+------+
+|      |Instance           |Module         |Cells |
++------+-------------------+---------------+------+
+|1     |top                |               |   124|
+|2     |  videoClk108MHz_0 |videoClk108MHz |     4|
++------+-------------------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 844.281 ; gain = 583.461
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 795.270 ; gain = 534.270
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 844.281 ; gain = 227.805
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 844.281 ; gain = 583.461
+Synthesis finished with 0 errors, 3 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 795.270 ; gain = 178.992
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 795.270 ; gain = 534.270
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 844.281 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 795.270 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-141 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+192 Infos, 43 Warnings, 35 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 844.281 ; gain = 593.297
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 844.281 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 795.270 ; gain = 543.336
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 795.270 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Axelb/Documents/School/WSU Spring 2019/ECE 324/BallMaze/BallMaze.runs/synth_1/BallMaze.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file BallMaze_utilization_synth.rpt -pb BallMaze_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 25 16:16:38 2019...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 30 10:37:03 2019...

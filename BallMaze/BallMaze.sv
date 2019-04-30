@@ -5,15 +5,15 @@ module BallMaze(
     //Buttons
     input logic CPU_RESETN,
     input logic BTNU, BTND, BTNL, BTNR,
-	input logic SW[15:0], // 16 switches
+	//input logic SW[15:0], // 16 switches
 
     //VGA
     output logic VGA_VS, VGA_HS,
     output logic [3:0] VGA_R, VGA_G, VGA_B,
     
     //SSEG
-    output logic [7:0] AN,               
-    output logic DP,CG,CF,CE,CD,CC,CB,CA,
+    //output logic [7:0] AN,               
+    //output logic DP,CG,CF,CE,CD,CC,CB,CA,
     
     //SPI
     input logic ACL_MISO,
@@ -133,14 +133,17 @@ assign ballRowDown = ballRow - 8;
 
 always_ff @(posedge clk108MHz) begin
 	//if SW[4], use switches for wall detection (debugging)
+	/*
 	if(SW[4]) begin
     	wallRightOfball <= SW[0];
 		wallLeftOfball <= SW[3];
 		wallAboveball <= SW[2];
 		wallBelowball <= SW[1];
 	end
-	//actual wall detection:
 	else begin
+	*/
+	//actual wall detection:
+	
 		//wall right
 		if (BallMazeTileSet[{BallMazeTileMapRom[{ballRow[7:3],ballColumnUp[7:3]}],ballRow[2:0],ballColumnUp[2:0]}] == 1) begin
 			wallRightOfball <= 1;
@@ -166,7 +169,6 @@ always_ff @(posedge clk108MHz) begin
 		if (BallMazeTileSet[{BallMazeTileMapRom[{ballRow[7:3],ballColumn[7:3]}],ballRow[2:0] + 1,ballColumn[2:0]}] == 2) begin
 			winGame <= 1;
 		end
-	end
 end
 
 /////////////////////////////////////////////////////////////////////

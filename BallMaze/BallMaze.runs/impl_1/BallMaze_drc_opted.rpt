@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Apr 25 16:17:47 2019
+| Date         : Tue Apr 30 10:37:43 2019
 | Host         : Alex-XPS running 64-bit major release  (build 9200)
 | Command      : report_drc -file BallMaze_drc_opted.rpt -pb BallMaze_drc_opted.pb -rpx BallMaze_drc_opted.rpx
 | Design       : BallMaze

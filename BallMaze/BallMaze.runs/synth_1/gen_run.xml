@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1556234152">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1556645785">
   <File Type="PA-TCL" Name="BallMaze.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="BallMaze_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="BallMaze_reports.tcl"/>
   <File Type="RDS-RDS" Name="BallMaze.vds"/>
   <File Type="RDS-UTIL" Name="BallMaze_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="BallMaze_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="BallMaze.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="BallMaze_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="BallMaze_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/videoClk108MHz.v">
@@ -23,20 +26,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/free_run_shift_reg.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/hex_to_sseg_p.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/led_mux8_p.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -73,6 +62,22 @@
     </File>
     <File Path="$PPRDIR/BallMaze.sv">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/hex_to_sseg_p.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/led_mux8_p.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
